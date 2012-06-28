@@ -1,0 +1,103 @@
+####################
+来客
+####################
+
+| 会社受付担当者が、来客予定を把握するのに便利です。
+| また営業担当の方は、事前に来客予定を把握することで顧客へのフォロー、新規提案などのきっかけづくりができます。
+
+来客予定の状況を確認する
+========================
+
+来客の予約・使用状況は、来客予定日や状態 「予定」「来客中」「完了」 で表示を切り替えて確認することができます。
+
+* メニューの |visitor_image| をクリックします。
+* 来客予定を確認したい日付を設定します。
+
+  |visitor_set_date|
+
+* 設備を選択します。確認したい予約の件名上でクリックします。
+
+  |visitor_top|
+
+* 詳細画面が表示されます。
+
+  |visitor_detail|
+
+表示を状態別で絞り込む
+----------------------
+
+来客予約を状態別に絞り込み表示することができます。 [#]_
+
+  |visitor_state|
+
+
+来客予定を登録する
+==================
+
+来客予定を新規に登録しましょう。
+
+* メニューの |visitor_image| をクリックします。
+* **新規作成** をクリックします。
+
+  |visitor_new|
+
+* 各項目を入力します。案内先の場所が設備予約に登録されている場合は設備区分から選択し、 **<< 書込** をクリックします。
+
+  |visitor_edit|
+
+* 応対者が複数いる場合は、 [応対者] の **選択** をクリックするとユーザーを追加できます。
+
+  |add_person|
+
+* 来客の状態を選択し **OK** をクリックします。 [#]_
+
+  |visitor_status|
+
+一括で「予約」「来客中」「完了」に設定
+--------------------------------------
+
+| 来客予定を一括で予約・来客中・完了に設定できます。
+| 設定したい来客予定をチェックし、プルダウンメニューから「予約」「来客中」「完了」を選択します。最後に **変更** をクリックします。 [3]_
+
+  |change_state|
+
+
+来客予定を削除する
+==================
+
+削除する来客予定にチェックし、 **削除** をクリックします。 [3]_
+
+  |visitor_delete|
+
+
+
+-----
+
+.. rubric:: 脚注
+.. [#] 初期状態では全てにチェックがついています。
+.. [#] アラームメールにつきましては、 :doc:`schedule` の :ref:`alarm-label` をご参照ください。
+.. [3] 登録者・応対者に登録されているユーザーが設定できます。
+
+
+.. 画像定義
+.. |visitor_image| image:: ../images/visitor_image.gif
+
+.. 来客予定の状況を確認する
+.. |visitor_set_date| image:: ../images/visitor_set_date.png
+.. |visitor_top| image:: ../images/visitor_top.png
+.. |visitor_detail| image:: ../images/visitor_detail.png
+
+.. 表示を状態別で絞り込む
+.. |visitor_state| image:: ../images/visitor_state.png
+
+.. 来客予定を登録する
+.. |visitor_new| image:: ../images/visitor_new.png
+.. |visitor_edit| image:: ../images/visitor_edit.png
+.. |add_person| image:: ../images/visitor_add_person.png
+.. |visitor_status| image:: ../images/visitor_status.png
+
+.. 一括で「予約」「来客中」「完了」に設定
+.. |change_state| image:: ../images/visitor_change_state.png
+
+.. 来客予定を削除する
+.. |visitor_delete| image:: ../images/visitor_delete.png

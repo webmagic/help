@@ -1,0 +1,154 @@
+####################
+ToDo
+####################
+
+
+「こなすべき仕事」や「仕上げるべき作業」などを書き出し、リストアップします。「締め切り日」を設定することにより、終了させる日程を意識することができます。一覧を「カテゴリ別」「状態別」に切り替えて表示することもできます。              
+
+カテゴリを登録する
+==================
+
+* メニューの |todo_image| をクリックします。
+* **カテゴリ編集** をクリックします。
+
+  |todo_top_category|
+
+* **新規登録** をクリックします。
+
+  |category|
+ 
+* 各項目を入力し、 **OK** をクリックします。
+
+  |category_edit|
+
+.. note::
+
+ **カテゴリコード** ： 任意の数字を入力します。複数のカテゴリを登録する場合、カテゴリコードが重複しないようにします。また、複数のカテゴリを登録した場合、カテゴリはカテゴリコードが若い順に表示されます。
+
+
+ToDo を登録する
+===============
+
+* メニューの |todo_image| をクリックします。
+* **新規作成** をクリックします。
+
+  |todo_top|
+
+* 各項目を選択・入力し、 **OK** をクリックします。 [#]_
+
+  |todo_edit|
+
+.. warning::
+ **[ToDo名]** は必須項目です。
+
+
+登録した ToDo を確認する
+=========================
+
+登録した ToDo リストを確認しましょう。詳細を確認し、意識付けしましょう。
+
+
+* メニューの |todo_image| をクリックします。
+* 確認したい ToDo の「ToDo名」をクリックします。
+ 
+  |todo_list|
+
+* 内容を確認し、 **戻る** をクリックします。
+ 
+  |todo_detail|
+
+カテゴリ別に表示する
+--------------------
+
+ToDo が一覧されている画面で「カテゴリ別表示」タブをクリックすると、ToDo をカテゴリ毎にまとめて表示できます。
+ 
+  |view_category|
+
+状態別に表示する
+----------------
+
+ToDo が一覧されている画面で「状態別表示」タブをクリックすると、ToDo をカテゴリ毎にまとめて表示できます。
+ 
+  |view_state|
+
+
+ToDo を完了する
+===============
+
+終えた仕事は「完了」にします。完了したことを示すようにグレーアウトされます。
+
+* メニューの |todo_image| をクリックします。
+* 完了にしたい ToDo にチェックを入れ、「状態」から **完了** を選択し、 **変更** をクリックします。
+ 
+  |todo_completion|
+ 
+* 完了となった ToDo がグレーアウトされます。
+ 
+  |todo_completion_list|
+
+
+ToDo を修正する
+===============
+
+* メニューの |todo_image| をクリックします。
+* 修正したい ToDo の「ToDo名」をクリックします。
+
+  |todo_title_click|
+
+* 詳細画面が表示されますので、 **編集** をクリックして内容を修正します。
+
+  |todo_fix|
+
+
+ToDo を削除する
+===============
+
+登録した ToDo を削除します。一度削除すると元に戻すことはできません。
+
+* メニューの |todo_image| をクリックします。
+* 削除したい ToDo にチェックを入れ、 **削除** をクリックします。
+ 
+  |todo_delete|
+
+* 確認メッセージが表示されたら **OK** をクリックします。
+
+
+
+
+-----
+
+.. rubric:: 脚注
+.. [#] アラームメールにつきましては、 :doc:`schedule` の :ref:`alarm-label` をご参照ください。
+
+.. 画像定義
+.. |todo_image| image:: ../images/todo_image.gif
+
+.. カテゴリを新規に登録する
+.. |todo_top_category| image:: ../images/todo_top_category.png
+.. |category| image:: ../images/todo_category.png
+.. |category_edit| image:: ../images/todo_category_edit.png
+
+.. ToDo を新規に登録する
+.. |todo_top| image:: ../images/todo_top.png
+.. |todo_edit| image:: ../images/todo_edit.png
+
+.. 登録した ToDo を確認する
+.. |todo_list| image:: ../images/todo_list.png
+.. |todo_detail| image:: ../images/todo_detail.png
+
+.. カテゴリ別に表示する
+.. |view_category| image:: ../images/todo_view_category.png
+
+.. 状態別に表示する
+.. |view_state| image:: ../images/todo_view_state.png
+
+.. ToDo を完了する
+.. |todo_completion| image:: ../images/todo_completion.png
+.. |todo_completion_list| image:: ../images/todo_completion_list.png
+
+.. ToDo を修正する
+.. |todo_title_click| image:: ../images/todo_title_click.png
+.. |todo_fix| image:: ../images/todo_fix.png
+
+.. ToDo を削除する
+.. |todo_delete| image:: ../images/todo_delete.png

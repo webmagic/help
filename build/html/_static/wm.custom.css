@@ -1,0 +1,25 @@
+@import 'nature.css';
+
+/*
+ * index で使用する
+ */
+div.toctree-wrapper.compound li{
+    list-style: none;
+}
+
+/*
+ * 手順
+ * ex. 1.1.2 
+ *
+ */
+div.section li {
+    list-style-type: decimal;
+}
+
+img { 
+    border: 1px gray solid;
+    max-width: 100%;
+}
+p.first img {
+    width: auto;
+}

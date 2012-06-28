@@ -1,0 +1,2546 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. 設定画面(管理者) &mdash; WebMagic v4.1.3 documentation</title>
+    <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '4.1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="WebMagic v4.1.3 documentation" href="../index.html" />
+    <link rel="prev" title="4. 設定画面(個人)" href="../user/config.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../user/config.html" title="4. 設定画面(個人)"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>1. 設定画面(管理者)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>管理者用設定では次の24種類の設定を行うことができます。</p>
+<blockquote>
+<div><img alt="config_all" src="../_images/admin_config_all.png" /></div></blockquote>
+<div class="line-block">
+<div class="line">WebMagic は各機能の表示形式・カテゴリ名などを任意に設定することができます。</div>
+<div class="line">使用する現場のニーズにあわせてご利用いただけます。</div>
+</div>
+<div class="section" id="id2">
+<h2>1.1. ユーザー<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>WebMagic を使用するユーザーの登録・削除・修正を行えます。 CSV ファイルからのインポート・エクスポートも対応しています。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">ユーザーの登録を実行する前に、メニューの 「所属」と 「役職」を先に設定しておきましょう。</p>
+</div>
+<div class="section" id="id3">
+<h3>1.1.1. ユーザーを登録する<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="user_new" src="../_images/user_control_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力・選択し、 <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id138" id="id4">[1]</a></p>
+<p><img alt="user_add" src="../_images/user_control_add.png" /></p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line">「所属」は複数設定できます。その際メインとなる方を選択し、 <strong>Primary 設定</strong> をクリックします。</div>
+<div class="line">「メール通知」では、次の場合に通知するメールアドレスを設定します。</div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="78%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>伝言</td>
+<td>行先伝言板で自分宛に伝言が書き込まれた場合</td>
+</tr>
+<tr><td>スケジュール</td>
+<td>他の人が自分のスケジュールを登録した場合</td>
+</tr>
+<tr><td>ワークフロー</td>
+<td>自分が閲覧すべきワークフローがある場合</td>
+</tr>
+</tbody>
+</table>
+<p>「接続方法」では、接続方法によりチェックを付加します。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>通常</td>
+<td><a class="reference external" href="http://***.***">http://***.***</a> と入力し接続する場合</td>
+</tr>
+<tr><td>SSL</td>
+<td><a class="reference external" href="https://***.***">https://***.***</a> と入力し接続する場合</td>
+</tr>
+<tr><td>携帯</td>
+<td><a class="reference external" href="http://***.***/m/">http://***.***/m/</a> と携帯電話 (i-mode,EZweb) 端末から接続する場合</td>
+</tr>
+<tr><td>携帯SSL</td>
+<td><a class="reference external" href="https://***.***/m/">https://***.***/m/</a> と携帯電話 (i-mode,EZweb) 端末から接続する場合</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">携帯での接続は、オプションの i-mode 対応または EZweb 対応を購入している場合です。</p>
+</div>
+<p>「ユーザ写真」では、ユーザーの写真が <strong>3枚</strong> まで登録できます。 <a class="footnote-reference" href="#id139" id="id5">[2]</a></p>
+</div>
+<div class="section" id="id6">
+<h3>1.1.2. ユーザーを修正する<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいユーザーの <strong>修正</strong> をクリックします。</p>
+<p><img alt="user_fix" src="../_images/user_control_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>1.1.3. ユーザーを削除する<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいユーザーの <strong>削除</strong> をクリックします。</p>
+<p><img alt="user_delete" src="../_images/user_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>1.1.4. ユーザーをインポートする<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>ユーザーを CSV ファイルに書き出すことができます。</p>
+<ul class="simple">
+<li>メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</li>
+<li><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</li>
+<li><strong>参照</strong> をクリックし、取り込む CSV ファイルを選択します。</li>
+</ul>
+<blockquote>
+<div><img alt="file_reference" src="../_images/user_control_file_reference.png" /></div></blockquote>
+<ul>
+<li><p class="first">プルダウンメニューから <strong>インポート</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="user_import" src="../_images/user_control_import.png" /></p>
+</li>
+<li><p class="first">インポート完了のメッセージが表示されます。プルダウンメニューから <strong>結果参照</strong> を選択して <strong>実行</strong> をクリックします。</p>
+<p><img alt="import_result" src="../_images/user_control_import_result.png" /></p>
+</li>
+<li><p class="first">インポートされた結果が別ウィンドウで表示されます。</p>
+<p><img alt="import_result_reference" src="../_images/user_control_import_result_reference.png" /></p>
+</li>
+</ul>
+<p><strong>&lt;説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>チェック</td>
+<td>インポートするために、CSVファイルの内容をチェックします。</td>
+</tr>
+<tr><td>結果参照</td>
+<td>チェック・インポート・エクスポートの処理結果を表示します。</td>
+</tr>
+<tr><td>インポート</td>
+<td>CSVファイルからデータを取り込みます。</td>
+</tr>
+<tr><td>エクスポート</td>
+<td>登録したデータをCSVファイルに書き出します。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h3>1.1.5. ユーザーをエクスポートする<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>表計算ソフト等で編集した CSV ファイルを取り込むことができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>エクスポート</strong> を選択して <strong>実行</strong> をクリックします。</p>
+<p><img alt="user_export" src="../_images/user_control_export.png" /></p>
+</li>
+<li><p class="first">ダイアログが表示されるので、 <strong>保存</strong> をクリックし保存したい場所を選択します。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="csv">
+<h3>1.1.6. CSV ファイルの書き方<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
+<p>CSV ファイルを記載する場合は、一度エクスポートを実行した CSV ファイル(export.csv) をご参照ください。</p>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>1.2. 所属<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>WebMagic の「所属」は組織内での「部署」にあたります。所属は階層的に登録でき、その階層数に制限はありません。</p>
+<div class="section" id="id11">
+<h3>1.2.1. 所属を設定する<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="department_control_image" src="../_images/department_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューより <strong>所属の新規登録を行う</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="department_new" src="../_images/department_control_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="department_add" src="../_images/department_control_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">所属コードには任意の数字を入力します。複数の所属を登録する場合、所属コードが重複しないようにします。また、複数の所属を登録した場合、所属は所属コードが若い順に表示されます。</p>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>1.2.2. 階層的に所属を設定する<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="department_control_image" src="../_images/department_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューより <strong>所属の新規登録を行う</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="department_new" src="../_images/department_control_new.png" /></p>
+</li>
+<li><p class="first">「上位所属選択」から、階層的に登録したい所属コードを選択します。</p>
+<p><img alt="department_level" src="../_images/department_control_level.png" /></p>
+</li>
+<li><p class="first">その他の各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">所属コードには任意の数字を入力します。複数の所属を登録する場合、所属コードが重複しないようにします。また、複数の所属を登録した場合、所属は所属コードが若い順に表示されます。</p>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>1.2.3. 所属を修正する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="department_control_image" src="../_images/department_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したい所属の <strong>所属名</strong> をクリックします。</p>
+<p><img alt="department_fix" src="../_images/department_control_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h3>1.2.4. 所属を削除する<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="department_control_image" src="../_images/department_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい所属にチェックを付けます。</p>
+<p><img alt="department_check" src="../_images/department_control_check.png" /></p>
+</li>
+<li><p class="first">プルダウンメニューより <strong>チェックされた所属を削除する</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="department_delete" src="../_images/department_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<div class="last line-block">
+<div class="line">削除したい所属の下位階層にすでに所属が設定してある場合、削除できません。</div>
+<div class="line">下位階層の所属を削除すれば、上位階層の所属も削除できます。</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<div class="last line-block">
+<div class="line">削除したい所属にすでにユーザーが登録してある場合、削除できません。</div>
+<div class="line">登録しているユーザーを削除すれば、所属を削除できます。</div>
+</div>
+</div>
+</div>
+<div class="section" id="id15">
+<h3>1.2.5. ユーザーの所属を設定する<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>設定画面の <strong>ユーザー</strong> からではなく、 <strong>所属</strong> からユーザーの所属を設定できます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="department_control_image" src="../_images/department_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ユーザーを登録・削除したい <strong>所属名</strong> をクリックします。</p>
+<p><img alt="department_list" src="../_images/department_control_list.png" /></p>
+</li>
+<li><p class="first">[ユーザー一覧] タブをクリックします。</p>
+<p><img alt="department_user_list" src="../_images/department_control_user_list.png" /></p>
+</li>
+<li><p class="first">登録したいユーザーを選択し、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="department_user_add" src="../_images/department_control_user_add.png" /></p>
+</li>
+<li><p class="first">削除したい場合は「選択ユーザー一覧」からユーザーを選択し、 <strong>←削除</strong>  をクリックします。</p>
+<p><img alt="department_user_delete" src="../_images/department_control_user_delete.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>1.3. 役職<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<p>役職は名称を任意に設定することができます。役職の名称が変更された場合にも速やかに対応できます。</p>
+<div class="section" id="id17">
+<h3>1.3.1. 役職を登録する<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="post_control_image" src="../_images/post_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>役職の新規登録を行う</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="post_new" src="../_images/post_control_new.png" /></p>
+</li>
+<li><p class="first">役職名を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="post_edit" src="../_images/post_control_edit.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h3>1.3.2. 役職を修正する<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="post_control_image" src="../_images/post_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">役職名一覧から修正したい <strong>役職名</strong> をクリックします。</p>
+<p><img alt="post_fix" src="../_images/post_control_fix.png" /></p>
+</li>
+<li><p class="first">役職名を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h3>1.3.3. 役職を削除する<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="post_control_image" src="../_images/post_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい役職にチェックを付けます。</p>
+<p><img alt="post_check" src="../_images/post_control_check.png" /></p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされた役職を削除する</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="post_delete" src="../_images/post_control_delete.png" /></p>
+</li>
+<li><p class="first">表示されたメッセージの <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">初期値として登録されている役職は削除できません。</p>
+</div>
+</div>
+<div class="section" id="id20">
+<h3>1.3.4. 役職を並び替える<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="post_control_image" src="../_images/post_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">表示する順番を変更したい役職を選択し、ドラッグアンドドロップで移動します。</p>
+<p><img alt="post_drag_and_drop" src="../_images/post_control_drag_and_drop.png" /></p>
+</li>
+<li><p class="first">「実行ボタンで並び替えを反映させてください。」のメッセージが表示され、プルダウンメニューが <strong>役職の並び替えを反映される</strong> に変更されますので、そのまま <strong>実行</strong> をクリックします。</p>
+<p><img alt="post_sort" src="../_images/post_control_sort.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id21">
+<h2>1.4. 設備<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<p>設備では、設備の名前や、その設備を分類分けする設備区分を登録します。「営業部だけが予約できる設備」「田中さんと加藤さんだけが閲覧できる設備」など、設備ごとにアクセス権が設定できます。</p>
+<div class="section" id="id22">
+<h3>1.4.1. 設備区分を設定する<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/reserve_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="recerve_section_new" src="../_images/recerve_section_control_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="recerve_section_edit" src="../_images/recerve_section_control_edit.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">設備区分コードには任意の数字を入力します。複数の設備区分を登録する場合、設備区分コードが重複しないようにします。また、複数の設備区分を登録した場合、設備区分は設備区分コードが若い順に表示されます。</p>
+</div>
+</div>
+<div class="section" id="id23">
+<h3>1.4.2. 設備区分を修正する<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/reserve_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したい設備区分の <strong>修正</strong> をクリックします。</p>
+<p><img alt="recerve_section_fix" src="../_images/recerve_section_control_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h3>1.4.3. 設備区分を削除する<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/reserve_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい施設区分の <strong>削除</strong> をクリックします。</p>
+<p><img alt="recerve_section_delete" src="../_images/recerve_section_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">設備区分を削除すると、設備区分に設定されている設備とその設備に登録されている予約も削除されます。</p>
+</div>
+</div>
+<div class="section" id="id25">
+<h3>1.4.4. 設備を設定する<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p>登録された設備区分に対して、設備を設定します。設備ごとに、所属単位、またはユーザー単位で、アクセス権の設定ができます。
+ここでは、所属単位でアクセス権を設定する方法を紹介します。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/reserve_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[設備] タブをクリックし、設備を設定する設定区分を選択します。</p>
+<p><img alt="recerve_tab" src="../_images/recerve_control_tab.png" /></p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="recerve_new" src="../_images/recerve_control_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力し、 <strong>アクセス権</strong> をクリックします。</p>
+<p><img alt="recerve_edit" src="../_images/recerve_control_edit.png" /></p>
+</li>
+<li><p class="first">「所属一覧」からアクセス権を設定したい所属を選択し、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="recerve_department_add" src="../_images/recerve_control_department_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス権一覧」から <strong>所属</strong> を選択し、設定したいアクセス権をリストから選択します。</p>
+<p><img alt="recerve_department_authority_add" src="../_images/recerve_control_dept_auth_add.png" /></p>
+</li>
+<li><p class="first"><strong>変更</strong> をクリックし、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="recerve_department_authority_end" src="../_images/recerve_control_dept_auth_end.png" /></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+<p><img alt="recerve_add" src="../_images/recerve_control_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">個人へのアクセス権設定も所属と同様の操作で <strong>追加・削除</strong> を行います。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">設備コードには任意の数字を入力します。複数の設備を登録する場合、設備コードが重複しないようにします。また、複数の設備を登録した場合、設備は設備コードが若い順に表示されます。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">画像添付には設備（教室や備品など）の画像を登録します。 <strong>参照</strong> をクリックし画像ファイルを選択し、 <strong>追加</strong> をクリックします。</p>
+</div>
+<p><strong>&lt;アクセス権の説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>一覧参照</td>
+<td>一つ一つの設備の予約は閲覧できませんが、一日単位や週間・月間単位の一覧は閲覧できます。（予約はできません）</td>
+</tr>
+<tr><td>詳細参照</td>
+<td>一つ一つの設備の予約内容まで閲覧できます。（予約はできません）</td>
+</tr>
+<tr><td>作成</td>
+<td>設備の予約ができます。</td>
+</tr>
+<tr><td>権限無し</td>
+<td>設備を閲覧・予約できなくなります。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id26">
+<h3>1.4.5. 設備を修正する<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/reserve_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[設備] タブをクリックし、プルダウンメニューから修正したい設備が登録されている <strong>設備区分</strong> を選択します。</p>
+<p><img alt="select_section" src="../_images/recerve_control_select_section.png" /></p>
+</li>
+<li><p class="first">修正したい設備の <strong>修正</strong> をクリックします。</p>
+<p><img alt="recerve_fix" src="../_images/recerve_control_fix.png" /></p>
+</li>
+<li><p class="first">各項目・アクセス権を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h3>1.4.6. 設備を削除する<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/reserve_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[設備] タブをクリックし、プルダウンメニューから削除したい設備が登録されている <strong>設備区分</strong> を選択します。</p>
+<p><img alt="select_section" src="../_images/recerve_control_select_section.png" /></p>
+</li>
+<li><p class="first">削除したい設備の <strong>削除</strong> をクリックします。</p>
+<p><img alt="recerve_delete" src="../_images/recerve_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">設備を削除すると、設備に登録されている予約も削除されます。</p>
+</div>
+</div>
+</div>
+<div class="section" id="noticeboard-config">
+<span id="id28"></span><h2>1.5. 掲示板<a class="headerlink" href="#noticeboard-config" title="Permalink to this headline">¶</a></h2>
+<p>掲示板では、情報を分類分けする「カテゴリ」を設定します。カテゴリごとにアクセス権が設定できます。例えば「営業部のみが閲覧できるカテゴリ」や「田中さんと加藤さんだけが書き込むことができるカテゴリ」の設定ができます。</p>
+<div class="section" id="id29">
+<h3>1.5.1. 掲示板のカテゴリを設定する<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<p>掲示板のカテゴリを設定します。また、設定したカテゴリに対し所属単位、ユーザー単位ごとにアクセス権の設定もできます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/noticeboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="noticeboard_category_new" src="../_images/noticeboard_control_category_new.png" /></p>
+</li>
+<li><p class="first">掲示板カテゴリ設定の各項目を入力し、 <strong>アクセス権</strong> をクリックします。 <a class="footnote-reference" href="#id140" id="id30">[3]</a></p>
+<p><img alt="noticeboard_category_edit" src="../_images/noticeboard_control_category_edit.png" /></p>
+</li>
+<li><p class="first">「所属一覧」からアクセス権を設定したい所属を選択し、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="noticeboard_department_add" src="../_images/noticeboard_control_category_dept_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス権一覧」から所属を選択し、設定したいアクセス権をリストから選択します。</p>
+<p><img alt="noticeboard_department_authority_add" src="../_images/noticeboard_control_category_dept_auth_add.png" /></p>
+</li>
+<li><p class="first"><strong>変更</strong> をクリックし、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="noticeboard_department_authority_end" src="../_images/noticeboard_control_category_dept_auth_end.png" /></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+<p><img alt="noticeboard_category_add" src="../_images/noticeboard_control_category_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">個人へのアクセス権設定も所属と同様の操作で <strong>追加・削除</strong> を行います。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">カテゴリコードには任意の数字を入力します。複数のカテゴリを登録する場合、カテゴリコードが重複しないようにします。また、複数のカテゴリを登録した場合、カテゴリはカテゴリコードが若い順に表示されます。</p>
+</div>
+<p><strong>&lt;アクセス権の説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>参照</td>
+<td>カテゴリに書き込まれている情報を閲覧できます。（登録はできません）</td>
+</tr>
+<tr><td>作成</td>
+<td>カテゴリに情報を書き込むことができます。</td>
+</tr>
+<tr><td>権限無し</td>
+<td>カテゴリにアクセスできません。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id31">
+<h3>1.5.2. 掲示板のカテゴリを修正する<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/noticeboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいカテゴリの <strong>修正</strong> をクリックします。</p>
+<p><img alt="noticeboard_category_fix" src="../_images/noticeboard_control_category_fix.png" /></p>
+</li>
+<li><p class="first">各項目・アクセス権を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h3>1.5.3. 掲示板のカテゴリを削除する<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/noticeboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいカテゴリの <strong>削除</strong> をクリックします。</p>
+<p><img alt="noticeboard_category_delete" src="../_images/noticeboard_control_category_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">カテゴリを削除すると、書き込まれている情報も削除されます。</p>
+</div>
+</div>
+<div class="section" id="id33">
+<h3>1.5.4. 掲示板の初期値を設定する<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<p>ここでは、登録された掲示物1件ごとに対して「未読者・既読者一覧表示」を誰に許可するのかが設定できます。設定は次の通りです。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/noticeboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[初期設定] タブをクリックします。</p>
+<p><img alt="noticeboard_default_tab" src="../_images/noticeboard_control_default_tab.png" /></p>
+</li>
+<li><p class="first">[未読者・既読者一覧表示] を誰に許可するか設定し、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="noticeboard_default_set" src="../_images/noticeboard_control_default_set.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">値を規定値に戻したい場合は、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id34">
+<h2>1.6. 電子会議室<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
+<p>会議室では、情報を分類分けする「カテゴリ」を設定します。カテゴリごとにアクセス権を設定できます。例えば「営業部のみが閲覧できるカテゴリ」や「田中さんと加藤さんだけが書き込むことができるカテゴリ」の作成などが行えます。</p>
+<div class="section" id="id35">
+<h3>1.6.1. 電子会議室のカテゴリを設定する<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<p>電子会議室のカテゴリを設定します。また、設定したカテゴリに対して所属単位・ユーザー単位でアクセス権の設定もできます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="meeting_room_control_image" src="../_images/meeting_room_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="meeting_room_category_new" src="../_images/meeting_room_control_category_new.png" /></p>
+</li>
+<li><p class="first">電子会議室カテゴリ設定の各項目を入力し、 <strong>アクセス権</strong> をクリックします。 <a class="footnote-reference" href="#id140" id="id36">[3]</a></p>
+<p><img alt="meeting_room_category_edit" src="../_images/meeting_room_control_category_edit.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">カテゴリコードには任意の数字を入力します。複数のカテゴリを登録する場合、カテゴリコードが重複しないようにします。また、複数のカテゴリを登録した場合、カテゴリはカテゴリコードが若い順に表示されます。</p>
+</div>
+<ul>
+<li><p class="first">「所属一覧」からアクセス権を設定したい所属を選択し、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="meeting_room_department_add" src="../_images/meeting_room_control_category_dept_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス権一覧」から所属を選択し、設定したいアクセス権をリストから選択して、 <strong>変更</strong> をクリックしたあと、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="meeting_room_department_authority_add" src="../_images/meeting_room_control_category_dept_auth_add.png" /></p>
+</li>
+<li><p class="first"><strong>変更</strong> をクリックし、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="meeting_room_department_authority_end" src="../_images/meeting_room_control_category_dept_auth_end.png" /></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+<p><img alt="meeting_room_category_add" src="../_images/meeting_room_control_category_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">個人へのアクセス権設定も所属と同様の操作で <strong>追加・削除</strong> を行います。</p>
+</div>
+<p><strong>&lt;アクセス権の説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>参照</td>
+<td>カテゴリに書き込まれている情報を閲覧できます。（登録はできません）</td>
+</tr>
+<tr><td>作成</td>
+<td>カテゴリに情報を書き込むことができます。</td>
+</tr>
+<tr><td>権限無し</td>
+<td>カテゴリにアクセスできません。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id37">
+<h3>1.6.2. 電子会議室のカテゴリを修正する<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/noticeboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいカテゴリの <strong>修正</strong> をクリックします。</p>
+<p><img alt="meeting_room_category_fix" src="../_images/meeting_room_control_category_fix.png" /></p>
+</li>
+<li><p class="first">各項目・アクセス権を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id38">
+<h3>1.6.3. 電子会議室のカテゴリを削除する<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/noticeboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいカテゴリの <strong>削除</strong> をクリックします。</p>
+<p><img alt="meeting_room_category_delete" src="../_images/meeting_room_control_category_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">カテゴリを削除すると、書き込まれている情報も削除されます。</p>
+</div>
+</div>
+<div class="section" id="id39">
+<h3>1.6.4. 電子会議室の初期値を設定する<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
+<p>カテゴリの登録をユーザー側で「登録可能（表示）・登録不可（非表示）」及び「未読・既読一覧表示」の設定ができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/noticeboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[初期値設定] タブをクリックします。</p>
+<p><img alt="meeting_room_default_tab" src="../_images/meeting_room_control_default_tab.png" /></p>
+</li>
+<li><p class="first">「電子会議室のカテゴリ登録ボタン」 の <strong>表示・非表示</strong> 、 「未読者・既読者一覧表示」 の表示を設定します。</p>
+<p><img alt="meeting_room_default_set" src="../_images/meeting_room_control_default_set.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">値を規定値に戻したい場合は、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</div>
+</div>
+<div class="section" id="cabinet-config">
+<span id="id40"></span><h2>1.7. 文書管理<a class="headerlink" href="#cabinet-config" title="Permalink to this headline">¶</a></h2>
+<p>文書管理では、情報を分類分けする「カテゴリ」を設定します。カテゴリは所属ごとに設定できます。カテゴリごとにアクセス権の設定を行えますので、「営業部のみが閲覧できるカテゴリ」や「田中さんと加藤さんだけが書き込むことができるカテゴリ」の作成が行えます。</p>
+<div class="section" id="id41">
+<h3>1.7.1. 文書管理のカテゴリを設定する<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
+<p>文書管理のカテゴリを設定します。また、設定したカテゴリに対して所属単位・ユーザー単位ごとにアクセス権を設定できます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="cabinet_control_image" src="../_images/cabinet_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="cabinet_category_new" src="../_images/cabinet_control_category_new.png" /></p>
+</li>
+<li><p class="first">「所属名」を選択し、各項目を入力して <strong>アクセス権</strong> をクリックします。</p>
+<p><img alt="cabinet_category_edit" src="../_images/cabinet_control_category_edit.png" /></p>
+</li>
+<li><p class="first">「所属一覧」からアクセス権を設定したい所属を選択し、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="cabinet_department_add" src="../_images/cabinet_control_category_dept_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス権一覧」から所属を選択し、設定したいアクセス権をリストから選択して、 <strong>変更</strong> をクリックしたあと、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="cabinet_department_authority_add" src="../_images/cabinet_control_category_dept_auth_add.png" /></p>
+</li>
+<li><p class="first"><strong>変更</strong> をクリックし、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="cabinet_department_authority_end" src="../_images/cabinet_control_category_dept_auth_end.png" /></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+<p><img alt="cabinet_category_add" src="../_images/cabinet_control_category_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">個人へのアクセス権設定も所属と同様の操作で <strong>追加・削除</strong> を行います。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">カテゴリコードには任意の数字を入力します。複数のカテゴリを登録する場合、カテゴリコードが重複しないようにします。また、複数のカテゴリを登録した場合、カテゴリはカテゴリコードが若い順に表示されます。</p>
+</div>
+<p><strong>&lt;アクセス権の説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>参照</td>
+<td>カテゴリに書き込まれている情報を閲覧できます。（情報を追加・変更はできません）</td>
+</tr>
+<tr><td>作成</td>
+<td>カテゴリに情報を書き込むことができます。</td>
+</tr>
+<tr><td>権限無し</td>
+<td>カテゴリにアクセスできません。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id42">
+<h3>1.7.2. 文書管理のカテゴリを修正する<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="cabinet_control_image" src="../_images/cabinet_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいカテゴリの <strong>修正</strong> をクリックします。 <a class="footnote-reference" href="#id141" id="id43">[4]</a></p>
+<p><img alt="cabinet_category_fix" src="../_images/cabinet_control_category_fix.png" /></p>
+</li>
+<li><p class="first">各項目・アクセス権を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id44">
+<h3>1.7.3. 文書管理のカテゴリを削除する<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="cabinet_control_image" src="../_images/cabinet_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいカテゴリの <strong>削除</strong> をクリックします。 <a class="footnote-reference" href="#id141" id="id45">[4]</a></p>
+<p><img alt="cabinet_category_delete" src="../_images/cabinet_control_category_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">カテゴリを削除すると、登録されている文書も削除されます。</p>
+</div>
+</div>
+</div>
+<div class="section" id="events-config">
+<span id="id46"></span><h2>1.8. 行事予定<a class="headerlink" href="#events-config" title="Permalink to this headline">¶</a></h2>
+<p>行事予定では、アクセス権などの設定を行えます。アクセス権は、所属・個人ごとに割り当てることができます。また、行事区分の作成・修正・削除・並び替えを行うことができます。</p>
+<div class="section" id="id47">
+<h3>1.8.1. 行事予定のアクセス権を設定する<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="event_control_image" src="../_images/event_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">左側のツリーからアクセス権を割り当てたい所属をクリックします。</p>
+<p><img alt="event_authory_tree" src="../_images/event_control_auth_tree.png" /></p>
+</li>
+<li><p class="first">「所属一覧」 からアクセス権を割り当てたい所属を選び、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="event_authory_add" src="../_images/event_control_auth_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス一覧」 へ追加した所属を選択、プルダウンメニューから権限を選択します。</p>
+<p><img alt="event_authory_select" src="../_images/event_control_auth_select.png" /></p>
+</li>
+<li><p class="first"><strong>修正</strong> をクリックし、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="event_authory_submit" src="../_images/event_control_auth_submit.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">個人へのアクセス権設定も所属と同様の操作で <strong>追加・削除</strong> を行います。</p>
+</div>
+<p><strong>&lt;アクセス権の説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>編集</td>
+<td>行事を作成することができ、自分または他人が作成した行事の編集・削除が行えます。</td>
+</tr>
+<tr><td>作成</td>
+<td>行事を作成することができ、自分が作成した行事の編集・削除が行えます。</td>
+</tr>
+<tr><td>詳細参照</td>
+<td>行事を閲覧することができます。</td>
+</tr>
+<tr><td>一覧参照</td>
+<td>行事一覧を閲覧することができます。</td>
+</tr>
+<tr><td>権限なし</td>
+<td>行事一覧を閲覧できません。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id48">
+<h3>1.8.2. 行事区分を登録する<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="event_control_image" src="../_images/event_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[行事区分] タブをクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>区分の新規登録を行う</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="event_section_new" src="../_images/event_control_section_new.png" /></p>
+</li>
+<li><p class="first">区分名を入力し <strong>OK</strong> をクリックします。</p>
+<p><img alt="event_section_add" src="../_images/event_control_section_add.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id49">
+<h3>1.8.3. 行事区分を修正する<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="event_control_image" src="../_images/event_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[行事区分] タブをクリックします。</p>
+</li>
+<li><p class="first">修正したい行事区分名をクリックします。</p>
+<p><img alt="event_section_fix" src="../_images/event_control_section_fix.png" /></p>
+</li>
+<li><p class="first">区分名を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id50">
+<h3>1.8.4. 行事区分を削除する<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="event_control_image" src="../_images/event_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[行事区分] のタブをクリックします。</p>
+</li>
+<li><p class="first">削除したい行事区分にチェックを付けます。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされた区分を削除する</strong> を選択し、 <strong>実行</strong> をクリックします。 <a class="footnote-reference" href="#id142" id="id51">[5]</a></p>
+<p><img alt="event_section_delete" src="../_images/event_control_section_delete.png" /></p>
+</li>
+<li><p class="first">表示されたメッセージの <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id52">
+<h3>1.8.5. 行事区分を公開にする<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="event_control_image" src="../_images/event_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[行事区分] のタブをクリックします。</p>
+</li>
+<li><p class="first">公開したい行事区分にチェックを付けます。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされた区分を公開にする</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="event_section_public" src="../_images/event_control_section_public.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id53">
+<h3>1.8.6. 行事区分を非公開にする<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="event_control_image" src="../_images/event_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[行事区分] のタブをクリックします。</p>
+</li>
+<li><p class="first">非公開したい行事区分にチェックを付けます。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされた区分を非公開にする</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="event_section_private" src="../_images/event_control_section_private.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id54">
+<h3>1.8.7. 行事区分を並び替える<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="event_control_image" src="../_images/event_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[行事区分] のタブをクリックします。</p>
+</li>
+<li><p class="first">表示する順番を変更したいメニューを選択し、ドラッグアンドドロップで移動します。</p>
+<p><img alt="event_section_drag_and_drop" src="../_images/event_control_section_drag_and_drop.png" /></p>
+</li>
+<li><p class="first">「実行ボタンで並び替えを反映させてください。」のメッセージが表示され、プルダウンメニューが <strong>区分の並び替えを反映される</strong> に変更されますので、そのまま <strong>実行</strong> をクリックします。</p>
+<p><img alt="event_section_sort" src="../_images/event_control_section_sort.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id55">
+<h2>1.9. ワークフロー<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h2>
+<p>ワークフローは、電子決裁をする場合の承認経路をあらかじめ登録しておくことができます。経路は複数登録でき、決裁の内容により使い分けることができます。また、決裁に使用する文書の雛形も登録できます。決裁時に次の決裁者にメールを「送信する・しない」などの設定もできます。</p>
+<div class="section" id="id56">
+<h3>1.9.1. 申請経路を設定する<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/workflow_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="workflow_route_new" src="../_images/workflow_control_route_new.png" /></p>
+</li>
+<li><p class="first">「申請経路名」を任意に入力し、「ユーザー一覧」から承認者を選択して <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="workflow_route_edit" src="../_images/workflow_control_route_edit.png" /></p>
+</li>
+<li><p class="first">「優先順序」を設定（変更）し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_route_add" src="../_images/workflow_control_route_add.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id57">
+<h3>1.9.2. 申請経路を修正する<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/workflow_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したい経路名の <strong>修正</strong> をクリックします。</p>
+<p><img alt="workflow_route_fix" src="../_images/workflow_control_route_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id58">
+<h3>1.9.3. 申請経路を削除する<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/workflow_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい経路名の <strong>削除</strong> をクリックします。</p>
+<p><img alt="workflow_route_delete" src="../_images/workflow_control_route_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id59">
+<h3>1.9.4. 申請する際の文書の雛形を設定する<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/workflow_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書設定] タブをクリックし、 <strong>新規登録</strong> をクリックします。</p>
+<p><img alt="workflow_form_new" src="../_images/workflow_control_form_new.png" /></p>
+</li>
+<li><p class="first">「タイトル」を任意に入力し、「雛形」に本文となる文章を入力して <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_form_add" src="../_images/workflow_control_form_add.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id60">
+<h3>1.9.5. 申請する際の文書の雛形を修正する<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/workflow_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書設定] タブをクリックし、修正したい雛形の <strong>修正</strong> をクリックします。</p>
+<p><img alt="workflow_form_fix" src="../_images/workflow_control_form_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id61">
+<h3>1.9.6. 申請する際の文書の雛形を削除する<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/workflow_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書設定] タブをクリックし、削除したい雛形文書の <strong>削除</strong> をクリックします。</p>
+<p><img alt="workflow_form_delete" src="../_images/workflow_control_form_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id62">
+<h3>1.9.7. 申請する際の初期値を設定する<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/workflow_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「初期値設定」シートを選択し、「次の人へのメールを送信」「未読・既読表示」を設定します。</p>
+<p><img alt="workflow_default" src="../_images/workflow_control_default.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">値を規定値に戻したい場合は、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</div>
+</div>
+<div class="section" id="url">
+<h2>1.10. URL リンク<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h2>
+<p>URLリンクでは、閲覧できるホームページを登録します。登録する前に、あらかじめカテゴリを登録しておきます。</p>
+<div class="section" id="id63">
+<h3>1.10.1. URL カテゴリを設定する<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「カテゴリ名」「説明」を任意に入力し、 <strong>追加</strong> をクリックします。</p>
+<p><img alt="link_category_new" src="../_images/link_control_category_new.png" /></p>
+</li>
+<li><p class="first"><strong>↑読込↑</strong> の下にカテゴリ名が表示されたことを確認ます。</p>
+<p><img alt="link_category_view" src="../_images/link_control_category_view.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id64">
+<h3>1.10.2. 登録した URL カテゴリを変更する<a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">変更したいカテゴリ名を選択し、 <strong>↑読込↑</strong>  をクリックします。</p>
+<p><img alt="link_category_load" src="../_images/link_control_category_load.png" /></p>
+</li>
+<li><p class="first">「カテゴリ名」や「説明」を変更し、 <strong>変更</strong> をクリックします。</p>
+<p><img alt="link_category_fix" src="../_images/link_control_category_fix.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id65">
+<h3>1.10.3. 登録した URL カテゴリを削除する<a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいカテゴリ名を選択し、 <strong>削除</strong> をクリックします。</p>
+<p><img alt="link_category_delete" src="../_images/link_control_category_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">カテゴリをクリックするとカテゴリに登録されているURLリンクも削除されます。</p>
+</div>
+</div>
+<div class="section" id="id66">
+<h3>1.10.4. URL リンクを設定する<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[URLリンク編集] のタブをクリックします。</p>
+</li>
+<li><p class="first">あらかじめ設定しておいた「カテゴリ」を選択し、「リンク名」「URL」「説明」等を任意に入力して <strong>追加</strong> をクリックします。</p>
+<p><img alt="link_new" src="../_images/link_control_new.png" /></p>
+</li>
+<li><p class="first"><strong>▲  ▼</strong> 空白内に、URL リンクが1件追加されたことを確認します。</p>
+<p><img alt="link_view" src="../_images/link_control_view.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id67">
+<h3>1.10.5. 登録した URL リンクを変更する<a class="headerlink" href="#id67" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[URLリンク編集] のタブをクリックします。</p>
+</li>
+<li><p class="first">変更したい URL リンクがあるカテゴリを選択し、変更したい URL リンクを <strong>▲  ▼</strong> の枠内より選択して、 <strong>↑読込↑</strong> をクリックします。</p>
+<p><img alt="link_load" src="../_images/link_control_load.png" /></p>
+</li>
+<li><p class="first">「リンク名」や「URL」「説明」を変更し、 <strong>変更</strong> をクリックします。</p>
+<p><img alt="link_fix" src="../_images/link_control_fix.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id68">
+<h3>1.10.6. 登録した URL リンクを削除する<a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[URLリンク編集] のタブをクリックします。</p>
+</li>
+<li><p class="first">削除したい URL リンクがあるカテゴリを選択し、削除したい URL リンクを選択して、 <strong>削除</strong> をクリックします。</p>
+<p><img alt="link_delete" src="../_images/link_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id69">
+<h3>1.10.7. 登録した URL リンクを別カテゴリへ「移動・コピー」する<a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[移動とコピー] のタブをクリックします。</p>
+</li>
+<li><p class="first">移動・コピーしたい URL リンクがあるカテゴリを選択し、対象となるリンク名を選択します。また、選択したリンク名の移動・コピー先となるカテゴリを選択します。</p>
+<p><img alt="link_move_select" src="../_images/link_control_move_select.png" /></p>
+</li>
+<li><p class="first"><strong>コピー</strong> または <strong>移動</strong> をクリックします。</p>
+<p><img alt="link_move_copy" src="../_images/link_control_move_copy.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id70">
+<h3>1.10.8. 「移動・コピー」から URL リンクを削除する<a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/link_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[移動とコピー] のタブをクリックします。</p>
+</li>
+<li><p class="first">削除したい URL があるカテゴリを選択し、対象となるリンク名を選択します。 <strong>削除</strong> をクリックします。</p>
+<p><img alt="link_move_delete" src="../_images/link_control_move_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id71">
+<h2>1.11. 用件<a class="headerlink" href="#id71" title="Permalink to this headline">¶</a></h2>
+<p>用件では、伝言の「用件の雛形」を登録できます。あらかじめ用意されている4パターンの雛形以外に、自由に文章を登録できます。</p>
+<div class="section" id="id72">
+<h3>1.11.1. 行先伝言板の用件を設定する<a class="headerlink" href="#id72" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="whiteboard_message_control_image" src="../_images/whiteboard_message_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="whiteboard_message_new" src="../_images/whiteboard_message_control_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="whiteboard_message_add" src="../_images/whiteboard_message_control_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">用件コードには任意の数字を入力します。複数の用件を登録する場合、用件コードが重複しないようにします。また、複数の用件を登録した場合、用件は用件コードが若い順に表示されます。</p>
+</div>
+</div>
+<div class="section" id="id73">
+<h3>1.11.2. 行先伝言板の用件を修正する<a class="headerlink" href="#id73" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="whiteboard_message_control_image" src="../_images/whiteboard_message_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したい用件内容の <strong>修正</strong> をクリックします。</p>
+<p><img alt="whiteboard_message_fix" src="../_images/whiteboard_message_control_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id74">
+<h3>1.11.3. 行先伝言板の用件を削除する<a class="headerlink" href="#id74" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="whiteboard_message_control_image" src="../_images/whiteboard_message_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい用件内容の <strong>削除</strong> をクリックします。</p>
+<p><img alt="whiteboard_message_delete" src="../_images/whiteboard_message_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id75">
+<h2>1.12. 行先伝言板<a class="headerlink" href="#id75" title="Permalink to this headline">¶</a></h2>
+<p>行先伝言板では、「戻り時刻」を自動消去する機能の初期値を設定します。</p>
+<div class="section" id="id76">
+<h3>1.12.1. 行先伝言板の自動消去機能を設定する<a class="headerlink" href="#id76" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="whiteboard_control_image" src="../_images/whiteboard_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">各項目を設定し、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="whiteboard_auto_delete" src="../_images/whiteboard_control_auto_delete.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">値を規定値に戻したい場合は、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id77">
+<h2>1.13. 休日<a class="headerlink" href="#id77" title="Permalink to this headline">¶</a></h2>
+<p>休日では、WebMagic 上のカレンダーに休日を設定する機能です。祝祭日等あらかじめ設定されているもの以外に「創立記念日」などが任意に設定できます。</p>
+<div class="section" id="id78">
+<h3>1.13.1. 休日を設定する<a class="headerlink" href="#id78" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="holiday_control_image" src="../_images/holiday_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="holiday_new" src="../_images/holiday_control_new.png" /></p>
+</li>
+<li><p class="first">各項目を設定し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="holiday_add" src="../_images/holiday_control_add.png" /></p>
+</li>
+</ul>
+<p><strong>&lt;種別&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>指定休日</td>
+<td>公休日以外</td>
+</tr>
+<tr><td>公休日</td>
+<td>国家が定めた休日</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id79">
+<h3>1.13.2. 休日を修正する<a class="headerlink" href="#id79" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="holiday_control_image" src="../_images/holiday_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したい休日名をクリックします。</p>
+<p><img alt="holiday_list" src="../_images/holiday_control_list.png" /></p>
+</li>
+<li><p class="first"><strong>編集</strong> をクリックします。</p>
+<p><img alt="holiday_edit" src="../_images/holiday_control_edit.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id80">
+<h3>1.13.3. 休日を削除する<a class="headerlink" href="#id80" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="holiday_control_image" src="../_images/holiday_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい休日の休日名をクリックします。</p>
+<p><img alt="holiday_list" src="../_images/holiday_control_list.png" /></p>
+</li>
+<li><p class="first"><strong>削除</strong> をクリックします。</p>
+<p><img alt="holiday_delete" src="../_images/holiday_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id81">
+<h3>1.13.4. 表示を期間で切り替える<a class="headerlink" href="#id81" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="holiday_control_image" src="../_images/holiday_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「期間」の <strong>年間・月間</strong> を選択すると、期間で表示を切り替えることができます。</p>
+<p><img alt="holiday_year" src="../_images/holiday_control_year.png" /></p>
+<p><img alt="holiday_month" src="../_images/holiday_control_month.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id82">
+<h3>1.13.5. 表示を種別で切り替える<a class="headerlink" href="#id82" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="holiday_control_image" src="../_images/holiday_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「種別」の <strong>公休日・指定休日</strong> を選択すると、種別で表示を切り替えることができます。</p>
+<p><img alt="holiday_public" src="../_images/holiday_control_public.png" /></p>
+<p><img alt="holiday_designate" src="../_images/holiday_control_designate.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id83">
+<h2>1.14. 添付アイコン<a class="headerlink" href="#id83" title="Permalink to this headline">¶</a></h2>
+<p>添付ファイルを設定した際に、添付ファイルを示すアイコンの図柄の設定を行います。あらかじめ用意されている図柄以外に、オリジナルの図柄も設定できます。</p>
+<div class="section" id="id84">
+<h3>1.14.1. 添付ファイルのアイコンを設定する<a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">オリジナルの図柄のサイズは、32×32ピクセルにしてください。</p>
+</div>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="attachment_icon_control_image" src="../_images/attachment_icon_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="icon_new" src="../_images/attachment_icon_control_new.png" /></p>
+</li>
+<li><p class="first">「ファイル拡張子」にファイルの拡張子を入力し、「アイコンファイル名」にオリジナルのアイコンファイルを設定し、 <strong>OK</strong> をクリックします</p>
+<p><img alt="icon_add" src="../_images/attachment_icon_control_add.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id85">
+<h3>1.14.2. 添付ファイルのアイコンの設定を修正する<a class="headerlink" href="#id85" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="attachment_icon_control_image" src="../_images/attachment_icon_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいアイコンの <strong>修正</strong> をクリックします。</p>
+<p><img alt="icon_fix" src="../_images/attachment_icon_control_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id86">
+<h3>1.14.3. 添付ファイルのアイコンの設定を削除する<a class="headerlink" href="#id86" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="attachment_icon_control_image" src="../_images/attachment_icon_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいアイコンの <strong>修正</strong> をクリックします。</p>
+<p><img alt="icon_delete" src="../_images/attachment_icon_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id87">
+<h2>1.15. グラフ表示色<a class="headerlink" href="#id87" title="Permalink to this headline">¶</a></h2>
+<p>グラフ表示色では、スケジュールなどのグラフ表示で選択できるグラフの色を設定しておくためのものです。初期値では6色設定されていますが、追加したり削除したりできます。</p>
+<div class="section" id="id88">
+<h3>1.15.1. グラフ表示色を設定する<a class="headerlink" href="#id88" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="schedule_color_control_image" src="../_images/schedule_color_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">あらかじめ用意されている色候補群から、任意の色をクリックします。</p>
+<p><img alt="color_select" src="../_images/schedule_color_control_select.png" /></p>
+</li>
+<li><p class="first">「ID（0以外）」に任意の数字を入力し、 <strong>登録</strong> をクリックします。 <a class="footnote-reference" href="#id143" id="id89">[6]</a></p>
+<p><img alt="color_add" src="../_images/schedule_color_control_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">あらかじめ用意されている色候補群の色以外でも、「COLOR」に直接16進数値を入力すれば色の設定が行えます。</p>
+</div>
+<ul class="simple">
+<li>確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</li>
+</ul>
+</div>
+<div class="section" id="id90">
+<h3>1.15.2. 設定したグラフ表示色を削除する<a class="headerlink" href="#id90" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="schedule_color_control_image" src="../_images/schedule_color_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい色の <strong>削除</strong> をクリックします。</p>
+<p><img alt="color_delete" src="../_images/schedule_color_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">初期値で作成されている色を削除することもできます。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id91">
+<h2>1.16. メール<a class="headerlink" href="#id91" title="Permalink to this headline">¶</a></h2>
+<p>メールでは、個人のアカウントを設定する際の初期値を設定することができます。ここでの設定は、メニューの［メール］画面で［詳細設定］をクリックし、表示される「アカウント」に反映されます。</p>
+<div class="section" id="id92">
+<h3>1.16.1. メール環境の初期値を設定する<a class="headerlink" href="#id92" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="mail_default_control_image" src="../_images/mail_default_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">各項目を設定し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="mail_default_set" src="../_images/mail_default_control_set.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id93">
+<h2>1.17. メニュー<a class="headerlink" href="#id93" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">メニューでは、標準で搭載されている WebMagic の機能の中から「使う機能のみ画面上に表示させるようにする」といった、メニューの公開・非公開の設定と、メニュー表示順序の変更、他のWebシステムをメニューとして登録といったことができます。</div>
+<div class="line">追加登録したメニューは、簡易シングルサインオン(※2)に対応しています。</div>
+</div>
+<div class="line-block">
+<div class="line">またメニューではアクセス権設定ができ、例えば「掲示板とスケジュールのみ使用可能な臨時職員用のメニュー」といった設定が、アクセス制限をかけることで実現できます。</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">POSTやGETを利用した方式でシングルサインオンの受け口が用意されているWebシステムに限ります。</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">初期値として登録されているシステムメニューは削除することが出来ません。</p>
+</div>
+<div class="section" id="id94">
+<h3>1.17.1. メニューを公開にする<a class="headerlink" href="#id94" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">公開したいメニューにチェックを付けます。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされたメニューを公開にする</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_public" src="../_images/menu_control_public.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id95">
+<h3>1.17.2. メニューを非公開にする<a class="headerlink" href="#id95" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">非公開したいメニューにチェックを付けます。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされたメニューを非公開にする</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_private" src="../_images/menu_control_private.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id96">
+<h3>1.17.3. メニューを並び替える<a class="headerlink" href="#id96" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">表示する順番を変更したいメニューを選択し、ドラッグアンドドロップで移動します。</p>
+</li>
+<li><p class="first">「実行ボタンで並び替えを反映させてください。」のメッセージが表示され、プルダウンメニューが <strong>メニューの並び替えを反映される</strong> に変更されますので、そのまま <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_sort" src="../_images/menu_control_sort.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id97">
+<h3>1.17.4. メニューを新規登録する<a class="headerlink" href="#id97" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>メニューの新規登録を行う</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_new" src="../_images/menu_control_new.png" /></p>
+</li>
+<li><p class="first">「基本設定」 の各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="menu_add" src="../_images/menu_control_add.png" /></p>
+</li>
+<li><p class="first">シングルサインオンの設定も行う場合は [シングルサインオン設定] の各項目を入力します。 <a class="footnote-reference" href="#id144" id="id98">[7]</a></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">メニュー名は必須入力項目です。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">ログインID、パスワード以外の値が必要な場合はオプション値に入力してください。</p>
+</div>
+</div>
+<div class="section" id="id99">
+<h3>1.17.5. メニューを修正する<a class="headerlink" href="#id99" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいメニューのメニュー名をクリックします。</p>
+<p><img alt="menu_fix" src="../_images/menu_control_fix.png" /></p>
+</li>
+<li><p class="first">項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id100">
+<h3>1.17.6. メニューを削除する<a class="headerlink" href="#id100" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいメニューにチェックを付けます。</p>
+</li>
+<li><p class="first"><strong>チェックされたメニューを削除する</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_delete" src="../_images/menu_control_delete.png" /></p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">初期値として登録されているシステムメニューは削除することが出来ません。</p>
+</div>
+</div>
+<div class="section" id="id101">
+<h3>1.17.7. メニューアクセス権の設定をする<a class="headerlink" href="#id101" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[アクセス権設定] タブをクリックします。</p>
+</li>
+<li><p class="first">左側のツリーからアクセス権を割り当てたいメニューをクリックします。</p>
+<p><img alt="menu_tree" src="../_images/menu_control_tree.png" /></p>
+</li>
+<li><p class="first">「所属一覧」 からアクセス権を割り当てたい所属を選び、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="menu_department_add" src="../_images/menu_control_dept_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス一覧」 へ追加した所属を選択、プルダウンメニューから権限を選択します。</p>
+<p><img alt="menu_authority_select" src="../_images/menu_control_auth_select.png" /></p>
+</li>
+<li><p class="first"><strong>修正</strong> をクリックし、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="menu_authority_add" src="../_images/menu_control_auth_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">個人へのアクセス権設定も所属と同様の操作で <strong>追加・削除</strong> を行います。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id102">
+<h2>1.18. アクセスログ<a class="headerlink" href="#id102" title="Permalink to this headline">¶</a></h2>
+<p>アクセスログでは、多種のログ情報を管理できます。所属別・機能別等のアクセス状態の一覧表示や、集計結果をグラフ表示することもできます。WebMagic がどのように利用されているのか、状況を把握し、管理することができます。</p>
+<div class="section" id="id103">
+<h3>1.18.1. ログ一覧を確認する<a class="headerlink" href="#id103" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="access_log_image" src="../_images/access_log_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ログ一覧が表示されます。</p>
+<p><img alt="access_log_list" src="../_images/access_log_list.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>最新</strong> をクリックすると最新の情報に更新されます。</p>
+</div>
+</div>
+<div class="section" id="id104">
+<h3>1.18.2. ログを絞り込む<a class="headerlink" href="#id104" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="access_log_image" src="../_images/access_log_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>詳細</strong> をクリックします。</p>
+</li>
+<li><p class="first">各プルダウンメニューから絞り込みたい条件を選択します。</p>
+<p><img alt="access_log_detail" src="../_images/access_log_detail.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id105">
+<h3>1.18.3. 集計結果を確認する<a class="headerlink" href="#id105" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="access_log_image" src="../_images/access_log_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[集計] タブをクリックすると、集計結果がグラフ表示されます。</p>
+<p><img alt="access_log_analysis" src="../_images/access_log_analysis.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id106">
+<h3>1.18.4. 集計結果を切り替える<a class="headerlink" href="#id106" title="Permalink to this headline">¶</a></h3>
+<p>各カテゴリ別に集計結果を切り替えることができます。</p>
+<blockquote>
+<div><img alt="access_log_analysis_category" src="../_images/access_log_analysis_category.png" /></div></blockquote>
+</div>
+</div>
+<div class="section" id="id107">
+<h2>1.19. 容量制限<a class="headerlink" href="#id107" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">容量制限では、1所属あたりの HDD 使用容量を設定することができます。また、警告値を設定することができ、警告値に達したユーザーのみを絞り込むこともできます。</div>
+<div class="line">機能毎の使用容量を確認することができます。</div>
+</div>
+<div class="section" id="id108">
+<h3>1.19.1. 所属毎の容量を決める<a class="headerlink" href="#id108" title="Permalink to this headline">¶</a></h3>
+<p>所属毎に使用できる容量を決めましょう。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="size_limit_control_image" src="../_images/size_limit_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">左側のツリーから所属を選択します。</p>
+<p><img alt="size_limit_tree" src="../_images/size_limit_control_tree.png" /></p>
+</li>
+<li><p class="first">容量を設定したい <strong>所属名</strong> をクリックします。</p>
+<p><img alt="size_limit_new" src="../_images/size_limit_control_new.png" /></p>
+</li>
+<li><p class="first">容量各項目を設定し、 <strong>登録</strong> をクリックします。</p>
+<p><img alt="size_limit_edit" src="../_images/size_limit_control_edit.png" /></p>
+</li>
+<li><p class="first">登録された値が一覧に表示されます。</p>
+<p><img alt="size_limit_view" src="../_images/size_limit_control_view.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>全体</strong> に容量を設定すると、制限値が設定されていない所属にも適用されます。制限値が設定されている場合は <strong>チェックボックス</strong> が表示されます。</p>
+</div>
+</div>
+<div class="section" id="id109">
+<h3>1.19.2. ラインを超えているユーザーを確認する<a class="headerlink" href="#id109" title="Permalink to this headline">¶</a></h3>
+<p>警告値または制限値を超えているユーザーを制限設定画面から確認します。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="size_limit_control_image" src="../_images/size_limit_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>警告・制限値</strong> を超えているユーザーがいる所属は以下のように表示されます。</p>
+<p><img alt="size_limit_over" src="../_images/size_limit_control_over.png" /></p>
+</li>
+<li><p class="first">リンクをクリックすると、 [ユーザー一覧] タブへ移動し超えているユーザーが表示されます。</p>
+<p><img alt="user_limit_over" src="../_images/size_limit_control_user_over.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id110">
+<h3>1.19.3. 所属毎の設定を削除する<a class="headerlink" href="#id110" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="size_limit_control_image" src="../_images/size_limit_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい所属の設定にチェックを付けます。</p>
+<p><img alt="size_limit_check" src="../_images/size_limit_control_check.png" /></p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされた設定を削除する</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="size_limit_delete" src="../_images/size_limit_control_delete.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">設定が削除された所属の制限値はデフォルトの <strong>無制限</strong> になります。</p>
+</div>
+</div>
+<div class="section" id="id111">
+<h3>1.19.4. ユーザー毎の使用容量を一覧する<a class="headerlink" href="#id111" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="size_limit_control_image" src="../_images/size_limit_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[ユーザー一覧] タブをクリックします。</p>
+</li>
+<li><p class="first">ユーザーの使用容量が一覧されます。</p>
+<p><img alt="user_limit_list" src="../_images/size_limit_control_user_list.png" /></p>
+</li>
+<li><p class="first">警告値を超えたユーザーは <strong>青色</strong> で表示されます。</p>
+<p><img alt="user_limit_warning" src="../_images/size_limit_control_user_warning.png" /></p>
+</li>
+<li><p class="first">制限値を超えたユーザーは <strong>赤色</strong> で表示されます。</p>
+<p><img alt="user_limit_alert" src="../_images/size_limit_control_user_alert.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id112">
+<h3>1.19.5. 表示をライン毎に切り替える<a class="headerlink" href="#id112" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="size_limit_control_image" src="../_images/size_limit_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[ユーザー一覧] タブをクリックします。</p>
+</li>
+<li><p class="first">表示したいラインを選択します。</p>
+<p><img alt="user_limit_select" src="../_images/size_limit_control_user_select.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id113">
+<h3>1.19.6. 機能毎の使用容量を一覧する<a class="headerlink" href="#id113" title="Permalink to this headline">¶</a></h3>
+<p>各機能毎の容量一覧が表示されます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="size_limit_control_image" src="../_images/size_limit_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[機能一覧] タブをクリックします。</p>
+</li>
+<li><p class="first">機能毎の使用容量が一覧されます。</p>
+<p><img alt="app_limit_list" src="../_images/size_limit_control_app_list.png" /></p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>共有領域</strong> には設定画面にある機能の容量と WebMagic で必要なシステム領域が含まれています。</p>
+</div>
+</div>
+<div class="section" id="id114">
+<h3>1.19.7. 容量の最適化をする<a class="headerlink" href="#id114" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="size_limit_control_image" src="../_images/size_limit_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[機能一覧] タブをクリックします。</p>
+</li>
+<li><p class="first"><strong>最適化</strong> をクリックします。</p>
+<p><img alt="app_limit_optimize" src="../_images/size_limit_control_app_optimize.png" /></p>
+</li>
+<li><p class="first">「最適化を行います」のメッセージが表示されますので、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>共有領域</strong> は設定画面と WebMagic で必要なシステム領域の容量を合計してます。システム領域の容量を最適化することはできません。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">最適化中は <strong>最適化</strong> のボタンがクリックできなくなります。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id115">
+<h2>1.20. 来客<a class="headerlink" href="#id115" title="Permalink to this headline">¶</a></h2>
+<p>来客では、来客予定を把握すべき管理者（受付係）の設定を行います。来客予定の登録情報を「非公開」とした場合でも、応対者以外に WebMagic 管理者と受付係に設定されたユーザーは閲覧することができます。</p>
+<div class="section" id="id116">
+<h3>1.20.1. ユーザー（受付係）を設定する<a class="headerlink" href="#id116" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="visitor_control_image" src="../_images/visitor_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ユーザー一覧よりユーザーを選択し、管理者(受付係)に登録するユーザーを選択して、 <strong>追加&gt;&gt;</strong> をクリックします。</p>
+<p><img alt="visitor_receptionist" src="../_images/visitor_control_receptionist.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id117">
+<h2>1.21. メール通知設定<a class="headerlink" href="#id117" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">メニューの <strong>「スケジュール」「ToDo」「来客」</strong> で使用できるアラーム通知（アラームメール）の有効・無効、有効の場合に使われるメールアカウントの設定を行います。</div>
+<div class="line">アラーム通知機能とは、「当該予定時刻になると自動的にメールで通知すること」です。</div>
+<div class="line">アラーム通知機能を [有効] とする場合は、[メール通知用アカウント] を設定してください。</div>
+</div>
+<div class="section" id="id118">
+<h3>1.21.1. アラーム通知機能を「有効」にする<a class="headerlink" href="#id118" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="mail_alarm_control_image" src="../_images/mail_alarm_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">アラーム通知機能を <strong>有効にする</strong> を選択します。</p>
+<p><img alt="mail_alarm_on" src="../_images/mail_alarm_control_on.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id119">
+<h3>1.21.2. アラーム通知を[有効]とした場合、アラームメールの差出人を設定する<a class="headerlink" href="#id119" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">「メール通知用アカウント 基本設定」を入力します。 <a class="footnote-reference" href="#id145" id="id120">[8]</a> <a class="footnote-reference" href="#id147" id="id121">[10]</a></p>
+<p><img alt="mail_alarm_account" src="../_images/mail_alarm_control_account.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id122">
+<h3>1.21.3. アラーム通知ができない場合<a class="headerlink" href="#id122" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">「アラームメールが送信されない」といった場合は、メールを送信する際にメールサーバ側で認証が必要とされている可能性があります。</div>
+<div class="line">その場合は、「詳細設定」の [POP before SMTP] または [SMTP認証] を入力します。 <a class="footnote-reference" href="#id147" id="id123">[10]</a></div>
+</div>
+<blockquote>
+<div><img alt="mail_alarm_certify" src="../_images/mail_alarm_control_certify.png" /></div></blockquote>
+</div>
+</div>
+<div class="section" id="id124">
+<h2>1.22. 契約関連<a class="headerlink" href="#id124" title="Permalink to this headline">¶</a></h2>
+<p>契約関連では、WebMagic ASP サービスのご契約状況が確認できます。試用期間から本契約への手続き、またID数の増減などの申請が行えます。また、ご契約管理者様の登録情報の変更もここから行えます。</p>
+<div class="section" id="id125">
+<h3>1.22.1. 登録情報を変更する<a class="headerlink" href="#id125" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="asp_contract_history_image" src="../_images/asp_contract_history_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[登録情報] タブをクリックし、登録情報の変更を行い <strong>適用</strong> をクリックします。</p>
+<p><img alt="register_info" src="../_images/asp_contract_history_register_info.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id126">
+<h3>1.22.2. 契約内容を変更する<a class="headerlink" href="#id126" title="Permalink to this headline">¶</a></h3>
+<p>ASP サービスの契約内容の変更が行えます。変更に関する申し込み手続き内容は下記の3項目です。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>[ 本契約事前申しこみ ]</td>
+<td><dl class="first last docutils">
+<dt>試用期限の翌日より「本契約」に自動更新されます。</dt>
+<dd><dl class="first last docutils">
+<dt>例) 試用期間 9月1日～11月30日で「本契約事前申しこみ」した場合</dt>
+<dd>12月1日より自動で「本契約」に契約内容が更新されます。</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>[ 今すぐ本契約 ]</td>
+<td>試用期限を待たずに、お申込された月から本契約となります。</td>
+</tr>
+<tr><td>[ 解 約 依 頼  ]</td>
+<td>解約依頼された月の末日をもって、翌月１日よりサービスはご利用できません。
+但し、試用期間中の場合は試用期限日までご利用可能で試用期間の翌月1日よりサービスはご利用できません。</td>
+</tr>
+</tbody>
+</table>
+<p>ここでは、「本契約事前申し込み」の手続きを例に手順をご説明いたします。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="asp_contract_history_image" src="../_images/asp_contract_history_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[契約情報] タブをクリックします。</p>
+<p><img alt="contract_info_tab" src="../_images/asp_contract_history_info_tab.png" /></p>
+</li>
+<li><p class="first"><strong>契約情報変更</strong> をクリックします。</p>
+</li>
+</ul>
+<blockquote>
+<div><img alt="contract_info_edit" src="../_images/asp_contract_history_info_edit.png" /></div></blockquote>
+<p>試用期間中の契約内容は、次の通りです。</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">ご利用可能 ID 数:</th><td class="field-body">10 ID (300MB)</td>
+</tr>
+<tr class="field"><th class="field-name">ご 利 用 期 間:</th><td class="field-body">約3ヶ月間</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul>
+<li><p class="first">「本契約事前申し込み」 をチェックし、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="contract_info_request" src="../_images/asp_contract_history_info_request.png" /></p>
+</li>
+<li><p class="first">本契約手続きの流れが表示されます。内容を確認し、 <strong>戻る</strong> をクリックします。また、同じ内容が管理者様あてに E-Mail で自動送信されるようになっています。</p>
+<p><img alt="contract_info_step" src="../_images/asp_contract_history_info_step.png" /></p>
+</li>
+<li><p class="first"><strong>契約情報変更</strong> をクリックします。</p>
+<p><img alt="contract_info_edit" src="../_images/asp_contract_history_info_edit.png" /></p>
+</li>
+<li><p class="first">管理者様あてに送信された E-Mail に記載された仮 ID をご確認ください。仮 ID を入力し <strong>GO</strong> をクリックします。</p>
+<p><img alt="contract_info_input_id" src="../_images/asp_contract_history_info_input_id.png" /></p>
+</li>
+<li><p class="first">「WebMagic ASP利用規約」 が表示されます。[同意します] を選択します。</p>
+</li>
+<li><p class="first">「本契約事前申し込み」 の確認が表示されます。[同意します] を選択します。</p>
+</li>
+<li><p class="first">本契約事前申し込み確認のメッセージが表示されますので <strong>OK</strong> をクリックします。</p>
+</li>
+<li><p class="first">OCC 宛に契約変更依頼のメールが送信されました。弊社からの契約変更完了メールが届きましたら契約変更手続き完了です。 <strong>戻る</strong> をクリックします。</p>
+<p><img alt="contract_info_submit" src="../_images/asp_contract_history_info_submit.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">上記、返答期間を過ぎても弊社より連絡がない場合は、お手数ですが [お問合せ] 画面よりご連絡ください。</p>
+</div>
+</div>
+<div class="section" id="id">
+<h3>1.22.3. ID数変更申しこみ<a class="headerlink" href="#id" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>契約関連より ID 数の変更依頼が行えます。</dt>
+<dd><ul class="first last simple">
+<li>ID数の変更は、本契約の場合のみ有効です。</li>
+<li>試用期間中の場合は、「本契約」 された月よりID数変更の申しこみを行うことができます。</li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="asp_contract_history_image" src="../_images/asp_contract_history_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[契約情報] タブをクリックします。</p>
+</li>
+<li><p class="first"><strong>契約情報変更</strong> をクリックし、「ID数変更お申し込み」を選択して <strong>OK</strong> をクリックします。</p>
+<p><img alt="change_id_request" src="../_images/asp_contract_history_info_change_id_request.png" /></p>
+</li>
+<li><p class="first">流れを確認し、 <strong>戻る</strong> をクリックします。また、同じ内容が管理者様あてに E-Mail にて自動送信されます。</p>
+<p><img alt="contract_info_step" src="../_images/asp_contract_history_info_step.png" /></p>
+</li>
+<li><p class="first"><strong>契約情報変更</strong> をクリックします。</p>
+</li>
+<li><p class="first">管理者様あてに送信された E-Mail に記載された仮 ID をご確認ください。仮 ID を入力し <strong>GO</strong> をクリックします。</p>
+<p><img alt="change_id_input_id" src="../_images/asp_contract_history_info_change_id_input_id.png" /></p>
+</li>
+<li><p class="first">「ID数変更申しこみ」 より変更 ID 数を選択し、 <strong>変更します</strong> をクリックします。</p>
+<p><img alt="change_id" src="../_images/asp_contract_history_info_change_id.png" /></p>
+</li>
+<li><p class="first">メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+</li>
+<li><p class="first">OCC宛に契約変更依頼のメールが送信されました。 <strong>戻る</strong> をクリックします。</p>
+</li>
+<li><p class="first">弊社からの契約変更完了メールが届きましたら契約手続き完了です。</p>
+<p><img alt="contract_info_submit" src="../_images/asp_contract_history_info_submit.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id127">
+<h3>1.22.4. 契約履歴を確認する<a class="headerlink" href="#id127" title="Permalink to this headline">¶</a></h3>
+<p>現在のご契約状況や過去の契約内容が確認できます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="asp_contract_history_image" src="../_images/asp_contract_history_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[履歴] タブをクリックすると、契約履歴が一覧表示されます。</p>
+<p><img alt="contract_info_history" src="../_images/asp_contract_history_info_history.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id128">
+<h2>1.23. お問合せ<a class="headerlink" href="#id128" title="Permalink to this headline">¶</a></h2>
+<p>WebMagic に関するお問合せを行います。</p>
+<div class="section" id="id129">
+<h3>1.23.1. 質問する<a class="headerlink" href="#id129" title="Permalink to this headline">¶</a></h3>
+<p>WebMagic の操作についてのご質問が行えます。質問は、この画面からのみの受付となります。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="asp_question_image" src="../_images/asp_question_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ご質問内容を選択し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="question_content" src="../_images/asp_question_content.png" /></p>
+</li>
+<li><p class="first">[お問合せ内容] の <strong>OS, バージョン, ブラウザ</strong> をご確認ください。お問合せ内容を入力後 <strong>送信</strong> をクリックします。</p>
+<p><img alt="question_send" src="../_images/asp_question_send.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>お問合せ内容につきましては、詳しい情報提供をお願い致します。</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>例) メール送信ができない。</dt>
+<dd><div class="first last line-block">
+<div class="line">(操作内容)</div>
+<div class="line">1. メール機能の [詳細設定] のプロファイル [基本情報] に入力しました。</div>
+<div class="line">2. メールの受信はできるが、新規作成を行って <strong>送信</strong> をクリックするが以下のようなエラーメッセージが表示される。</div>
+</div>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="id130">
+<h2>1.24. その他<a class="headerlink" href="#id130" title="Permalink to this headline">¶</a></h2>
+<p>その他では、スケジュールのアクセス権の変更やテロップ表示の設定を行うことができます。</p>
+<div class="section" id="id131">
+<h3>1.24.1. スケジュールのアクセス権の初期値を変更する<a class="headerlink" href="#id131" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="other_control_image" src="../_images/other_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">デフォルトアクセス権を設定し、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="other_schedule_authority_default" src="../_images/other_control_schedule_auth_default.png" /></p>
+</li>
+</ul>
+<p><strong>&lt;アクセス権の説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>権限無し</td>
+<td>スケジュールにアクセスできません。</td>
+</tr>
+<tr><td>一覧参照</td>
+<td>一つ一つのスケジュールの内容は閲覧できませんが、一日単位や週間・月間単位の一覧は閲覧できます。（登録はできません）</td>
+</tr>
+<tr><td>詳細参照</td>
+<td>一つ一つのスケジュールの内容まで閲覧できます。（登録はできません）</td>
+</tr>
+<tr><td>作成</td>
+<td>スケジュールを登録することができます。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">値を規定値に戻したい場合は、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</div>
+<div class="section" id="id132">
+<h3>1.24.2. アドレス帳の共有グループ作成権の設定<a class="headerlink" href="#id132" title="Permalink to this headline">¶</a></h3>
+<p>アドレス帳の [共有] グループの登録設定に関する作成権の設定が行えます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="other_control_image" src="../_images/other_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">共有グループの作成権を設定し、 <strong>適用</strong> をクリックします。 <a class="footnote-reference" href="#id146" id="id133">[9]</a> <a class="footnote-reference" href="#id148" id="id134">[11]</a></p>
+<p><img alt="other_address_authority" src="../_images/other_control_address_auth.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id135">
+<h3>1.24.3. テロップ表示の設定<a class="headerlink" href="#id135" title="Permalink to this headline">¶</a></h3>
+<p>管理者からすべてのユーザーに対して、テロップ表示にてメッセージを登録することができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="other_control_image" src="../_images/other_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">管理者からのメッセージを作成します。下段の [メッセージ] を入力し、表示する文字の色を設定します。リンク先がある場合は、 [リンクを張る] にチェックし、URL を入力します。表示期間を設定します。</p>
+</li>
+<li><p class="first"><strong>追加</strong> をクリックします。</p>
+<p><img alt="other_telop_add" src="../_images/other_control_telop_add.png" /></p>
+</li>
+<li><p class="first">上段の 「メッセージ」 枠内に、メッセージタイトルが登録されたことを確認します。</p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id136">
+<h3>1.24.4. 登録したテロップ表示の設定を変更する<a class="headerlink" href="#id136" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="other_control_image" src="../_images/other_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">設定を変更する 「メッセージ」 のタイトルを選択し、 <strong>切り取り編集</strong> をクリックします。</p>
+<p><img alt="other_telop_edit" src="../_images/other_control_telop_edit.png" /></p>
+</li>
+<li><p class="first">メッセージの詳細が下段に表示されたことを確認し、内容を変更して <strong>追加</strong> をクリックします。</p>
+<p><img alt="other_telop_fix" src="../_images/other_control_telop_fix.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id137">
+<h3>1.24.5. 登録したテロップ表示の設定を削除する<a class="headerlink" href="#id137" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="other_control_image" src="../_images/other_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除する 「メッセージ」 タイトル選択し、 <strong>削除</strong> をクリックします。</p>
+<p><img alt="other_telop_delete" src="../_images/other_control_telop_delete.png" /></p>
+</li>
+<li><p class="first">選択されたメッセージが削除されます。</p>
+</li>
+</ul>
+<hr class="docutils" />
+<p class="rubric">脚注</p>
+<table class="docutils footnote" frame="void" id="id138" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[1]</a></td><td>パスワードはセキュリティのため ●●● と表示されます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id139" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td>[プライマリ写真] に設定した写真がアドレス帳のユーザー名簿に表示されます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id140" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[3]</td><td><em>(<a class="fn-backref" href="#id30">1</a>, <a class="fn-backref" href="#id36">2</a>)</em> アクセス権は、所属単位、またはユーザー単位で設定できます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id141" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[4]</td><td><em>(<a class="fn-backref" href="#id43">1</a>, <a class="fn-backref" href="#id45">2</a>)</em> 「所属名」の「すべて」を選択すると、すべてのカテゴリが一覧表示されます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id142" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id51">[5]</a></td><td>初期値の「なし」は削除できません。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id143" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id89">[6]</a></td><td>「MIME形式」は入力しなくても問題ありませんが、判る範囲で入力してください。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id144" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id98">[7]</a></td><td>IDは他と重複しないようにします。色はIDが若い順に表示されます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id145" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id120">[8]</a></td><td>POST や GET を利用した方式でシングルサインオンの受け口が用意されている Web システムに限ります。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id146" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id133">[9]</a></td><td>アラーム通知を <strong>有効</strong> としたときのみ設定が必要です。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id147" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[10]</td><td><em>(<a class="fn-backref" href="#id121">1</a>, <a class="fn-backref" href="#id123">2</a>)</em> 設定は管理者様にご確認ください。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id148" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id134">[11]</a></td><td>共有グループの作成権初期値は [すべてのユーザーに許可] となります。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id149" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[12]</td><td>ユーザー写真初期値は [表示しない] となります。</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. 設定画面(管理者)</a><ul>
+<li><a class="reference internal" href="#id2">1.1. ユーザー</a><ul>
+<li><a class="reference internal" href="#id3">1.1.1. ユーザーを登録する</a></li>
+<li><a class="reference internal" href="#id6">1.1.2. ユーザーを修正する</a></li>
+<li><a class="reference internal" href="#id7">1.1.3. ユーザーを削除する</a></li>
+<li><a class="reference internal" href="#id8">1.1.4. ユーザーをインポートする</a></li>
+<li><a class="reference internal" href="#id9">1.1.5. ユーザーをエクスポートする</a></li>
+<li><a class="reference internal" href="#csv">1.1.6. CSV ファイルの書き方</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id10">1.2. 所属</a><ul>
+<li><a class="reference internal" href="#id11">1.2.1. 所属を設定する</a></li>
+<li><a class="reference internal" href="#id12">1.2.2. 階層的に所属を設定する</a></li>
+<li><a class="reference internal" href="#id13">1.2.3. 所属を修正する</a></li>
+<li><a class="reference internal" href="#id14">1.2.4. 所属を削除する</a></li>
+<li><a class="reference internal" href="#id15">1.2.5. ユーザーの所属を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id16">1.3. 役職</a><ul>
+<li><a class="reference internal" href="#id17">1.3.1. 役職を登録する</a></li>
+<li><a class="reference internal" href="#id18">1.3.2. 役職を修正する</a></li>
+<li><a class="reference internal" href="#id19">1.3.3. 役職を削除する</a></li>
+<li><a class="reference internal" href="#id20">1.3.4. 役職を並び替える</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id21">1.4. 設備</a><ul>
+<li><a class="reference internal" href="#id22">1.4.1. 設備区分を設定する</a></li>
+<li><a class="reference internal" href="#id23">1.4.2. 設備区分を修正する</a></li>
+<li><a class="reference internal" href="#id24">1.4.3. 設備区分を削除する</a></li>
+<li><a class="reference internal" href="#id25">1.4.4. 設備を設定する</a></li>
+<li><a class="reference internal" href="#id26">1.4.5. 設備を修正する</a></li>
+<li><a class="reference internal" href="#id27">1.4.6. 設備を削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#noticeboard-config">1.5. 掲示板</a><ul>
+<li><a class="reference internal" href="#id29">1.5.1. 掲示板のカテゴリを設定する</a></li>
+<li><a class="reference internal" href="#id31">1.5.2. 掲示板のカテゴリを修正する</a></li>
+<li><a class="reference internal" href="#id32">1.5.3. 掲示板のカテゴリを削除する</a></li>
+<li><a class="reference internal" href="#id33">1.5.4. 掲示板の初期値を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id34">1.6. 電子会議室</a><ul>
+<li><a class="reference internal" href="#id35">1.6.1. 電子会議室のカテゴリを設定する</a></li>
+<li><a class="reference internal" href="#id37">1.6.2. 電子会議室のカテゴリを修正する</a></li>
+<li><a class="reference internal" href="#id38">1.6.3. 電子会議室のカテゴリを削除する</a></li>
+<li><a class="reference internal" href="#id39">1.6.4. 電子会議室の初期値を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cabinet-config">1.7. 文書管理</a><ul>
+<li><a class="reference internal" href="#id41">1.7.1. 文書管理のカテゴリを設定する</a></li>
+<li><a class="reference internal" href="#id42">1.7.2. 文書管理のカテゴリを修正する</a></li>
+<li><a class="reference internal" href="#id44">1.7.3. 文書管理のカテゴリを削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#events-config">1.8. 行事予定</a><ul>
+<li><a class="reference internal" href="#id47">1.8.1. 行事予定のアクセス権を設定する</a></li>
+<li><a class="reference internal" href="#id48">1.8.2. 行事区分を登録する</a></li>
+<li><a class="reference internal" href="#id49">1.8.3. 行事区分を修正する</a></li>
+<li><a class="reference internal" href="#id50">1.8.4. 行事区分を削除する</a></li>
+<li><a class="reference internal" href="#id52">1.8.5. 行事区分を公開にする</a></li>
+<li><a class="reference internal" href="#id53">1.8.6. 行事区分を非公開にする</a></li>
+<li><a class="reference internal" href="#id54">1.8.7. 行事区分を並び替える</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id55">1.9. ワークフロー</a><ul>
+<li><a class="reference internal" href="#id56">1.9.1. 申請経路を設定する</a></li>
+<li><a class="reference internal" href="#id57">1.9.2. 申請経路を修正する</a></li>
+<li><a class="reference internal" href="#id58">1.9.3. 申請経路を削除する</a></li>
+<li><a class="reference internal" href="#id59">1.9.4. 申請する際の文書の雛形を設定する</a></li>
+<li><a class="reference internal" href="#id60">1.9.5. 申請する際の文書の雛形を修正する</a></li>
+<li><a class="reference internal" href="#id61">1.9.6. 申請する際の文書の雛形を削除する</a></li>
+<li><a class="reference internal" href="#id62">1.9.7. 申請する際の初期値を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#url">1.10. URL リンク</a><ul>
+<li><a class="reference internal" href="#id63">1.10.1. URL カテゴリを設定する</a></li>
+<li><a class="reference internal" href="#id64">1.10.2. 登録した URL カテゴリを変更する</a></li>
+<li><a class="reference internal" href="#id65">1.10.3. 登録した URL カテゴリを削除する</a></li>
+<li><a class="reference internal" href="#id66">1.10.4. URL リンクを設定する</a></li>
+<li><a class="reference internal" href="#id67">1.10.5. 登録した URL リンクを変更する</a></li>
+<li><a class="reference internal" href="#id68">1.10.6. 登録した URL リンクを削除する</a></li>
+<li><a class="reference internal" href="#id69">1.10.7. 登録した URL リンクを別カテゴリへ「移動・コピー」する</a></li>
+<li><a class="reference internal" href="#id70">1.10.8. 「移動・コピー」から URL リンクを削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id71">1.11. 用件</a><ul>
+<li><a class="reference internal" href="#id72">1.11.1. 行先伝言板の用件を設定する</a></li>
+<li><a class="reference internal" href="#id73">1.11.2. 行先伝言板の用件を修正する</a></li>
+<li><a class="reference internal" href="#id74">1.11.3. 行先伝言板の用件を削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id75">1.12. 行先伝言板</a><ul>
+<li><a class="reference internal" href="#id76">1.12.1. 行先伝言板の自動消去機能を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id77">1.13. 休日</a><ul>
+<li><a class="reference internal" href="#id78">1.13.1. 休日を設定する</a></li>
+<li><a class="reference internal" href="#id79">1.13.2. 休日を修正する</a></li>
+<li><a class="reference internal" href="#id80">1.13.3. 休日を削除する</a></li>
+<li><a class="reference internal" href="#id81">1.13.4. 表示を期間で切り替える</a></li>
+<li><a class="reference internal" href="#id82">1.13.5. 表示を種別で切り替える</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id83">1.14. 添付アイコン</a><ul>
+<li><a class="reference internal" href="#id84">1.14.1. 添付ファイルのアイコンを設定する</a></li>
+<li><a class="reference internal" href="#id85">1.14.2. 添付ファイルのアイコンの設定を修正する</a></li>
+<li><a class="reference internal" href="#id86">1.14.3. 添付ファイルのアイコンの設定を削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id87">1.15. グラフ表示色</a><ul>
+<li><a class="reference internal" href="#id88">1.15.1. グラフ表示色を設定する</a></li>
+<li><a class="reference internal" href="#id90">1.15.2. 設定したグラフ表示色を削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id91">1.16. メール</a><ul>
+<li><a class="reference internal" href="#id92">1.16.1. メール環境の初期値を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id93">1.17. メニュー</a><ul>
+<li><a class="reference internal" href="#id94">1.17.1. メニューを公開にする</a></li>
+<li><a class="reference internal" href="#id95">1.17.2. メニューを非公開にする</a></li>
+<li><a class="reference internal" href="#id96">1.17.3. メニューを並び替える</a></li>
+<li><a class="reference internal" href="#id97">1.17.4. メニューを新規登録する</a></li>
+<li><a class="reference internal" href="#id99">1.17.5. メニューを修正する</a></li>
+<li><a class="reference internal" href="#id100">1.17.6. メニューを削除する</a></li>
+<li><a class="reference internal" href="#id101">1.17.7. メニューアクセス権の設定をする</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id102">1.18. アクセスログ</a><ul>
+<li><a class="reference internal" href="#id103">1.18.1. ログ一覧を確認する</a></li>
+<li><a class="reference internal" href="#id104">1.18.2. ログを絞り込む</a></li>
+<li><a class="reference internal" href="#id105">1.18.3. 集計結果を確認する</a></li>
+<li><a class="reference internal" href="#id106">1.18.4. 集計結果を切り替える</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id107">1.19. 容量制限</a><ul>
+<li><a class="reference internal" href="#id108">1.19.1. 所属毎の容量を決める</a></li>
+<li><a class="reference internal" href="#id109">1.19.2. ラインを超えているユーザーを確認する</a></li>
+<li><a class="reference internal" href="#id110">1.19.3. 所属毎の設定を削除する</a></li>
+<li><a class="reference internal" href="#id111">1.19.4. ユーザー毎の使用容量を一覧する</a></li>
+<li><a class="reference internal" href="#id112">1.19.5. 表示をライン毎に切り替える</a></li>
+<li><a class="reference internal" href="#id113">1.19.6. 機能毎の使用容量を一覧する</a></li>
+<li><a class="reference internal" href="#id114">1.19.7. 容量の最適化をする</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id115">1.20. 来客</a><ul>
+<li><a class="reference internal" href="#id116">1.20.1. ユーザー（受付係）を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id117">1.21. メール通知設定</a><ul>
+<li><a class="reference internal" href="#id118">1.21.1. アラーム通知機能を「有効」にする</a></li>
+<li><a class="reference internal" href="#id119">1.21.2. アラーム通知を[有効]とした場合、アラームメールの差出人を設定する</a></li>
+<li><a class="reference internal" href="#id122">1.21.3. アラーム通知ができない場合</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id124">1.22. 契約関連</a><ul>
+<li><a class="reference internal" href="#id125">1.22.1. 登録情報を変更する</a></li>
+<li><a class="reference internal" href="#id126">1.22.2. 契約内容を変更する</a></li>
+<li><a class="reference internal" href="#id">1.22.3. ID数変更申しこみ</a></li>
+<li><a class="reference internal" href="#id127">1.22.4. 契約履歴を確認する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id128">1.23. お問合せ</a><ul>
+<li><a class="reference internal" href="#id129">1.23.1. 質問する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id130">1.24. その他</a><ul>
+<li><a class="reference internal" href="#id131">1.24.1. スケジュールのアクセス権の初期値を変更する</a></li>
+<li><a class="reference internal" href="#id132">1.24.2. アドレス帳の共有グループ作成権の設定</a></li>
+<li><a class="reference internal" href="#id135">1.24.3. テロップ表示の設定</a></li>
+<li><a class="reference internal" href="#id136">1.24.4. 登録したテロップ表示の設定を変更する</a></li>
+<li><a class="reference internal" href="#id137">1.24.5. 登録したテロップ表示の設定を削除する</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../user/config.html"
+                        title="previous chapter">4. 設定画面(個人)</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/admin/config.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../user/config.html" title="4. 設定画面(個人)"
+             >previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, WebMagic Development Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

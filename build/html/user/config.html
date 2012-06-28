@@ -1,0 +1,900 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4. 設定画面(個人) &mdash; WebMagic v4.1.3 documentation</title>
+    <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '4.1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="WebMagic v4.1.3 documentation" href="../index.html" />
+    <link rel="next" title="1. 設定画面(管理者)" href="../admin/config.html" />
+    <link rel="prev" title="3. 行事予定" href="events.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../admin/config.html" title="1. 設定画面(管理者)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="events.html" title="3. 行事予定"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>4. 設定画面(個人)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>設定画面にはログインしているユーザー個人の設定を行う「個人用設定」と、管理者のみが設定できる「管理者用設定」があります。 <a class="footnote-reference" href="#id51" id="id2">[1]</a>
+設定を行うことで WebMagic をより快適に利用できるようになります。</p>
+<p>個人用設定では、以下の9種類の設定を行うことができます。</p>
+<div class="section" id="private-information">
+<span id="id3"></span><h2>4.1. 個人情報<a class="headerlink" href="#private-information" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">個人情報では、ログインする際のパスワードを変更したり内線番号や携帯電話番号の変更をしたりできます。 <a class="footnote-reference" href="#id52" id="id4">[2]</a></div>
+<div class="line">一部変更できない項目がありますが、それは管理者側で変更可能な項目です。</div>
+</div>
+<div class="section" id="id5">
+<h3>4.1.1. 個人情報を変更する<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/personal_user.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">各項目を変更し、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="user_edit" src="../_images/p_config_user_edit.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>メール通知</strong></p>
+<div class="last line-block">
+<div class="line">「メール通知」は、次の場合に通知するメールアドレスを設定します。</div>
+<div class="line"><br /></div>
+<div class="line">伝言　: 行先伝言板で自分宛に伝言が書き込まれた場合</div>
+<div class="line">スケジュール　:　が自分のスケジュールを登録した場合、アラームメールを設定した場合</div>
+<div class="line">ワークフロー　:　自分が閲覧すべきワークフローがある場合</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>4.2. スケジュール<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">スケジュールで表示される個人スケジュールを他の人が一覧したり登録したりするアクセス権を設定できます。</div>
+<div class="line">また、スケジュールが表示される時間帯の設定やはじめに表示されるグループ（所属）を選択したり、スケジュールの表示形式を選択したりできます。</div>
+</div>
+<div class="section" id="id7">
+<h3>4.2.1. スケジュールのアクセス権を設定する<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">アクセス権は、所属単位、またはユーザー単位に設定できます。</div>
+<div class="line">ここでは、所属単位でアクセス権を設定する方法を紹介します。</div>
+</div>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="schedule_control_image" src="../_images/personal_schedule.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「所属一覧」からアクセス権を設定したい所属を選択し、 <strong>追加→</strong> をクリックします。</p>
+<p><img alt="sche_auth_add" src="../_images/p_config_sche_auth_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス権一覧」から所属を選択し、設定したいアクセス権をリストから選択し， <strong>変更</strong> をクリックします。</p>
+<p><img alt="sche_auth_change" src="../_images/p_config_sche_auth_change.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+<p><img alt="sche_auth_save" src="../_images/p_config_sche_auth_save.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>アクセス権一覧</strong></p>
+<div class="last line-block">
+<div class="line">詳細参照　:　一つ一つのスケジュールの内容まで閲覧できます。（登録はできません）</div>
+<div class="line">一覧参照　:　一つ一つのスケジュールの内容は閲覧できませんが、一日単位や週間・月間単位の一覧は閲覧できます。（登録はできません）</div>
+<div class="line">作    成　:　スケジュールを登録することができます。</div>
+<div class="line">権限無し　:　スケジュールを閲覧できなくなります。</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>4.2.2. スケジュールのアクセス権を削除する<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>ここでは、所属単位でアクセス権を削除する方法を紹介します。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="schedule_control_image" src="../_images/personal_schedule.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「所属アクセス権一覧」からアクセス権を削除したい所属を選択し、 <strong>←削除</strong> をクリックします。</p>
+<p><img alt="sche_auth_delete" src="../_images/p_config_sche_auth_delete.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>4.2.3. 時間設定でスケジュールの表示時間を設定する<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="schedule_control_image" src="../_images/personal_schedule.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[時間設定] タブを選択します。</p>
+<p><img alt="sche_time" src="../_images/p_config_sche_time.png" /></p>
+</li>
+<li><p class="first">時間を選択し、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="sche_time_save" src="../_images/p_config_sche_time_save.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>4.2.4. スケジュールの画面表示初期値を設定する<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="schedule_control_image" src="../_images/personal_schedule.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[初期値設定] タブを選択します。</p>
+<p><img alt="sche_default" src="../_images/p_config_sche_default.png" /></p>
+</li>
+<li><p class="first">「最初に表示する画面」を選択します。</p>
+<p><img alt="sche_default_list" src="../_images/p_config_sche_default_list.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>最初に表示する画面一覧</strong></p>
+<div class="last line-block">
+<div class="line">個人一日　:　自分のスケジュールが１日分表示されます。</div>
+<div class="line">個人週間　:　自分のスケジュールが１週間分表示されます。</div>
+<div class="line">個人月間　:　自分のスケジュールが１ヶ月分表示されます。</div>
+<div class="line">グループ一日　:　指定したグループのメンバーのスケジュールが一日分表示されます。</div>
+<div class="line">グループ週間　:　指定したグループのメンバーのスケジュールが一週間分表示されます。</div>
+</div>
+</div>
+</li>
+<li><p class="first">「最初に表示するグループ」を選択します。「共有」・「個人」をクリックし、 <strong>▼</strong>  で表示するグループ(所属)を選択して、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="sche_default_group" src="../_images/p_config_sche_default_group.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>個人グループを設定する場合</strong></p>
+<div class="last line-block">
+<div class="line">「個人」グループは、［設定画面］で［グループ］の設定を行っていない場合、選択できません。</div>
+<div class="line">選択するには、あらかじめ「個人グループ」を作成しておく必要があります。</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>4.3. グループ<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>［グループ］で設定する「グループ」は、管理者が設定する「部署」のことではなく、個人単位で設定できるユーザーグループのことです。ここで設定したグループは、メールの一括送信に利用したり、グループに所属するメンバーのスケジュールを管理したりできます。</div></blockquote>
+<div class="section" id="id12">
+<h3>4.3.1. グループを登録する<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</li>
+<li><img alt="group_control_image" src="../_images/personal_group.gif" /> をクリックします。</li>
+<li><strong>新規登録</strong> をクリックします。</li>
+</ul>
+<blockquote>
+<div><img alt="group" src="../_images/p_config_group.png" /></div></blockquote>
+<ul>
+<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="group_add" src="../_images/p_config_group_add.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>グループコードには</strong></p>
+<div class="last line-block">
+<div class="line">グループコードには任意の数字を入力します。複数のグループを登録する場合、グループコードが重複しないようにします。</div>
+<div class="line">また、複数のグループを登録した場合にはグループ名はグループコードが若い順に表示されます。</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>4.3.2. グループを修正する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="group_control_image" src="../_images/personal_group.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいグループの「修正」をクリックします。</p>
+<p><img alt="group_list_edit" src="../_images/p_config_group_list_edit.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="group_edit" src="../_images/p_config_group_edit.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h3>4.3.3. グループを削除する<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="group_control_image" src="../_images/personal_group.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいグループの「削除」をクリックします。</p>
+<p><img alt="group_list_delete" src="../_images/p_config_group_list_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="group_list_delete_msg" src="../_images/p_config_group_list_delete_msg.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h3>4.3.4. グループにユーザーを登録する<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="group_control_image" src="../_images/personal_group.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ユーザーを登録したいグループのグループ名をクリックします。</p>
+<p><img alt="group_list_member" src="../_images/p_config_group_list_member.png" /></p>
+</li>
+<li><p class="first">「ユーザー一覧」からユーザーを選択し、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="group_member_edit" src="../_images/p_config_group_member_edit.png" /></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+<p><img alt="group_member_add" src="../_images/p_config_group_member_add.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h3>4.3.5. グループのユーザーを変更する<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="group_control_image" src="../_images/personal_group.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ユーザーを変更したいグループのグループ名をクリックします。</p>
+<p><img alt="group_list_member" src="../_images/p_config_group_list_member.png" /></p>
+</li>
+<li><p class="first">追加したい場合、「ユーザー一覧」からユーザーを選択し、 <strong>追加→</strong>  をクリックします。</p>
+</li>
+<li><p class="first">削除したい場合、「選択ユーザー一覧」からユーザーを選択し、 <strong>←削除</strong>  をクリックします。</p>
+<p><img alt="group_member_delete" src="../_images/p_config_group_member_delete.png" /></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>4.4. 設備<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>[設備] では、 [設備予約] 画面の設定や「簡単予約」画面の入力設定などを行います。 <a class="footnote-reference" href="#id53" id="id18">[3]</a></p>
+<div class="section" id="id19">
+<h3>4.4.1. 簡単予約設定<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>[設備予約] 画面の「簡単予約」を使って予約する際に <strong>目的･連絡先</strong> を選択して入力できるように設定します。</p>
+</div>
+<div class="section" id="id20">
+<h3>4.4.2. 目的を登録する<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/equip.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[簡単予約設定] タブをクリックします。</p>
+<p><img alt="rsv_easy" src="../_images/p_config_rsv_easy.png" /></p>
+</li>
+<li><p class="first">プルダウンメニューを確認し、 <strong>新規登録</strong> をクリックします。</p>
+<p><img alt="rsv_purpose_new" src="../_images/p_config_rsv_purpose_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="rsv_purpose_add" src="../_images/p_config_rsv_purpose_add.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>目的コードには</strong></p>
+<div class="last line-block">
+<div class="line">目的コードには任意の数字を入力します。複数の目的コードを登録する場合、目的コードが重複しないようにします。</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id21">
+<h3>4.4.3. 連絡先を登録する<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/equip.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[簡単予約設定] タブをクリックします。</p>
+<p><img alt="rsv_easy" src="../_images/p_config_rsv_easy.png" /></p>
+</li>
+<li><p class="first">プルダウンメニューを確認し、 <strong>新規登録</strong> をクリックします。</p>
+<p><img alt="rsv_contact_new" src="../_images/p_config_rsv_contact_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="rsv_contact_add" src="../_images/p_config_rsv_contact_add.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>連絡先コードには</strong></p>
+<div class="last line-block">
+<div class="line">連絡先コードには任意の数字を入力します。複数の目的コードを登録する場合、連絡先コードが重複しないようにします。</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h3>4.4.4. 目的･連絡先を修正する<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/equip.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[簡単予約設定] タブをクリックします。</p>
+<p><img alt="rsv_easy_edit" src="../_images/p_config_rsv_easy_edit.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id23">
+<h3>4.4.5. 目的･連絡先を削除する<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/equip.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[簡単予約設定] タブをクリックします。</p>
+<p><img alt="rsv_easy" src="../_images/p_config_rsv_easy.png" /></p>
+</li>
+<li><p class="first">削除したい目的･連絡先の「削除」をクリックします。</p>
+<p><img alt="rsv_easy_delete" src="../_images/p_config_rsv_easy_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="rsv_easy_delete_msg" src="../_images/p_config_rsv_easy_delete_msg.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h3>4.4.6. 時間設定<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<p>[時間設定] タブでは、予約時の表示時間間隔を15分間隔、30分間隔などに変更することができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/equip.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[時間設定] タブをクリックします。</p>
+<p><img alt="rsv_time" src="../_images/p_config_rsv_time.png" /></p>
+</li>
+<li><p class="first">各項目の <strong>▼</strong>  をクリックし、入力を行い， <strong>適用</strong> をクリックします。</p>
+<p><img alt="rsv_time_save" src="../_images/p_config_rsv_time_save.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">初期の設定に戻すには、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</div>
+<div class="section" id="id25">
+<h3>4.4.7. 初期値設定<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p>[初期値設定] タブでは、設備予約画面を開いた時に最初に表示される設備の初期値設定を行います。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="reserve_control_image" src="../_images/equip.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[初期値設定] タブをクリックします。</p>
+<p><img alt="rsv_default" src="../_images/p_config_rsv_default.png" /></p>
+</li>
+<li><p class="first">プルダウンメニューから最初に表示させる設備を選択し、 * <strong>適用</strong> をクリックします。</p>
+<p><img alt="rsv_default_save" src="../_images/p_config_rsv_default_save.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">初期の設定に戻すには、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id26">
+<h2>4.5. 掲示板<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<p>掲示板を開いた時に最初に表示される項目を設定することができます。一番に確認したい項目(掲示板)を設定します。 <a class="footnote-reference" href="#id54" id="id27">[4]</a></p>
+<div class="section" id="id28">
+<h3>4.5.1. 掲示板を設定する<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="noticeboard_control_image" src="../_images/notice.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「最初に表示するカテゴリ」･「掲載期限」の <strong>▼</strong>  をクリックし、選択します。</p>
+<p><img alt="noticeboard_default" src="../_images/p_config_noticeboard_default.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+<p><img alt="noticeboard_default_save" src="../_images/p_config_noticeboard_default_save.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">初期の設定に戻すには、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="private-workflow">
+<span id="id29"></span><h2>4.6. ワークフロー<a class="headerlink" href="#private-workflow" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">ワークフローで電子決裁をする場合の承認経路をあらかじめ登録しておくことができます。経路は複数登録できるので、決裁の内容により使い分けることができます。</div>
+<div class="line">また、決裁に使用する文書の雛形も登録できます。ワークフローを起動した際の初期設定画面を変更することができます。</div>
+</div>
+<div class="section" id="id30">
+<h3>4.6.1. 申請経路を設定する<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</li>
+<li><img alt="workflow_control_image" src="../_images/wf_user.gif" /> をクリックします。</li>
+<li><strong>新規登録</strong> をクリックします。</li>
+</ul>
+<blockquote>
+<div><img alt="workflow_route_new" src="../_images/p_config_workflow_route_new.png" /></div></blockquote>
+<ul>
+<li><p class="first">「申請経路名」を任意に入力し、「ユーザー一覧」から承認者を選択して <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="workflow_route_select" src="../_images/p_config_workflow_route_select.png" /></p>
+</li>
+<li><p class="first">「優先順序」を変更し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_route_save" src="../_images/p_config_workflow_route_save.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id31">
+<h3>4.6.2. 申請経路を修正する<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/wf_user.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したい経路名の「修正」をクリックします。</p>
+<p><img alt="workflow_route_edit" src="../_images/p_config_workflow_route_edit.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_route_update" src="../_images/p_config_workflow_route_update.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h3>4.6.3. 申請経路を削除する<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/wf_user.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい経路名の「削除」をクリックします。</p>
+<p><img alt="workflow_route_delete" src="../_images/p_config_workflow_route_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_route_delete_msg" src="../_images/p_config_workflow_route_delete.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id33">
+<h3>4.6.4. 申請する際の文書の雛形を設定する<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/wf_user.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書設定] タブをクリックし、 <strong>新規登録</strong> をクリックします。</p>
+<p><img alt="workflow_form_new" src="../_images/p_config_workflow_form_new.png" /></p>
+</li>
+<li><p class="first">「タイトル」に任意に入力し、「雛形」に本文となる文章を入力して <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_form_save" src="../_images/p_config_workflow_form_save.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id34">
+<h3>4.6.5. 申請する際の文書の雛形を修正する<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/wf_user.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書設定] タブをクリックし、 修正したい雛形の「修正」をクリックします。</p>
+<p><img alt="workflow_form_edit" src="../_images/p_config_workflow_form_edit.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_form_update" src="../_images/p_config_workflow_form_update.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h3>4.6.6. 申請する際の文書の雛形を削除する<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/wf_user.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書設定] タブをクリックし、 削除したい雛形文書の「削除」をクリックします。</p>
+<p><img alt="workflow_form_delete" src="../_images/p_config_workflow_form_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="workflow_form_delete_msg" src="../_images/p_config_workflow_form_delete_msg.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id36">
+<h3>4.6.7. 最初に表示される項目を設定する<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="workflow_control_image" src="../_images/wf_user.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[初期値設定] タブをクリックし、項目の <strong>▼</strong> 表示する項目を選択します。</p>
+<p><img alt="workflow_default" src="../_images/p_config_workflow_default.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">初期の設定に戻すには、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="url">
+<span id="link-config"></span><h2>4.7. URL リンク<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">URL リンクでは、メニューの で閲覧できるホームページを登録します。</div>
+<div class="line">登録する前に、あらかじめ［カテゴリ編集］を登録しておきます。</div>
+</div>
+<div class="section" id="link-category-new">
+<span id="id37"></span><h3>4.7.1. URL カテゴリを設定する<a class="headerlink" href="#link-category-new" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/url_personal_ca.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">「カテゴリ名」「説明」を任意に入力し、 <strong>追加</strong> をクリックします。</p>
+<p><img alt="p_category_add" src="../_images/url_p_category_add.png" /></p>
+</li>
+<li><p class="first">カテゴリ名が表示されたことを確認し、 <strong>戻る</strong> をクリックします。</p>
+<p><img alt="p_category_back" src="../_images/url_p_category_back.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="link-category-edit">
+<span id="id38"></span><h3>4.7.2. 登録した URL カテゴリを変更する<a class="headerlink" href="#link-category-edit" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/url_personal_ca.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">変更したいカテゴリ名を選択し、 <strong>↑読込↑</strong>  をクリックします。</p>
+<p><img alt="p_category_edit_select" src="../_images/url_p_category_edit_select.png" /></p>
+</li>
+<li><p class="first">「カテゴリ名」や「説明」を変更し、 <strong>変更</strong> をクリックします。</p>
+<p><img alt="p_category_edit" src="../_images/url_p_category_edit.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="link-category-rank">
+<span id="id39"></span><h3>4.7.3. カテゴリの表示順序を変更<a class="headerlink" href="#link-category-rank" title="Permalink to this headline">¶</a></h3>
+<p>カテゴリの表示順序を変更する場合は、順序を変更するカテゴリ名を選択し、 <strong>▲</strong> または <strong>▼</strong>  をクリックします。</p>
+<blockquote>
+<div><img alt="p_category_edit_rank" src="../_images/url_p_category_edit_rank.png" /></div></blockquote>
+</div>
+<div class="section" id="link-category-delete">
+<span id="id40"></span><h3>4.7.4. 登録した URL カテゴリを削除する<a class="headerlink" href="#link-category-delete" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/url_personal_ca.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいカテゴリ名を選択し、 <strong>削除</strong> をクリックします。</p>
+<p><img alt="p_category_delete" src="../_images/url_p_category_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="p_category_delete_msg" src="../_images/url_p_category_delete_msg.png" /></p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">カテゴリを削除するとカテゴリに登録されているURLリンクも削除されます。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="link-new">
+<span id="id41"></span><h3>4.7.5. URL リンクを設定する<a class="headerlink" href="#link-new" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/url_personal_ca.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[URLリンク編集] タブをクリックします。</p>
+</li>
+<li><p class="first">あらかじめ設定しておいた「カテゴリ」を選択し、「リンク名」「URL」「説明」等を任意に入力して <strong>追加</strong> をクリックします。</p>
+<p><img alt="p_link_add" src="../_images/url_p_link_add.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="link-edit">
+<span id="id42"></span><h3>4.7.6. 登録した URL リンクを変更する<a class="headerlink" href="#link-edit" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/url_personal_ca.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[URLリンク編集] タブをクリックします。</p>
+</li>
+<li><p class="first">変更したい URL リンクがあるカテゴリを選択、対象となるリンク名を <strong>▲ ▼</strong> の枠内より選択して <strong>↑読込↑</strong> をクリックします。</p>
+<p><img alt="p_link_edit_select" src="../_images/url_p_link_edit_select.png" /></p>
+</li>
+<li><p class="first">「リンク名」や「URL」「説明」を変更し、 <strong>変更</strong> をクリックします。</p>
+<p><img alt="p_link_edit" src="../_images/url_p_link_edit.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="link-rank">
+<span id="id43"></span><h3>4.7.7. リンクの表示順序を変更する<a class="headerlink" href="#link-rank" title="Permalink to this headline">¶</a></h3>
+<p>リンクを変更する画面で、順序を変更するカテゴリを選択し <strong>▲</strong> または <strong>▼</strong> をクリックします。</p>
+<blockquote>
+<div><img alt="p_link_rank" src="../_images/url_p_link_rank.png" /></div></blockquote>
+</div>
+<div class="section" id="link-delete">
+<span id="id44"></span><h3>4.7.8. 登録した URL リンクを削除する<a class="headerlink" href="#link-delete" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/url_personal_ca.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[URLリンク編集] タブをクリックします。</p>
+</li>
+<li><p class="first">削除したい URL リンクがあるカテゴリを選択し、 <strong>削除</strong> をクリックします。</p>
+<p><img alt="p_link_delete" src="../_images/url_p_link_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="p_link_delete_msg" src="../_images/url_p_link_delete_msg.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="link-move">
+<span id="id45"></span><h3>4.7.9. リンクを移動またはコピーする<a class="headerlink" href="#link-move" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="link_control_image" src="../_images/url_personal_ca.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[移動とコピー] のタブをクリックし、移動またはコピーさせたいリンク名を選択します。</p>
+<p><img alt="p_link_move_select" src="../_images/url_p_link_move_select.png" /></p>
+</li>
+<li><p class="first">「コピー・移動先」を選択し、コピーしたい場合は <strong>コピー</strong> を，移動させたい場合は <strong>移動</strong> をクリックします。</p>
+<p><img alt="p_link_move" src="../_images/url_p_link_move.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+<p><img alt="p_link_move_msg" src="../_images/url_p_link_move_msg.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id46">
+<h2>4.8. シングルサインオン<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h2>
+<p>シングルサインオンでは、シングルサインオンのログインIDとパスワードの設定が行えます。 <a class="footnote-reference" href="#id55" id="id47">[5]</a></p>
+<div class="section" id="id48">
+<h3>4.8.1. シングルサインオンリンクを設定する<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="sso_control_image" src="../_images/sso.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">左側のツリーから設定したいメニューを選択します。</p>
+<p><img alt="sso_list" src="../_images/p_config_sso_list.png" /></p>
+</li>
+<li><p class="first">シングルサインオン時に必要な項目を入力します。</p>
+<p><img alt="sso_edit" src="../_images/p_config_sso_edit.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+<p><img alt="sso_save" src="../_images/p_config_sso_save.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id49">
+<h2>4.9. その他<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h2>
+<p>その他では WebMagic の各機能をクリックすると表示される、表示形式の初期値を設定します。</p>
+<div class="section" id="id50">
+<h3>4.9.1. その他の各種表示形式を設定する<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="other_control_image" src="../_images/user_setup.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">各項目を選択し、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="other" src="../_images/p_config_other.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>各設定内容</strong></p>
+<div class="last line-block">
+<div class="line">共通設定　:　メール・掲示板等で一覧表示される件数を設定します。</div>
+<div class="line">自動ログオフ設定　:　にログイン後、画面はそのままで指定時間操作がなかった時に、指定時間を経過するとログオフします。</div>
+<div class="line">会議室設定　:　会議室設定」を開いた際に表示される初期設定画面を設定します。</div>
+<div class="line">ToDo設定　:　[ToDo] を開いた際に表示される初期画面を設定します。</div>
+<div class="line">テロップ設定　:　掲示板等の最新情報の設定を行います。伝言を設定すると、本人宛の伝言テロップが本人の画面上だけに流れます。</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">初期の設定に戻すには、 <strong>規定値に戻す</strong> をクリックします。</p>
+</div>
+</li>
+</ul>
+<hr class="docutils" />
+<p class="rubric">脚注</p>
+<table class="docutils footnote" frame="void" id="id51" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>「管理者用設定」は、管理者権限があるユーザーのみ表示されます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id52" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>パスワードはセキュリティのため ●●● と表示されます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id53" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id18">[3]</a></td><td>設備の詳細情報（写真、収容人数、備考）などの設定は、管理者が行います。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id54" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id27">[4]</a></td><td>掲示板のカテゴリ追加等は、管理者が行います。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id55" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id47">[5]</a></td><td>シングルサインオンのメニュー追加等は、管理者が行います。</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4. 設定画面(個人)</a><ul>
+<li><a class="reference internal" href="#private-information">4.1. 個人情報</a><ul>
+<li><a class="reference internal" href="#id5">4.1.1. 個人情報を変更する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id6">4.2. スケジュール</a><ul>
+<li><a class="reference internal" href="#id7">4.2.1. スケジュールのアクセス権を設定する</a></li>
+<li><a class="reference internal" href="#id8">4.2.2. スケジュールのアクセス権を削除する</a></li>
+<li><a class="reference internal" href="#id9">4.2.3. 時間設定でスケジュールの表示時間を設定する</a></li>
+<li><a class="reference internal" href="#id10">4.2.4. スケジュールの画面表示初期値を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id11">4.3. グループ</a><ul>
+<li><a class="reference internal" href="#id12">4.3.1. グループを登録する</a></li>
+<li><a class="reference internal" href="#id13">4.3.2. グループを修正する</a></li>
+<li><a class="reference internal" href="#id14">4.3.3. グループを削除する</a></li>
+<li><a class="reference internal" href="#id15">4.3.4. グループにユーザーを登録する</a></li>
+<li><a class="reference internal" href="#id16">4.3.5. グループのユーザーを変更する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id17">4.4. 設備</a><ul>
+<li><a class="reference internal" href="#id19">4.4.1. 簡単予約設定</a></li>
+<li><a class="reference internal" href="#id20">4.4.2. 目的を登録する</a></li>
+<li><a class="reference internal" href="#id21">4.4.3. 連絡先を登録する</a></li>
+<li><a class="reference internal" href="#id22">4.4.4. 目的･連絡先を修正する</a></li>
+<li><a class="reference internal" href="#id23">4.4.5. 目的･連絡先を削除する</a></li>
+<li><a class="reference internal" href="#id24">4.4.6. 時間設定</a></li>
+<li><a class="reference internal" href="#id25">4.4.7. 初期値設定</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id26">4.5. 掲示板</a><ul>
+<li><a class="reference internal" href="#id28">4.5.1. 掲示板を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#private-workflow">4.6. ワークフロー</a><ul>
+<li><a class="reference internal" href="#id30">4.6.1. 申請経路を設定する</a></li>
+<li><a class="reference internal" href="#id31">4.6.2. 申請経路を修正する</a></li>
+<li><a class="reference internal" href="#id32">4.6.3. 申請経路を削除する</a></li>
+<li><a class="reference internal" href="#id33">4.6.4. 申請する際の文書の雛形を設定する</a></li>
+<li><a class="reference internal" href="#id34">4.6.5. 申請する際の文書の雛形を修正する</a></li>
+<li><a class="reference internal" href="#id35">4.6.6. 申請する際の文書の雛形を削除する</a></li>
+<li><a class="reference internal" href="#id36">4.6.7. 最初に表示される項目を設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#url">4.7. URL リンク</a><ul>
+<li><a class="reference internal" href="#link-category-new">4.7.1. URL カテゴリを設定する</a></li>
+<li><a class="reference internal" href="#link-category-edit">4.7.2. 登録した URL カテゴリを変更する</a></li>
+<li><a class="reference internal" href="#link-category-rank">4.7.3. カテゴリの表示順序を変更</a></li>
+<li><a class="reference internal" href="#link-category-delete">4.7.4. 登録した URL カテゴリを削除する</a></li>
+<li><a class="reference internal" href="#link-new">4.7.5. URL リンクを設定する</a></li>
+<li><a class="reference internal" href="#link-edit">4.7.6. 登録した URL リンクを変更する</a></li>
+<li><a class="reference internal" href="#link-rank">4.7.7. リンクの表示順序を変更する</a></li>
+<li><a class="reference internal" href="#link-delete">4.7.8. 登録した URL リンクを削除する</a></li>
+<li><a class="reference internal" href="#link-move">4.7.9. リンクを移動またはコピーする</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id46">4.8. シングルサインオン</a><ul>
+<li><a class="reference internal" href="#id48">4.8.1. シングルサインオンリンクを設定する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id49">4.9. その他</a><ul>
+<li><a class="reference internal" href="#id50">4.9.1. その他の各種表示形式を設定する</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="events.html"
+                        title="previous chapter">3. 行事予定</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../admin/config.html"
+                        title="next chapter">1. 設定画面(管理者)</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/user/config.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../admin/config.html" title="1. 設定画面(管理者)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="events.html" title="3. 行事予定"
+             >previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, WebMagic Development Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

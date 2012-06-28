@@ -1,0 +1,391 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>5. 設備予約 &mdash; WebMagic v4.1.3 documentation</title>
+    <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '4.1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="WebMagic v4.1.3 documentation" href="../index.html" />
+    <link rel="next" title="6. 来客" href="visitor.html" />
+    <link rel="prev" title="4. スケジュール" href="schedule.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="visitor.html" title="6. 来客"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="schedule.html" title="4. スケジュール"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>5. 設備予約<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">会議室やミーティングルームなどの施設の予約・管理をすることができます。</div>
+<div class="line">プロジェクターやノートパソコンなどを予約する場合にも活用できます。</div>
+</div>
+<div class="section" id="id2">
+<h2>5.1. 予約状況を確認する<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>設備の予約・使用状況は横棒グラフで視覚的に表示されます。グラフでの表示を切り替えて件名で表示させることもできます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">日付を確認します。カレンダーまたは <strong>&lt; &gt;</strong> から予約を確認したい日をクリックします。</p>
+<p><img alt="reserve_top" src="../_images/reserve_top.png" /></p>
+</li>
+<li><p class="first">設備を選択します。予約を確認したい設備が含まれる設備区分をクリックします。</p>
+<p><img alt="reserve_top_section" src="../_images/reserve_top_section.png" /></p>
+</li>
+<li><p class="first">[グラフ表示] の場合は確認したい予約の横棒グラフ上でクリックします。</p>
+<p><img alt="reserve_top_graph" src="../_images/reserve_top_graph.png" /></p>
+</li>
+<li><p class="first">［一覧表示］の場合は確認したい予約の件名上でクリックします。</p>
+<p><img alt="reserve_top_list" src="../_images/reserve_top_list.png" /></p>
+</li>
+<li><p class="first">設備の予約状況の詳細が表示されたら、 <strong>戻る</strong> をクリックします。</p>
+<p><img alt="reserve_detail" src="../_images/reserve_detail.png" /></p>
+</li>
+</ul>
+<div class="section" id="id3">
+<h3>5.1.1. 表示を「週間」「月間」に切り替える<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>各施設ごとの予約状況の表示形式を「一日」「週間」「月間」単位に切り替えることができます。</p>
+<blockquote>
+<div><img alt="reserve_month" src="../_images/reserve_month.png" /></div></blockquote>
+</div>
+<div class="section" id="id4">
+<h3>5.1.2. 設備の詳細を確認する<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p><strong>設備名</strong> をクリックすると、各設備の場所・収容人数・イメージ(写真) 等を確認することができます。</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>5.2. 設備を予約する<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>設備を新規に予約しましょう。既に予約が入っている時間帯には、予約を取ることが出来ません。</p>
+<div class="section" id="id6">
+<h3>5.2.1. 簡単予約<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>一日の設備予約状況を確認しながら、簡単に設備予約を行うことができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">日付を選択します。カレンダーまたは <strong>&lt; &gt;</strong> から予約したい日を設定します。</p>
+<p><img alt="reserve_top" src="../_images/reserve_top.png" /></p>
+</li>
+<li><p class="first">設備を選択します。予約したい設備が含まれる設備区分をクリックします。</p>
+<p><img alt="reserve_top_section" src="../_images/reserve_top_section.png" /></p>
+</li>
+<li><p class="first">簡単予約画面にて入力を行い、 <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id20" id="id7">[1]</a></p>
+<p><img alt="reserve_simple" src="../_images/reserve_simple.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>5.2.2. スケジュールの同時登録<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">設備予約を登録する際に、スケジュールの登録や定期予定の予約を同時に行うことができます。</div>
+<div class="line"><strong>同時登録ユーザー</strong> から他ユーザーのスケジュールも同時に設定することができます。</div>
+</div>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規予約</strong> をクリックします。</p>
+<p><img alt="reserve_new" src="../_images/reserve_new.png" /></p>
+</li>
+<li><p class="first">各項目を選択・入力し、スケジュール登録画面の [予約登録] を <strong>する</strong> を選択します。</p>
+<p><img alt="reserve_edit" src="../_images/reserve_edit.png" /></p>
+</li>
+<li><p class="first">スケジュール登録画面が表示されます。各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="reserve_schedule" src="../_images/reserve_schedule.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>5.2.3. 定期的な予定を一度に登録する<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>「毎月10日」「毎週水曜日」など、定期的なスケジュールで設備を一度に登録することができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規予約</strong> をクリックします。</p>
+<p><img alt="reserve_new" src="../_images/reserve_new.png" /></p>
+</li>
+<li><p class="first"><strong>定期予定</strong> をクリック、各項目を入力して <strong>OK</strong> をクリックします。</p>
+<p><img alt="reserve_regularly" src="../_images/reserve_regularly.png" /></p>
+<p><img alt="reserve_regularly_edit" src="../_images/reserve_regularly_edit.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>5.2.4. 24時間予約を入れる<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p><strong>終日</strong> にチェックを入れると、自動的に開始時間が「0時」、終了時間が「24時」に設定されます。</p>
+<blockquote>
+<div><img alt="edit_24" src="../_images/reserve_edit_24.png" /></div></blockquote>
+</div>
+<div class="section" id="id11">
+<h3>5.2.5. 空き時間を検索する<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>設備の空いている時間を検索し、そのまま設備を予約することができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規予約</strong> をクリックします。</p>
+<p><img alt="reserve_new" src="../_images/reserve_new.png" /></p>
+</li>
+<li><p class="first">新規予約画面で予約したい日付を設定し <strong>空き検索</strong> をクリックします。</p>
+<p><img alt="spare_time_search" src="../_images/reserve_spare_time_search.png" /></p>
+</li>
+<li><p class="first">空き検索結果、「? 件の空き設備が見つかりました。」と表示されます。プルダウンメニューに空き設備が表示されますので、その中から使用する設備名を選択します。</p>
+<p><img alt="spare_time_search_list" src="../_images/reserve_spare_time_search_list.png" /></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>5.3. 予約した内容を修正する<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>登録した内容は後から修正できます。設備予約を修正できるのは、設備予約を登録したユーザーと管理者のみです。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">カレンダーまたは <strong>&lt; &gt;</strong> から予約を修正したい日をクリックします。</p>
+<p><img alt="reserve_top" src="../_images/reserve_top.png" /></p>
+</li>
+<li><p class="first">予約を修正したい設備が含まれる設備区分を選択します。</p>
+<p><img alt="reserve_top_section" src="../_images/reserve_top_section.png" /></p>
+</li>
+<li><p class="first">[グラフ表示] の場合は修正したい予約の横棒グラフ上でクリックします。</p>
+<p><img alt="reserve_top_graph" src="../_images/reserve_top_graph.png" /></p>
+</li>
+<li><p class="first">[一覧表示] の場合は修正したい予約の件名上でクリックします。</p>
+<p><img alt="reserve_top_list" src="../_images/reserve_top_list.png" /></p>
+</li>
+<li><p class="first">設備の予約状況の詳細が表示されたら、 <strong>修正</strong> をクリックします。</p>
+<p><img alt="reserve_fix" src="../_images/reserve_fix.png" /></p>
+</li>
+<li><p class="first">内容を修正し <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h2>5.4. 予約を削除する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>予約した内容を削除しましょう。内容を削除できるのは、設備予約を登録したユーザーと管理者のみです。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">カレンダーまたは <strong>&lt; &gt;</strong> から予約を削除したい日をクリックします。</p>
+<p><img alt="reserve_top" src="../_images/reserve_top.png" /></p>
+</li>
+<li><p class="first">予約を削除したい設備が含まれる設備区分を選択します。</p>
+<p><img alt="reserve_top_section" src="../_images/reserve_top_section.png" /></p>
+</li>
+<li><p class="first">[グラフ表示] の場合は削除したい予約の横棒グラフ上でクリックします。</p>
+<p><img alt="reserve_top_graph" src="../_images/reserve_top_graph.png" /></p>
+</li>
+<li><p class="first">[一覧表示] の場合は削除したい予約の件名上でクリックします。</p>
+<p><img alt="reserve_top_list" src="../_images/reserve_top_list.png" /></p>
+</li>
+<li><p class="first">設備の予約状況の詳細が表示されたら、 <strong>削除</strong> をクリックします。</p>
+<p><img alt="reserve_delete" src="../_images/reserve_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>5.5. 予約をコピーする<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<p>予約した内容をコピーして新たに予約をすることができます。内容をコピーできるのは、一覧参照権限以上を持つユーザーと管理者です。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">カレンダーまたは <strong>&lt; &gt;</strong> から予約を削除したい日をクリックします。</p>
+<p><img alt="reserve_top" src="../_images/reserve_top.png" /></p>
+</li>
+<li><p class="first">予約を削除したい設備が含まれる設備区分を選択します。</p>
+<p><img alt="reserve_top_section" src="../_images/reserve_top_section.png" /></p>
+</li>
+<li><p class="first">[グラフ表示] の場合は削除したい予約の横棒グラフ上でクリックします。</p>
+<p><img alt="reserve_top_graph" src="../_images/reserve_top_graph.png" /></p>
+</li>
+<li><p class="first">[一覧表示] の場合は削除したい予約の件名上でクリックします。</p>
+<p><img alt="reserve_top_list" src="../_images/reserve_top_list.png" /></p>
+</li>
+<li><p class="first">設備の予約状況の詳細が表示されたら、 <strong>コピー</strong> をクリックします。</p>
+<p><img alt="reserve_copy" src="../_images/reserve_copy.png" /></p>
+</li>
+<li><p class="first">日時・内容を修正し <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h2>5.6. 設備予約をエクスポートする<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>設備予約を CSV ファイルに書き出すことができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">右上のプルダウンメニューから <strong>エクスポート</strong> を選択します。</p>
+<p><img alt="select_export" src="../_images/reserve_select_export.png" /></p>
+</li>
+<li><p class="first">設備予約を書き出したい設備、期間を指定し <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id21" id="id16">[2]</a></p>
+<p><img alt="reserve_export" src="../_images/reserve_export.png" /></p>
+</li>
+<li><p class="first">CSV ファイルが出力されます。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h2>5.7. 設備予約をインポートする<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>表計算ソフト等で編集した CSV ファイルを取り込むことができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="reserve_image" src="../_images/reserve_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">右上のプルダウンメニューから <strong>インポート</strong> を選択します。</p>
+<p><img alt="select_import" src="../_images/reserve_select_import.png" /></p>
+</li>
+<li><p class="first"><strong>参照</strong> をクリックし、取り込む CSV ファイルを選択します。</p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id22" id="id18">[3]</a> <a class="footnote-reference" href="#id23" id="id19">[4]</a></p>
+<p><img alt="reserve_import" src="../_images/reserve_import.png" /></p>
+</li>
+<li><p class="first">設備予約がインポートされていることを確認します。</p>
+</li>
+</ul>
+<div class="section" id="csv">
+<h3>5.7.1. CSV ファイルの書き方<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
+<p>CSV ファイルを記載する場合は、一度エクスポートを実行した CSV ファイル (export.csv) をご参照ください。</p>
+<hr class="docutils" />
+<p class="rubric">脚注</p>
+<table class="docutils footnote" frame="void" id="id20" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[1]</a></td><td>簡単予約は、「 <strong>一日</strong> 」表示からのみ登録可能です。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id21" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id16">[2]</a></td><td><strong>ヘッダ文字を日本語にする</strong> にチェックを入れると、書き出される項目名を日本語で表示することができます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id22" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id18">[3]</a></td><td>[オプション] の <strong>テストを行う</strong> にチェックをつけて <strong>OK</strong> ボタンをクリックすると、CSVファイルのテストを行うことができます。(チェックがつけられている場合は、データ登録はされません)</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id23" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id19">[4]</a></td><td>日本語のヘッダ文字が含まれた CSV データはインポートできません。</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">5. 設備予約</a><ul>
+<li><a class="reference internal" href="#id2">5.1. 予約状況を確認する</a><ul>
+<li><a class="reference internal" href="#id3">5.1.1. 表示を「週間」「月間」に切り替える</a></li>
+<li><a class="reference internal" href="#id4">5.1.2. 設備の詳細を確認する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">5.2. 設備を予約する</a><ul>
+<li><a class="reference internal" href="#id6">5.2.1. 簡単予約</a></li>
+<li><a class="reference internal" href="#id8">5.2.2. スケジュールの同時登録</a></li>
+<li><a class="reference internal" href="#id9">5.2.3. 定期的な予定を一度に登録する</a></li>
+<li><a class="reference internal" href="#id10">5.2.4. 24時間予約を入れる</a></li>
+<li><a class="reference internal" href="#id11">5.2.5. 空き時間を検索する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id12">5.3. 予約した内容を修正する</a></li>
+<li><a class="reference internal" href="#id13">5.4. 予約を削除する</a></li>
+<li><a class="reference internal" href="#id14">5.5. 予約をコピーする</a></li>
+<li><a class="reference internal" href="#id15">5.6. 設備予約をエクスポートする</a></li>
+<li><a class="reference internal" href="#id17">5.7. 設備予約をインポートする</a><ul>
+<li><a class="reference internal" href="#csv">5.7.1. CSV ファイルの書き方</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="schedule.html"
+                        title="previous chapter">4. スケジュール</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="visitor.html"
+                        title="next chapter">6. 来客</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/common/reserve.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="visitor.html" title="6. 来客"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="schedule.html" title="4. スケジュール"
+             >previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, WebMagic Development Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

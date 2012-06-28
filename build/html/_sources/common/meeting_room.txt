@@ -1,0 +1,240 @@
+####################
+電子会議室
+####################
+
+| 書き込まれている質問や提案・メッセージに対して返答を入力することができます。返答は階層構造で表示され、話題ごとにどんなやりとりが交わされたかを確認できます。
+| ユーザー相互のコミュニケーション・ディスカッションの場として利用できます。
+
+新規に情報を登録する
+====================
+
+新しく情報を書き込みます。返答の場合は元の情報の下位に位置しますが、新しく書き込んだ場合、その意見が階層の先頭に表示されます。
+
+* メニューの |meeting_room_image| をクリックします。
+* **新規作成** をクリックします。
+
+  |list_new|
+
+* 書き込みたい「カテゴリ」を選択し、各項目を入力して **OK** をクリックします。
+
+  |new|
+
+* 階層の先頭に書き込んだ情報が表示されます。
+
+  |new_show|
+
+
+カテゴリごとに表示する
+======================
+
+カテゴリごとに一覧を絞り込んで表示できます。
+
+* メニューの |meeting_room_image| をクリックします。
+* 表示したいカテゴリを選択します。
+
+  |list_category|
+ 
+* 選択したカテゴリのみが表示されます。
+
+  |list_category_result|
+
+
+すべてのカテゴリを表示させたい
+------------------------------
+
+［項目］を［すべて］に切り替えると、全てのカテゴリが表示されます。
+
+  |list_allcategory|
+ 
+書き込みされた内容の状態
+------------------------
+
+タイトルの左側にある絵の状態で [未読／既読／添付] を確認する。
+
+ | |open_icon|  ・・・既に読んだ情報
+ | |close_icon| ・・・未だ読んでいない情報
+ | |stick| ・・・添付ファイルが付いている情報
+
+
+
+登録されている情報を確認する
+============================
+
+登録されている情報を確認しましょう。意見のやりとりは階層構造で表示されます。
+
+.. note:: **＋ －** のマークの意味
+
+ | **＋** マークはこの情報に対し、返答が書き込まれていることを指します。
+ | **＋** をクリックすることで下位の情報が表示でき **－** に変わります。
+
+* メニューの |meeting_room_image| をクリックします。
+* 確認したい情報の「タイトル」をクリックします。
+
+  |list_show|
+ 
+* 内容が表示されます。この情報に対して下位の書込がある場合、画面下の階層から同様に確認することが出来ます。 [#]_
+
+  |show|
+
+
+一覧の「全開」表示と「全閉」表示
+------------------
+
+*  **▼** をクリックし「全開」を選択します。 実行 をクリックします。
+* 下位の書込がある場合、それらが全て表示されます。
+
+  |list_open|
+
+* **▼**  をクリックし「全閉」を選択します。 実行 をクリックします。
+* 下位の書込が非表示になります。
+
+  |list_close|
+
+一覧の「未読のみ」表示と「未読を含む階層」表示
+--------------------------------
+
+* **▼**  をクリックし「未読のみ」を選択します。未読の書き込み一覧が表示されます（情報の階層は保持せず表示される）。
+
+  |list_unread|
+
+* **▼**  をクリックし「未読を含む階層」を選択します。未読の書き込みが含まれる情報を階層も含めて一覧表示されます。
+
+  |list_unread_lay|
+
+「親記事の表示」を表示させたい
+----------------
+
+* 内容確認画面で **親記事の表示** をクリックします。画面下には階層の情報が表示されます。
+
+  |show_parent|
+
+* 参照していた記事の親記事が表示されます。
+
+  |show_parent_result|
+
+
+情報に返答する
+==============
+
+登録されている情報に対して、返答を書き込みましょう。元の文章とタイトルは、自動的に引用されます。
+
+* メニューの |meeting_room_image| をクリックします。
+* 確認したい情報の「タイトル」をクリックします。
+
+  |list_show|
+
+* **返答** をクリックします。
+
+  |show_res|
+ 
+* 文章を入力し、 **OK** をクリックします。 [#]_
+
+  |res|
+
+.. note::
+ 添付ファイルを付けたい場合、 **参照** をクリックしファイルを指定して **追加** をクリックします。
+
+
+新規にカテゴリを登録する
+========================
+
+カテゴリは、あらかじめ管理者が登録できます。
+
+* メニューの |meeting_room_image| をクリックします。
+* **カテゴリ登録** をクリックします。
+
+  |list_newcategory|
+
+* **カテゴリ登録** をクリックします。
+
+  |category_list|
+
+* カテゴリ名を入力し **OK** をクリックします。
+
+  |category|
+
+* 新しいカテゴリ名が登録されます。
+
+  |category_result|
+
+
+
+情報を検索する
+==============
+
+情報を登録したユーザーの名前、本文に含まれる文字列、または情報のタイトルから検索することができます。検索結果は階層表示ではなく並列表示させることもできます。
+
+* メニューの |meeting_room_image| をクリックします。
+* キーワードを入力し、 **検索** をクリックします。
+
+  |search|
+
+* 検索結果が表示されます。 [#]_
+  
+  |search_result|
+
+検索文章を階層表示する
+----------------------
+
+検索を実行した後、 **検索文章階層表示** をクリックすると、検索結果だけではなく前後の書込も表示されます。
+
+**検索文章階層表示** をクリックする前
+
+  |search_all|
+ 
+**検索文章階層表示** をクリックした後
+
+  |search_lay|
+
+
+-----
+
+.. rubric:: 脚注
+.. [#] 添付ファイルがある場合、添付ファイル名をクリックすると内容が表示されます。画像は展開して表示されます。
+.. [#] 「タイトル」と「本文」は元のものが引用されて表示されます。
+.. [#] 検索する前の状態に戻すには **リセット** をクリックします。
+
+.. 画像定義
+.. 新規に情報を登録する
+.. |list_new| image:: ../images/meeting_list_new.png
+.. |new| image:: ../images/meeting_new.png
+.. |new_show| image:: ../images/meeting_new_show.png
+
+.. カテゴリごとに表示する
+.. |list_category| image:: ../images/meeting_list_category.png
+.. |list_category_result| image:: ../images/meeting_list_category_result.png
+.. |list_allcategory| image:: ../images/meeting_list_allcategory.png
+
+.. 書き込みされた内容の状態
+.. |meeting_room_image| image:: ../images/meeting_room_image.gif
+.. |open_icon| image:: ../images/open2.gif
+.. |close_icon| image:: ../images/close2.gif
+.. |stick| image:: ../images/stick.gif
+
+.. 登録されている情報を確認する
+.. |list_show| image:: ../images/meeting_list_show.png
+.. |show| image:: ../images/meeting_show.png
+
+.. 「全開」と「全閉」
+.. |list_open| image:: ../images/meeting_list_open.png
+.. |list_close| image:: ../images/meeting_list_close.png
+.. |list_unread| image:: ../images/meeting_list_unread.png
+.. |list_unread_lay| image:: ../images/meeting_list_unread_lay.png
+.. |show_parent| image:: ../images/meeting_show_parent.png
+.. |show_parent_result| image:: ../images/meeting_show_parent_result.png
+
+.. 情報に返答する
+.. |show_res| image:: ../images/meeting_show_res.png
+.. |res| image:: ../images/meeting_res.png
+
+.. 新規にカテゴリを登録する
+.. |list_newcategory| image:: ../images/meeting_list_newcategory.png
+.. |category_list| image:: ../images/meeting_category_list.png
+.. |category| image:: ../images/meeting_category.png
+.. |category_result| image:: ../images/meeting_category_result.png
+
+.. 情報を検索する
+.. |search| image:: ../images/meeting_search.png
+.. |search_result| image:: ../images/meeting_search_result.png
+.. |search_all| image:: ../images/meeting_search_all.png
+.. |search_lay| image:: ../images/meeting_search_lay.png
