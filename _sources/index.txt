@@ -1,6 +1,6 @@
-#############################
-WebMagic 操作マニュアルガイド
-#############################
+###################
+WebMagic 操作ガイド
+###################
 .. versionadded:: 4.1.3
 
 .. toctree::
@@ -62,12 +62,12 @@ WebMagic 操作マニュアルガイド
 .. school/config
 
 
-よくあるご質問
-
-.. toctree::
-    :maxdepth: 2
-
-    faq/index
+.. よくあるご質問
+.. 
+.. .. toctree::
+..     :maxdepth: 2
+.. 
+..     faq/index
 
 
 
