@@ -1,7 +1,6 @@
 ###################
 WebMagic 操作ガイド
 ###################
-.. versionadded:: 4.1.3
 
 .. toctree::
    :maxdepth: 2
@@ -50,24 +49,6 @@ WebMagic 操作ガイド
    admin/user
    admin/noticeboard
    admin/config
-
-
-.. TODO 現在ASPの学校版を契約しているユーザがいないのでマニュアルは作成しない
-.. 学校版機能
-
-.. school/home
-.. school/today_reports
-.. school/lessonplan
-.. school/lessontimes
-.. school/config
-
-
-.. よくあるご質問
-.. 
-.. .. toctree::
-..     :maxdepth: 2
-.. 
-..     faq/index
 
 
 
