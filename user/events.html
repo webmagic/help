@@ -55,7 +55,7 @@
 <div class="line-block">
 <div class="line">全体的な行事の予定など、比較的規模の大きなスケジュールを管理できます。</div>
 <div class="line">登録時には、行事のタイプ、区分、重要度「大」「中」「小」を設定でき、一覧から絞り込こんで表示できます。</div>
-<div class="line">また、一覧のカレンダー表示は通常と縦型を選択することができます。 <a class="footnote-reference" href="#id18" id="id2">[1]</a></div>
+<div class="line">また、一覧のカレンダー表示は通常と縦型を選択することができます。 <a class="footnote-reference" href="#id17" id="id2">[1]</a></div>
 </div>
 <div class="section" id="id3">
 <h2>3.1. 行事予定を新規に登録する<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
@@ -75,7 +75,7 @@
 <ul>
 <li><p class="first">メニューの <img alt="events_image" src="../_images/events_image.gif" /> をクリックします。</p>
 </li>
-<li><p class="first">確認したい行事のカテゴリをツリーから選択し切り替えます。 <a class="footnote-reference" href="#id19" id="id5">[2]</a></p>
+<li><p class="first">確認したい行事のカテゴリをツリーから選択し切り替えます。 <a class="footnote-reference" href="#id18" id="id5">[2]</a></p>
 <p><img alt="category_select" src="../_images/events_category_select.png" /></p>
 </li>
 <li><p class="first">確認したい行事の「件名」をクリックし、詳細を確認します。</p>
@@ -162,10 +162,10 @@
 <li><p class="first">行事予定の右上のコンボボックスより <strong>エクスポート</strong> を選択します。</p>
 <p><img alt="select_export" src="../_images/events_select_export.png" /></p>
 </li>
-<li><p class="first">予定を書き出したい期間を指定し <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id20" id="id13">[3]</a></p>
+<li><p class="first">予定を書き出したい期間を指定し <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id19" id="id13">[3]</a></p>
 <p><img alt="events_export" src="../_images/events_export.png" /></p>
 </li>
-<li><p class="first">CSV ファイルが出力されます。 <a class="footnote-reference" href="#id21" id="id14">[4]</a></p>
+<li><p class="first">CSV ファイルが出力されます。 <a class="footnote-reference" href="#id20" id="id14">[4]</a></p>
 </li>
 </ul>
 </div>
@@ -193,49 +193,94 @@
 <p class="last">所属 (カテゴリ) プルダウンには、作成権限以上の所属が表示されます。</p>
 </div>
 <ul>
-<li><p class="first"><strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id22" id="id16">[5]</a> <a class="footnote-reference" href="#id23" id="id17">[6]</a></p>
+<li><p class="first"><strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id21" id="id16">[5]</a></p>
 <p><img alt="events_import" src="../_images/events_import.png" /></p>
 </li>
 </ul>
 <div class="section" id="csv">
 <h3>3.6.1. CSV ファイルの書き方<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
 <p>CSV ファイルを記載する場合は、一度エクスポートを実行した CSV ファイル(event_export.csv) をご参照ください。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="15%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">インポートに必要なヘッダーの説明</th>
+<th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>category_name</td>
+<td>所属名</td>
+<td>例) 全体</td>
+</tr>
+<tr class="row-odd"><td>title</td>
+<td>件名</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>start_datetime</td>
+<td>行事開始日</td>
+<td>「西暦/月/日」まで入力(半角)</td>
+</tr>
+<tr class="row-odd"><td>end_datetime</td>
+<td>行事終了日</td>
+<td>「西暦/月/日」まで入力(半角)</td>
+</tr>
+<tr class="row-even"><td>place</td>
+<td>場所</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>content</td>
+<td>内容</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>event_type_name</td>
+<td>区分</td>
+<td>例) 会議</td>
+</tr>
+<tr class="row-odd"><td>importance</td>
+<td>重要度</td>
+<td>例) 大</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">日本語のヘッダー文字が含まれた CSV データはインポートできません。</p>
+</div>
 <hr class="docutils" />
 <p class="rubric">脚注</p>
-<table class="docutils footnote" frame="void" id="id18" rules="none">
+<table class="docutils footnote" frame="void" id="id17" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>行事予定のカテゴリ作成やアクセス権については <a class="reference internal" href="../admin/config.html"><em>設定画面(管理者)</em></a> の <a class="reference internal" href="../admin/config.html#events-config"><em>行事予定</em></a> をご確認ください。</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id19" rules="none">
+<table class="docutils footnote" frame="void" id="id18" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td>行事予定は所属で分類されます。</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id20" rules="none">
+<table class="docutils footnote" frame="void" id="id19" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id13">[3]</a></td><td>「ヘッダ文字を日本語にする」にチェックを入れると、書き出される項目名を日本語で表示することができます。</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id21" rules="none">
+<table class="docutils footnote" frame="void" id="id20" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id14">[4]</a></td><td>他人のスケジュールをエクスポートするためには「詳細参照」または「作成」権限が必要です。</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id22" rules="none">
+<table class="docutils footnote" frame="void" id="id21" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id16">[5]</a></td><td>[オプション] の [テストを行う] にチェックをつけて <strong>OK</strong> ボタンをクリックすると、CSVファイルのテストを行うことができます。(チェックがつけられている場合は、データ登録はされません)</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id23" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id17">[6]</a></td><td>日本語のヘッダ文字が含まれた CSV データはインポートできません。</td></tr>
 </tbody>
 </table>
 </div>
