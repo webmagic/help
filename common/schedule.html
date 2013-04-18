@@ -293,6 +293,93 @@
 <div class="section" id="csv">
 <h3>4.6.1. CSV ファイルの書き方<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
 <p>CSV ファイルを記載する場合は、一度エクスポートを実行した CSV ファイル (export.csv) をご参照ください。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="26%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">インポートに必要なヘッダーの説明</th>
+<th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>username</td>
+<td>ログイン ID</td>
+<td>WebMagic にログインする際に使用する ID</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>氏名</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>sche_start</td>
+<td>開始日時</td>
+<td>「西暦/月/日 時:分」まで入力(半角)</td>
+</tr>
+<tr class="row-odd"><td>sche_end</td>
+<td>終了日時</td>
+<td>「西暦/月/日 時:分」まで入力(半角)</td>
+</tr>
+<tr class="row-even"><td>plan</td>
+<td>予定</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>place</td>
+<td>場所</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>content</td>
+<td>内容</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>open</td>
+<td>情報公開</td>
+<td><div class="first last line-block">
+<div class="line">スケジュールを公開するか否かのチェック(半角数字)</div>
+<div class="line">「0」が非公開, 「1」が公開</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>grph_color</td>
+<td>グラフ色</td>
+<td>グラフの色(半角数字)</td>
+</tr>
+<tr class="row-odd"><td>edit_datetime</td>
+<td>登録日(スケジュール入力日時)</td>
+<td>「西暦/月/日 時:分」まで入力(半角)</td>
+</tr>
+<tr class="row-even"><td>edit_user_id</td>
+<td>登録ユーザー ID</td>
+<td>WebMagic にログインする際に使用する ID</td>
+</tr>
+<tr class="row-odd"><td>edit_username</td>
+<td>登録者氏名</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>pattern</td>
+<td>登録パターン</td>
+<td><a class="reference internal" href="reserve.html#pattern"><em>パターンの説明</em></a> を参照</td>
+</tr>
+<tr class="row-odd"><td>pattern_parm</td>
+<td>登録パラメータ</td>
+<td><a class="reference internal" href="reserve.html#pattern"><em>パターンの説明</em></a> を参照</td>
+</tr>
+<tr class="row-even"><td>exception_date</td>
+<td>例外日</td>
+<td><div class="first last line-block">
+<div class="line">「西暦/月/日」を入力</div>
+<div class="line">複数ある場合は「,」で区切る(半角)</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">日本語のヘッダー文字が含まれた CSV データはインポートできません。</p>
+</div>
 <hr class="docutils" />
 <p class="rubric">脚注</p>
 <table class="docutils footnote" frame="void" id="id29" rules="none">

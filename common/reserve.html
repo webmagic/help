@@ -270,7 +270,7 @@
 </li>
 <li><p class="first"><strong>参照</strong> をクリックし、取り込む CSV ファイルを選択します。</p>
 </li>
-<li><p class="first"><strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id22" id="id18">[3]</a> <a class="footnote-reference" href="#id23" id="id19">[4]</a></p>
+<li><p class="first"><strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id22" id="id18">[3]</a></p>
 <p><img alt="reserve_import" src="../_images/reserve_import.png" /></p>
 </li>
 <li><p class="first">設備予約がインポートされていることを確認します。</p>
@@ -279,6 +279,147 @@
 <div class="section" id="csv">
 <h3>5.7.1. CSV ファイルの書き方<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
 <p>CSV ファイルを記載する場合は、一度エクスポートを実行した CSV ファイル (export.csv) をご参照ください。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="24%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">インポートに必要なヘッダーの説明</th>
+<th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>division_code</td>
+<td>設備区分コード</td>
+<td>設備区分設定で設定したコード(半角数字)</td>
+</tr>
+<tr class="row-odd"><td>division_name</td>
+<td>設備区分名</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>plant_code</td>
+<td>設備コード</td>
+<td>設備設定で設定したコード(半角数字)</td>
+</tr>
+<tr class="row-odd"><td>plant_name</td>
+<td>設備名</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>reserve_start</td>
+<td>開始日時</td>
+<td>「西暦/月/日 時:分」まで入力(半角)</td>
+</tr>
+<tr class="row-odd"><td>reserve_end</td>
+<td>終了日時</td>
+<td>「西暦/月/日 時:分」まで入力(半角)</td>
+</tr>
+<tr class="row-even"><td>purpose</td>
+<td>目的</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>extensioin</td>
+<td>連絡先</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>note</td>
+<td>内容</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>rsv_reg_name</td>
+<td>予約者</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>reg_date</td>
+<td>予約日</td>
+<td>「西暦/月/日 時:分」まで入力(半角)</td>
+</tr>
+<tr class="row-odd"><td>up_date</td>
+<td>更新日</td>
+<td>「西暦/月/日 時:分」まで入力(半角)</td>
+</tr>
+<tr class="row-even"><td>pattern</td>
+<td>登録パターン</td>
+<td><a class="reference internal" href="#pattern"><em>パターンの説明</em></a> を参照</td>
+</tr>
+<tr class="row-odd"><td>pattern_parm</td>
+<td>登録パターンパラメータ</td>
+<td><a class="reference internal" href="#pattern"><em>パターンの説明</em></a> を参照</td>
+</tr>
+<tr class="row-even"><td>exception_date</td>
+<td>例外日</td>
+<td><div class="first last line-block">
+<div class="line">「西暦/月/日」を入力</div>
+<div class="line">複数ある場合は「,」で区切る(半角)</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">日本語のヘッダー文字が含まれた CSV データはインポートできません。</p>
+</div>
+<div class="section" id="pattern">
+<span id="id19"></span><h4>5.7.1.1. パターンの説明<a class="headerlink" href="#pattern" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="16%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">パターン</th>
+<th class="head">pattern</th>
+<th class="head">pattern_param (例)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>毎日</td>
+<td>1</td>
+<td>なし</td>
+</tr>
+<tr class="row-odd"><td>毎週~曜日</td>
+<td>2</td>
+<td><div class="first last line-block">
+<div class="line">月, 火の場合 「,1,2,,,,,」</div>
+<div class="line">日, 金, 土の場合 「0,,,,,5,6」</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>毎月~日</td>
+<td>3</td>
+<td><div class="first last line-block">
+<div class="line">毎月3日の場合 「3」</div>
+<div class="line">毎月10日の場合 「10」</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>毎月第~曜日</td>
+<td>4</td>
+<td><div class="first last line-block">
+<div class="line">第3水曜日の場合 「3-3」</div>
+<div class="line">第1土曜日の場合 「1-6」</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>曜日の数字は以下の通りになります。</p>
+<div class="last line-block">
+<div class="line">0 ・・・ 日曜日</div>
+<div class="line">1 ・・・ 月曜日</div>
+<div class="line">2 ・・・ 火曜日</div>
+<div class="line">3 ・・・ 水曜日</div>
+<div class="line">4 ・・・ 木曜日</div>
+<div class="line">5 ・・・ 金曜日</div>
+<div class="line">6 ・・・ 土曜日</div>
+</div>
+</div>
 <hr class="docutils" />
 <p class="rubric">脚注</p>
 <table class="docutils footnote" frame="void" id="id20" rules="none">
@@ -299,12 +440,7 @@
 <tr><td class="label"><a class="fn-backref" href="#id18">[3]</a></td><td>[オプション] の <strong>テストを行う</strong> にチェックをつけて <strong>OK</strong> ボタンをクリックすると、CSVファイルのテストを行うことができます。(チェックがつけられている場合は、データ登録はされません)</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id23" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id19">[4]</a></td><td>日本語のヘッダ文字が含まれた CSV データはインポートできません。</td></tr>
-</tbody>
-</table>
+</div>
 </div>
 </div>
 </div>
@@ -336,7 +472,10 @@
 <li><a class="reference internal" href="#id14">5.5. 予約をコピーする</a></li>
 <li><a class="reference internal" href="#id15">5.6. 設備予約をエクスポートする</a></li>
 <li><a class="reference internal" href="#id17">5.7. 設備予約をインポートする</a><ul>
-<li><a class="reference internal" href="#csv">5.7.1. CSV ファイルの書き方</a></li>
+<li><a class="reference internal" href="#csv">5.7.1. CSV ファイルの書き方</a><ul>
+<li><a class="reference internal" href="#pattern">5.7.1.1. パターンの説明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

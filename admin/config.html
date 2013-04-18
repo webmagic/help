@@ -213,6 +213,122 @@
 <div class="section" id="csv">
 <h3>1.1.6. CSV ファイルの書き方<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
 <p>CSV ファイルを記載する場合は、一度エクスポートを実行した CSV ファイル(export.csv) をご参照ください。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="14%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">インポートに必要なヘッダーの説明</th>
+<th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>operation</td>
+<td>操作</td>
+<td><ul class="first simple">
+<li>insert ・・・ ユーザを新規登録する場合</li>
+<li>update ・・・ ユーザの登録内容を変更する場合</li>
+<li>delete ・・・ ユーザを削除する場合</li>
+</ul>
+<p class="last">のいずれかを指定(半角英字)</p>
+</td>
+</tr>
+<tr class="row-odd"><td>username</td>
+<td>ログイン ID</td>
+<td><p class="first">WebMagic にログインするときの ID</p>
+<p class="last">文字数は <strong>15文字</strong> まで。
+利用可能文字は <strong>半角英数字(a-z A-Z 0-9), アンダースコア(_), ハイフン(-)</strong></p>
+</td>
+</tr>
+<tr class="row-even"><td>password</td>
+<td>パスワード</td>
+<td><p class="first">エクスポート時に作成される <strong>export.csv</strong> にはこの列は含まれない(セキュリティのため)</p>
+<p class="last">文字数は <strong>無制限</strong> 。
+利用可能文字は <strong>半角英数字(a-z A-Z 0-9), アンダースコア(_), ハイフン(-)</strong></p>
+</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>氏名</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>kana</td>
+<td>フリガナ</td>
+<td>全角カタカナ</td>
+</tr>
+<tr class="row-odd"><td>roma</td>
+<td>ローマ字</td>
+<td>半角英字</td>
+</tr>
+<tr class="row-even"><td>emp_code</td>
+<td>社員 ID</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>post</td>
+<td>役職名</td>
+<td><p class="first">役職設定で設定した役職名。
+複数ある場合は 「:」 で分割</p>
+<p class="last">例) 役職が「部長」と「課長」の場合, 「部長:課長」と指定</p>
+</td>
+</tr>
+<tr class="row-even"><td>extension</td>
+<td>内線番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>portable_phone</td>
+<td>携帯番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>e_mail</td>
+<td>E-mail アドレス</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>contact_email</td>
+<td>メール通知アドレス</td>
+<td>伝言などで通知するアドレス</td>
+</tr>
+<tr class="row-even"><td>contact_email_flg</td>
+<td>メール通知フラグ</td>
+<td><p class="first">メール通知を行うか否かのチェック(半角数字)。
+「1」 が ON, 「0」 が OFF</p>
+<p class="last">例) 伝言(ON), スケジュール(OFF), ワークフロー(OFF)を「1:0:0」のように指定</p>
+</td>
+</tr>
+<tr class="row-odd"><td>group</td>
+<td>所属コード</td>
+<td><p class="first">所属設定で設定したコード(半角数字)
+複数ある場合は 「:」 で分割</p>
+<p class="last">例) 所属が総務部「100」と 管理部「200」の場合, 「100:200」と指定</p>
+</td>
+</tr>
+<tr class="row-even"><td>home_address</td>
+<td>自宅住所</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>home_tel</td>
+<td>自宅 TEL 番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>home_fax</td>
+<td>自宅 FAX 番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>conn_method</td>
+<td>接続方法フラグ</td>
+<td><p class="first">WebMagic へのポート単位の接続許可のチェック(半角数字)。
+「1」 が ON, 「0」 が OFF</p>
+<p class="last">例) 通常(ON), 通常 SSL(OFF), 携帯(ON), 携帯 SSL(ON) を「1:0:1:1」のように指定</p>
+</td>
+</tr>
+<tr class="row-even"><td>perms</td>
+<td>管理者権限</td>
+<td>WebMagic の管理者を指定する(半角英字)。
+管理権限を与える場合は「admin」と指定</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="section" id="id10">
