@@ -33,11 +33,8 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
           <a href="schedule.html" title="4. スケジュール"
-             accesskey="N">next</a> |</li>
+             accesskey="N">next</a></li>
         <li class="right" >
           <a href="address.html" title="2. アドレス帳"
              accesskey="P">previous</a> |</li>
@@ -62,7 +59,7 @@
 <ul>
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
-<li><p class="first">メッセージが表示されたら、 <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id38" id="id3">[1]</a></p>
+<li><p class="first">メッセージが表示されたら、 <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id37" id="id3">[1]</a></p>
 <p><img alt="profile_msg" src="../_images/mail_profile_msg.gif" /></p>
 </li>
 <li><p class="first">[アカウント] タブでまず「基本設定」を入力します。</p>
@@ -91,19 +88,66 @@
 <h4>3.1.2.1. メールが送信できない場合<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">「メールは受信できるが送信ができない」といった場合は、メールを送信する際にメールサーバ側で認証が必要とされている可能性があります。</div>
-<div class="line">その場合は「送信設定」の[送信方法 - POP before SMTP] または [SMTP 認証] を入力します。 <a class="footnote-reference" href="#id39" id="id7">[2]</a></div>
+<div class="line">その場合は「送信設定」の [送信方法] の変更、または認証の設定を行います。</div>
 </div>
 <p><img alt="profile_smtp" src="../_images/mail_profile_smtp.gif" /></p>
+<p><strong>メール送信方法の種類</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">送信方法</th>
+<th class="head">説明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>SMTP</td>
+<td>電子メールを送信するためのプロトコル</td>
+</tr>
+<tr class="row-odd"><td>SMTP over SSL</td>
+<td>電子メール送信時に、メールクライアントとサーバ間の通信を暗号化する方式</td>
+</tr>
+<tr class="row-even"><td>STARTTLS</td>
+<td>SMTP/POP3 で通信を開始し、通信途中で暗号化された状態に切り替える方式</td>
+</tr>
+</tbody>
+</table>
+<p><strong>メール認証方法の種類</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">認証方法</th>
+<th class="head">説明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>POP before SMTP</td>
+<td>電子メール送信前に、POP サーバに接続して認証を行う</td>
+</tr>
+<tr class="row-odd"><td>SMTP 認証(SMTP-AUTH)</td>
+<td>電子メール送信時に、SMTP サーバで認証を行う</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">メールアカウント設定情報については、メールサーバ管理者へご確認ください。</p>
 </div>
-<div class="section" id="id8">
-<h4>3.1.2.2. 他のメールソフトでも受信したい場合<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="id7">
+<h4>3.1.2.2. 他のメールソフトでも受信したい場合<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <p>メールの [詳細設定] をクリックし、他のメールソフトでも受信したい [プロファイル名] を選択して [サーバからメールを削除する] のチェックを外します。</p>
 <p><img alt="profile_maildel" src="../_images/mail_profile_maildel.gif" /></p>
 </div>
 </div>
 </div>
-<div class="section" id="id9">
-<h2>3.2. メールを送信する<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h2>3.2. メールを送信する<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <p>メールを新規に作成します。
 宛先は新規入力することも、アドレス帳にあらかじめ登録されている中から選択することもできます。
 複数の宛先に一度に送信することもできます。</p>
@@ -132,8 +176,8 @@
 <p><img alt="new_preview" src="../_images/mail_new_preview.gif" /></p>
 </li>
 </ul>
-<div class="section" id="id10">
-<h3>3.2.1. 部署のメンバー全員にメールを送信したい<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>3.2.1. 部署のメンバー全員にメールを送信したい<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">宛先を指定する際、部署で絞り込み、表示されたユーザー全員に送信できます。</div>
 <div class="line">全員にチェックを入れる場合、氏名の左側一番上のチェックボックスにチェックを入れると、表示されているユーザー全員一度にチェックをつけることができます。</div>
@@ -151,8 +195,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id11">
-<h2>3.3. メールを受信する<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h2>3.3. メールを受信する<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>メールを受信しましょう。メールを受信するには [メール受信] をクリックします。</p>
 <ul class="simple">
 <li>メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</li>
@@ -164,8 +208,8 @@
 <li>メールが受信されます。</li>
 <li>読みたいメールの [件名] をクリックします。</li>
 </ul>
-<div class="section" id="id12">
-<h3>3.3.1. 受信されたメールの状態<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h3>3.3.1. 受信されたメールの状態<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>受信したメールは、件名の左側にあるアイコンの状態で [未読/既読/添付] を確認することができます。</p>
 <blockquote>
 <div><div class="line-block">
@@ -175,15 +219,15 @@
 </div>
 </div></blockquote>
 </div>
-<div class="section" id="id13">
-<h3>3.3.2. ホーム画面からメールの新着を確認する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h3>3.3.2. ホーム画面からメールの新着を確認する<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>ホーム画面の「メールが○件届いています」という表示をクリックすると、新規に届いているメールを受信した状態でメール一覧画面が表示されます。</p>
 <p><img alt="home" src="../_images/mail_home.gif" /></p>
 </div>
-<div class="section" id="id14">
-<h3>3.3.3. メールの添付ファイルを開く<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h3>3.3.3. メールの添付ファイルを開く<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <p>メールの添付ファイルを確認しましょう。
-添付ファイルを開くことができるソフトが入っている場合、そのソフトが起動しファイルを開くことができます。 <a class="footnote-reference" href="#id40" id="id15">[3]</a></p>
+添付ファイルを開くことができるソフトが入っている場合、そのソフトが起動しファイルを開くことができます。 <a class="footnote-reference" href="#id38" id="id14">[2]</a></p>
 <ul>
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
@@ -195,8 +239,8 @@
 </ul>
 </div>
 </div>
-<div class="section" id="id16">
-<h2>3.4. メールに返信する<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h2>3.4. メールに返信する<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">送られてきたメールに返信しましょう。返信機能を使うと、宛先を改めて設定する必要がなく便利です。</div>
 <div class="line">メールが自分以外の複数人に送信されている場合、全員に返信することもできます。</div>
@@ -206,7 +250,7 @@
 </li>
 <li><p class="first">メールの「件名」をクリックし、メールを開きます。</p>
 </li>
-<li><p class="first"><strong>返信</strong> をクリックします。 <a class="footnote-reference" href="#id41" id="id17">[4]</a></p>
+<li><p class="first"><strong>返信</strong> をクリックします。 <a class="footnote-reference" href="#id39" id="id16">[3]</a></p>
 <p><img alt="return" src="../_images/mail_return.jpg" /></p>
 </li>
 <li><p class="first">[宛先] [件名] が自動的に入力されます。本文も引用符付きで引用されているので、引用された本文を編集します。</p>
@@ -216,8 +260,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id18">
-<h2>3.5. メールを転送する<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id17">
+<h2>3.5. メールを転送する<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
 <p>メールを第三者に転送しましょう。メールの内容を知っておいてほしいユーザーへメールの内容をそのまま送信することを「転送する」といいます。</p>
 <ul>
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
@@ -236,8 +280,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id19">
-<h2>3.6. 署名を設定する<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<h2>3.6. 署名を設定する<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <p>メールには文章の最後に署名を付ける場合があります。
 あらかじめ署名の設定をしておくと、メールを作成する際に自動的にメール本文に署名が入力されます。</p>
 <ul>
@@ -249,27 +293,27 @@
 <li><p class="first">「署名」をクリックし、署名を作るプロファイルを選択、[署名] と [署名編集] を入力して <strong>追加</strong> をクリックします。</p>
 <p><img alt="signature" src="../_images/mail_signature.gif" /></p>
 </li>
-<li><p class="first">追加された署名は <strong>▲</strong> <strong>▲</strong>  のボックスに表示されます。 <a class="footnote-reference" href="#id42" id="id20">[5]</a></p>
+<li><p class="first">追加された署名は <strong>▲</strong> <strong>▲</strong>  のボックスに表示されます。 <a class="footnote-reference" href="#id40" id="id19">[4]</a></p>
 <p><img alt="signature_add" src="../_images/mail_signature_add.gif" /></p>
 </li>
 <li><p class="first"><strong>戻る</strong> をクリックします。</p>
 </li>
 </ul>
-<div class="section" id="id21">
-<h3>3.6.1. 署名を複数設定する<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id20">
+<h3>3.6.1. 署名を複数設定する<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">署名を設定する画面で、「署名」と「署名の編集」を新しく入力し <strong>追加</strong> をクリックします。</div>
 <div class="line">追加された署名が <strong>▲</strong> <strong>▼</strong> のボックスに表示されます。</div>
 </div>
 <p><img alt="multi_signature" src="../_images/mail_multi_signature.gif" /></p>
 </div>
-<div class="section" id="id22">
-<h3>3.6.2. 「標準の署名」を使いたくない場合<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3>3.6.2. 「標準の署名」を使いたくない場合<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <p><strong>標準の署名</strong> に設定した署名を自動的にメール本文に入力したくない場合、署名を設定する画面で「署名なし」にチェックを入れます。</p>
 </div>
 </div>
-<div class="section" id="id23">
-<h2>3.7. メールを削除する<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id22">
+<h2>3.7. メールを削除する<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">読んだメール、不要なメールは積極的に削除しましょう。</div>
 <div class="line">受信メールは WebMagic サーバに溜まるので、削除しないとサーバを圧迫します。
@@ -285,14 +329,14 @@
 <li><p class="first">削除したメールは「ゴミ箱」へ移動します。</p>
 </li>
 </ul>
-<div class="section" id="id24">
-<h3>3.7.1. 削除したメールを元に戻す<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id23">
+<h3>3.7.1. 削除したメールを元に戻す<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <p>削除したメールはいったん「ゴミ箱」に移動するので、「ゴミ箱」を開いて元に戻したいメールをチェックします。移動先フォルダの「受信箱」を選択し、 <strong>移動</strong> をクリックすると元の「受信箱」に戻すことができます。</p>
 <blockquote>
 <div><img alt="trash_move" src="../_images/mail_trash_move.png" /></div></blockquote>
 </div>
-<div class="section" id="id25">
-<h3>3.7.2. メールを完全に削除する<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id24">
+<h3>3.7.2. メールを完全に削除する<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">ゴミ箱からメールを削除すると、メールは完全に削除されます。</div>
 <div class="line">「ゴミ箱」を開き、メールにチェックを入れ <strong>削除</strong> をクリックします。</div>
@@ -300,8 +344,8 @@
 <blockquote>
 <div><img alt="trash_delete" src="../_images/mail_trash_delete.png" /></div></blockquote>
 </div>
-<div class="section" id="id26">
-<h3>3.7.3. ゴミ箱を一度に空にする<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id25">
+<h3>3.7.3. ゴミ箱を一度に空にする<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
 <p>ゴミ箱内のすべてのメールを削除する場合は一番上のチェックを入れるか、 <strong>ゴミ箱を空にする</strong> をクリックします。</p>
 <blockquote>
 <div><img alt="trash_all" src="../_images/mail_trash_all.png" /></div></blockquote>
@@ -311,8 +355,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id27">
-<h2>3.8. メールを移動する<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id26">
+<h2>3.8. メールを移動する<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
 <p>既存フォルダや新規に作成したフォルダにメールを移動できます。</p>
 <ul>
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
@@ -324,8 +368,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id28">
-<h2>3.9. メールを検索する<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id27">
+<h2>3.9. メールを検索する<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
 <p>検索文字列を元にメールが検索でき、表示されたメールの削除・移動ができます。</p>
 <ul>
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
@@ -333,13 +377,13 @@
 <li><p class="first">メール一覧画面の [検索] をクリックします。</p>
 <p><img alt="list_search" src="../_images/mail_list_search.png" /></p>
 </li>
-<li><p class="first">検索条件を入力し <strong>検索</strong> をクリックすると、検索結果が表示されます。 <a class="footnote-reference" href="#id43" id="id29">[6]</a> <a class="footnote-reference" href="#id44" id="id30">[7]</a></p>
+<li><p class="first">検索条件を入力し <strong>検索</strong> をクリックすると、検索結果が表示されます。 <a class="footnote-reference" href="#id41" id="id28">[5]</a> <a class="footnote-reference" href="#id42" id="id29">[6]</a></p>
 <p><img alt="search_result" src="../_images/mail_search_result.png" /></p>
 </li>
 </ul>
 </div>
-<div class="section" id="id31">
-<h2>3.10. 自動振り分けを設定する<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id30">
+<h2>3.10. 自動振り分けを設定する<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
 <p>社外からのメールを「社外」フォルダに振り分けたり、件名が「議事録〜」のメールを「議事録集」フォルダに振り分けたりすることもできます。初めに設定しておけば、着信時に自動的に振り分けられます。</p>
 <ul>
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
@@ -365,7 +409,7 @@
 <div class="line">To           : To で宛先指定されたユーザーのメールアドレスに含まれる文字列</div>
 <div class="line">Cc           : Cc で宛先指定されたユーザーのメールアドレスに含まれる文字列</div>
 <div class="line">Subject      : メールの「件名」に含まれる文字列</div>
-<div class="line">Organization : メールソフトの「組織・団体」で設定されている文字列 <a class="footnote-reference" href="#id45" id="id32">[8]</a></div>
+<div class="line">Organization : メールソフトの「組織・団体」で設定されている文字列 <a class="footnote-reference" href="#id43" id="id31">[7]</a></div>
 </div>
 </div>
 </div>
@@ -380,9 +424,9 @@
 <p class="last"><img alt="draft_rank" src="../_images/mail_draft_rank.png" /></p>
 </div>
 </div>
-<div class="section" id="id33">
-<h2>3.11. 振り分けを手動で実行する<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
-<p>現在の受信箱に追加した振り分け条件を反映させたい場合は [振り分け適用] をクリックすると任意のタイミングで振り分けることができます。 <a class="footnote-reference" href="#id46" id="id34">[9]</a></p>
+<div class="section" id="id32">
+<h2>3.11. 振り分けを手動で実行する<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+<p>現在の受信箱に追加した振り分け条件を反映させたい場合は [振り分け適用] をクリックすると任意のタイミングで振り分けることができます。 <a class="footnote-reference" href="#id44" id="id33">[8]</a></p>
 <blockquote>
 <div><img alt="list_draft" src="../_images/mail_list_draft.png" /></div></blockquote>
 <div class="admonition note">
@@ -396,8 +440,8 @@
 <p class="last"><img alt="list_folder" src="../_images/mail_list_folder.png" /></p>
 </div>
 </div>
-<div class="section" id="id35">
-<h2>3.12. メールをエクスポートする<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id34">
+<h2>3.12. メールをエクスポートする<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
 <p>受信したメールや送信済みのメールを eml 形式でエクスポートすることができます。</p>
 <ul>
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
@@ -413,8 +457,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id36">
-<h2>3.13. メールをインポートする<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id35">
+<h2>3.13. メールをインポートする<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">eml 形式のメールを取り込むことができます。</div>
 <div class="line">例えば、他のメーラーでエクスポートした eml 形式のメールを WebMagic へ取り込んで参照することができます。</div>
@@ -436,8 +480,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id37">
-<h2>3.14. メールヘッダを確認する<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id36">
+<h2>3.14. メールヘッダを確認する<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">メールヘッダには送信から受信するまでの情報が記載されています。</div>
 <div class="line">メールヘッダを確認する必要性が発生した場合、次の操作を行います。</div>
@@ -453,58 +497,52 @@
 </ul>
 <hr class="docutils" />
 <p class="rubric">脚注</p>
-<table class="docutils footnote" frame="void" id="id38" rules="none">
+<table class="docutils footnote" frame="void" id="id37" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>初めてメールアカウントを設定する場合にのみ必要な操作です。次回からはメール受信画面の [詳細設定] より行います。</td></tr>
 </tbody>
 </table>
+<table class="docutils footnote" frame="void" id="id38" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id14">[2]</a></td><td>ファイルを読み込むことができない場合は、ファイルを一旦 PC に保存する必要があります。保存したファイルは、ソフトが入っている PC で開きましょう。</td></tr>
+</tbody>
+</table>
 <table class="docutils footnote" frame="void" id="id39" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id7">[2]</a></td><td>設定内容をネットワーク管理者にご確認ください。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id16">[3]</a></td><td>同送されている全員に返信したい場合、 [全員に返信] をクリックします。</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="id40" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id15">[3]</a></td><td>ファイルを読み込むことができない場合は、ファイルを一旦 PC に保存する必要があります。保存したファイルは、ソフトが入っている PC で開きましょう。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id19">[4]</a></td><td>署名のうち標準で使用する署名を選択し、 <strong>規定の設定</strong> をクリックします。</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="id41" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id17">[4]</a></td><td>同送されている全員に返信したい場合、 [全員に返信] をクリックします。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id28">[5]</a></td><td>検索したメールは 「3.8. メールを削除する」 のように、削除できます。</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="id42" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id20">[5]</a></td><td>署名のうち標準で使用する署名を選択し、 <strong>規定の設定</strong> をクリックします。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id29">[6]</a></td><td>検索したメールは 「3.9. メールを移動する」 のように、移動できます。</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="id43" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id29">[6]</a></td><td>検索したメールは 「3.8. メールを削除する」 のように、削除できます。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id31">[7]</a></td><td>Organization の情報が含まれているメールに限り有効。</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="id44" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id30">[7]</a></td><td>検索したメールは 「3.9. メールを移動する」 のように、移動できます。</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id45" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id32">[8]</a></td><td>Organization の情報が含まれているメールに限り有効。</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id46" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id34">[9]</a></td><td>振り分けを行えるのは [受信箱] にあるメールのみです。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id33">[8]</a></td><td>振り分けを行えるのは [受信箱] にあるメールのみです。</td></tr>
 </tbody>
 </table>
 </div>
@@ -523,44 +561,44 @@
 <li><a class="reference internal" href="#id4">3.1.1. メールのアカウントを変更する</a></li>
 <li><a class="reference internal" href="#id5">3.1.2. メールのアカウントを削除する</a><ul>
 <li><a class="reference internal" href="#id6">3.1.2.1. メールが送信できない場合</a></li>
-<li><a class="reference internal" href="#id8">3.1.2.2. 他のメールソフトでも受信したい場合</a></li>
+<li><a class="reference internal" href="#id7">3.1.2.2. 他のメールソフトでも受信したい場合</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id9">3.2. メールを送信する</a><ul>
-<li><a class="reference internal" href="#id10">3.2.1. 部署のメンバー全員にメールを送信したい</a><ul>
+<li><a class="reference internal" href="#id8">3.2. メールを送信する</a><ul>
+<li><a class="reference internal" href="#id9">3.2.1. 部署のメンバー全員にメールを送信したい</a><ul>
 <li><a class="reference internal" href="#cc-bcc">3.2.1.1. CC, BCC とは？</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id11">3.3. メールを受信する</a><ul>
-<li><a class="reference internal" href="#id12">3.3.1. 受信されたメールの状態</a></li>
-<li><a class="reference internal" href="#id13">3.3.2. ホーム画面からメールの新着を確認する</a></li>
-<li><a class="reference internal" href="#id14">3.3.3. メールの添付ファイルを開く</a></li>
+<li><a class="reference internal" href="#id10">3.3. メールを受信する</a><ul>
+<li><a class="reference internal" href="#id11">3.3.1. 受信されたメールの状態</a></li>
+<li><a class="reference internal" href="#id12">3.3.2. ホーム画面からメールの新着を確認する</a></li>
+<li><a class="reference internal" href="#id13">3.3.3. メールの添付ファイルを開く</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id16">3.4. メールに返信する</a></li>
-<li><a class="reference internal" href="#id18">3.5. メールを転送する</a></li>
-<li><a class="reference internal" href="#id19">3.6. 署名を設定する</a><ul>
-<li><a class="reference internal" href="#id21">3.6.1. 署名を複数設定する</a></li>
-<li><a class="reference internal" href="#id22">3.6.2. 「標準の署名」を使いたくない場合</a></li>
+<li><a class="reference internal" href="#id15">3.4. メールに返信する</a></li>
+<li><a class="reference internal" href="#id17">3.5. メールを転送する</a></li>
+<li><a class="reference internal" href="#id18">3.6. 署名を設定する</a><ul>
+<li><a class="reference internal" href="#id20">3.6.1. 署名を複数設定する</a></li>
+<li><a class="reference internal" href="#id21">3.6.2. 「標準の署名」を使いたくない場合</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id23">3.7. メールを削除する</a><ul>
-<li><a class="reference internal" href="#id24">3.7.1. 削除したメールを元に戻す</a></li>
-<li><a class="reference internal" href="#id25">3.7.2. メールを完全に削除する</a></li>
-<li><a class="reference internal" href="#id26">3.7.3. ゴミ箱を一度に空にする</a></li>
+<li><a class="reference internal" href="#id22">3.7. メールを削除する</a><ul>
+<li><a class="reference internal" href="#id23">3.7.1. 削除したメールを元に戻す</a></li>
+<li><a class="reference internal" href="#id24">3.7.2. メールを完全に削除する</a></li>
+<li><a class="reference internal" href="#id25">3.7.3. ゴミ箱を一度に空にする</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id27">3.8. メールを移動する</a></li>
-<li><a class="reference internal" href="#id28">3.9. メールを検索する</a></li>
-<li><a class="reference internal" href="#id31">3.10. 自動振り分けを設定する</a></li>
-<li><a class="reference internal" href="#id33">3.11. 振り分けを手動で実行する</a></li>
-<li><a class="reference internal" href="#id35">3.12. メールをエクスポートする</a></li>
-<li><a class="reference internal" href="#id36">3.13. メールをインポートする</a></li>
-<li><a class="reference internal" href="#id37">3.14. メールヘッダを確認する</a></li>
+<li><a class="reference internal" href="#id26">3.8. メールを移動する</a></li>
+<li><a class="reference internal" href="#id27">3.9. メールを検索する</a></li>
+<li><a class="reference internal" href="#id30">3.10. 自動振り分けを設定する</a></li>
+<li><a class="reference internal" href="#id32">3.11. 振り分けを手動で実行する</a></li>
+<li><a class="reference internal" href="#id34">3.12. メールをエクスポートする</a></li>
+<li><a class="reference internal" href="#id35">3.13. メールをインポートする</a></li>
+<li><a class="reference internal" href="#id36">3.14. メールヘッダを確認する</a></li>
 </ul>
 </li>
 </ul>
@@ -571,11 +609,6 @@
   <h4>Next topic</h4>
   <p class="topless"><a href="schedule.html"
                         title="next chapter">4. スケジュール</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/common/mail.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
@@ -597,11 +630,8 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
           <a href="schedule.html" title="4. スケジュール"
-             >next</a> |</li>
+             >next</a></li>
         <li class="right" >
           <a href="address.html" title="2. アドレス帳"
              >previous</a> |</li>
