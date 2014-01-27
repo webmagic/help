@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>21. メール通知設定 &mdash; WebMagic  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="WebMagic  documentation" href="../index.html" />
+    <link rel="up" title="1. 設定画面(管理者)" href="index.html" />
+    <link rel="next" title="22. 契約関連" href="asp_contract_history.html" />
+    <link rel="prev" title="20. 来客" href="visitor_control.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="asp_contract_history.html" title="22. 契約関連"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="visitor_control.html" title="20. 来客"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>21. メール通知設定<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">メニューの <strong>「スケジュール」「ToDo」「来客」</strong> で使用できるアラーム通知（アラームメール）の有効・無効、有効の場合に使われるメールアカウントの設定を行います。</div>
+<div class="line">アラーム通知機能とは、「当該予定時刻になると自動的にメールで通知すること」です。</div>
+<div class="line">アラーム通知機能を <strong>有効</strong> とする場合は、[メール通知用アカウント] を設定してください。</div>
+</div>
+<div class="section" id="id2">
+<h2>21.1. アラーム通知機能を「有効」にする<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="alarm_config_image" src="../_images/alarm_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">アラーム通知機能を <strong>有効にする</strong> を選択します。</p>
+<p><img alt="alarm_on" src="../_images/alarm_config_on.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>21.2. アラーム通知を[有効]とした場合、アラームメールの差出人を設定する<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">「アカウント設定」を入力します。 <a class="footnote-reference" href="#id8" id="id4">[1]</a> <a class="footnote-reference" href="#id9" id="id5">[2]</a></p>
+<p><img alt="alarm_account" src="../_images/alarm_config_account.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>21.3. アラーム通知ができない場合<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">「アラームメールが送信されない」といった場合は、メールを送信する際にメールサーバ側で認証が必要とされている可能性があります。</div>
+<div class="line">その場合は、「認証方式」の <strong>SMTP 認証</strong> または <strong>POP before SMTP</strong> にチェックをつけます。 <a class="footnote-reference" href="#id9" id="id7">[2]</a></div>
+<div class="line">チェックをつけると各項目が入力できるようになります。</div>
+</div>
+<blockquote>
+<div><img alt="alarm_certify" src="../_images/alarm_config_certify.png" /></div></blockquote>
+<hr class="docutils" />
+<p class="rubric">脚注</p>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[1]</a></td><td>アラーム通知が <strong>無効</strong> の場合は入力できません。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[2]</td><td><em>(<a class="fn-backref" href="#id5">1</a>, <a class="fn-backref" href="#id7">2</a>)</em> 設定については、メールサーバ管理者または御社 WebMagic ご担当者様までお問い合わせください。</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">21. メール通知設定</a><ul>
+<li><a class="reference internal" href="#id2">21.1. アラーム通知機能を「有効」にする</a></li>
+<li><a class="reference internal" href="#id3">21.2. アラーム通知を[有効]とした場合、アラームメールの差出人を設定する</a></li>
+<li><a class="reference internal" href="#id6">21.3. アラーム通知ができない場合</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="visitor_control.html"
+                        title="previous chapter">20. 来客</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="asp_contract_history.html"
+                        title="next chapter">22. 契約関連</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="asp_contract_history.html" title="22. 契約関連"
+             >next</a></li>
+        <li class="right" >
+          <a href="visitor_control.html" title="20. 来客"
+             >previous</a> |</li>
+        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li>
+          <li><a href="index.html" >1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, WebMagic Development Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

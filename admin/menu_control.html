@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>17. メニュー &mdash; WebMagic  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="WebMagic  documentation" href="../index.html" />
+    <link rel="up" title="1. 設定画面(管理者)" href="index.html" />
+    <link rel="next" title="18. アクセスログ" href="access_log_control.html" />
+    <link rel="prev" title="16. メール" href="mail_default_control.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="access_log_control.html" title="18. アクセスログ"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="mail_default_control.html" title="16. メール"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>17. メニュー<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">メニューでは、標準で搭載されている WebMagic の機能の中から「使う機能のみ画面上に表示させるようにする」といった、メニューの公開・非公開の設定と、メニュー表示順序の変更、他のWebシステムをメニューとして登録といったことができます。</div>
+<div class="line">追加登録したメニューは、簡易シングルサインオン(※2)に対応しています。</div>
+</div>
+<div class="line-block">
+<div class="line">またメニューではアクセス権設定ができ、例えば「掲示板とスケジュールのみ使用可能な臨時職員用のメニュー」といった設定が、アクセス制限をかけることで実現できます。</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">POSTやGETを利用した方式でシングルサインオンの受け口が用意されているWebシステムに限ります。</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">初期値として登録されているシステムメニューは削除することが出来ません。</p>
+</div>
+<div class="section" id="id2">
+<h2>17.1. メニューを公開にする<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">公開したいメニューにチェックを付けます。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされたメニューを公開にする</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_public" src="../_images/menu_control_public.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>17.2. メニューを非公開にする<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">非公開したいメニューにチェックを付けます。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>チェックされたメニューを非公開にする</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_private" src="../_images/menu_control_private.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>17.3. メニューを並び替える<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">表示する順番を変更したいメニューを選択し、ドラッグアンドドロップで移動します。</p>
+</li>
+<li><p class="first">「実行ボタンで並び替えを反映させてください。」のメッセージが表示され、プルダウンメニューが <strong>メニューの並び替えを反映される</strong> に変更されますので、そのまま <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_sort" src="../_images/menu_control_sort.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>17.4. メニューを新規登録する<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>メニューの新規登録を行う</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_new" src="../_images/menu_control_new.png" /></p>
+</li>
+<li><p class="first">「基本設定」 の各項目を入力し、 <strong>OK</strong> をクリックします。</p>
+<p><img alt="menu_add" src="../_images/menu_control_add.png" /></p>
+</li>
+<li><p class="first">シングルサインオンの設定も行う場合は [シングルサインオン設定] の各項目を入力します。 <a class="footnote-reference" href="#id10" id="id6">[1]</a></p>
+</li>
+<li><p class="first"><strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">メニュー名は必須入力項目です。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">ログインID、パスワード以外の値が必要な場合はオプション値に入力してください。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>17.5. メニューを修正する<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいメニューのメニュー名をクリックします。</p>
+<p><img alt="menu_fix" src="../_images/menu_control_fix.png" /></p>
+</li>
+<li><p class="first">項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>17.6. メニューを削除する<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいメニューにチェックを付けます。</p>
+</li>
+<li><p class="first"><strong>チェックされたメニューを削除する</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="menu_delete" src="../_images/menu_control_delete.png" /></p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">初期値として登録されているシステムメニューは削除することが出来ません。</p>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>17.7. メニューアクセス権の設定をする<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="menu_control_image" src="../_images/menu_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[アクセス権設定] タブをクリックします。</p>
+</li>
+<li><p class="first">左側のツリーからアクセス権を割り当てたいメニューをクリックします。</p>
+<p><img alt="menu_tree" src="../_images/menu_control_tree.png" /></p>
+</li>
+<li><p class="first">「所属一覧」 からアクセス権を割り当てたい所属を選び、 <strong>追加→</strong>  をクリックします。</p>
+<p><img alt="menu_department_add" src="../_images/menu_control_dept_add.png" /></p>
+</li>
+<li><p class="first">「所属アクセス一覧」 へ追加した所属を選択、プルダウンメニューから権限を選択します。</p>
+<p><img alt="menu_authority_select" src="../_images/menu_control_auth_select.png" /></p>
+</li>
+<li><p class="first"><strong>修正</strong> をクリックし、 <strong>適用</strong> をクリックします。</p>
+<p><img alt="menu_authority_add" src="../_images/menu_control_auth_add.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">個人へのアクセス権設定も所属と同様の操作で <strong>追加・削除</strong> を行います。</p>
+</div>
+<hr class="docutils" />
+<p class="rubric">脚注</p>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[1]</a></td><td>POST や GET を利用した方式でシングルサインオンの受け口が用意されている Web システムに限ります。</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">17. メニュー</a><ul>
+<li><a class="reference internal" href="#id2">17.1. メニューを公開にする</a></li>
+<li><a class="reference internal" href="#id3">17.2. メニューを非公開にする</a></li>
+<li><a class="reference internal" href="#id4">17.3. メニューを並び替える</a></li>
+<li><a class="reference internal" href="#id5">17.4. メニューを新規登録する</a></li>
+<li><a class="reference internal" href="#id7">17.5. メニューを修正する</a></li>
+<li><a class="reference internal" href="#id8">17.6. メニューを削除する</a></li>
+<li><a class="reference internal" href="#id9">17.7. メニューアクセス権の設定をする</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="mail_default_control.html"
+                        title="previous chapter">16. メール</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="access_log_control.html"
+                        title="next chapter">18. アクセスログ</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="access_log_control.html" title="18. アクセスログ"
+             >next</a></li>
+        <li class="right" >
+          <a href="mail_default_control.html" title="16. メール"
+             >previous</a> |</li>
+        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li>
+          <li><a href="index.html" >1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, WebMagic Development Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

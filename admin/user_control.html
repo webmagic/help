@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. ユーザー &mdash; WebMagic  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="WebMagic  documentation" href="../index.html" />
+    <link rel="up" title="1. 設定画面(管理者)" href="index.html" />
+    <link rel="next" title="2. 所属" href="department_control.html" />
+    <link rel="prev" title="1. 設定画面(管理者)" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="department_control.html" title="2. 所属"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="index.html" title="1. 設定画面(管理者)"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>1. ユーザー<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>WebMagic を使用するユーザーの登録・削除・修正を行えます。 CSV ファイルからのインポート・エクスポートも対応しています。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">ユーザーの登録を実行する前に、メニューの 「所属」と 「役職」を先に設定しておきましょう。</p>
+</div>
+<div class="section" id="id2">
+<h2>1.1. ユーザーを登録する<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規登録</strong> をクリックします。</p>
+<p><img alt="user_new" src="../_images/user_control_new.png" /></p>
+</li>
+<li><p class="first">各項目を入力・選択し、 <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id9" id="id3">[1]</a></p>
+<p><img alt="user_add" src="../_images/user_control_add.png" /></p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line">「所属」は複数設定できます。その際メインとなる方を選択し、 <strong>Primary 設定</strong> をクリックします。</div>
+<div class="line">「メール通知」では、次の場合に通知するメールアドレスを設定します。</div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="78%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>伝言</td>
+<td>行先伝言板で自分宛に伝言が書き込まれた場合</td>
+</tr>
+<tr class="row-even"><td>スケジュール</td>
+<td>他の人が自分のスケジュールを登録した場合</td>
+</tr>
+<tr class="row-odd"><td>ワークフロー</td>
+<td>自分が閲覧すべきワークフローがある場合</td>
+</tr>
+</tbody>
+</table>
+<p>「接続方法」では、接続方法によりチェックを付加します。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>通常</td>
+<td><a class="reference external" href="http://***.***">http://***.***</a> と入力し接続する場合</td>
+</tr>
+<tr class="row-even"><td>SSL</td>
+<td><a class="reference external" href="https://***.***">https://***.***</a> と入力し接続する場合</td>
+</tr>
+<tr class="row-odd"><td>携帯</td>
+<td><a class="reference external" href="http://***.***/m/">http://***.***/m/</a> と携帯電話 (i-mode,EZweb) 端末から接続する場合</td>
+</tr>
+<tr class="row-even"><td>携帯SSL</td>
+<td><a class="reference external" href="https://***.***/m/">https://***.***/m/</a> と携帯電話 (i-mode,EZweb) 端末から接続する場合</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">携帯での接続は、オプションの i-mode 対応または EZweb 対応を購入している場合です。</p>
+</div>
+<p>「ユーザ写真」では、ユーザーの写真が <strong>3枚</strong> まで登録できます。 <a class="footnote-reference" href="#id10" id="id4">[2]</a></p>
+</div>
+<div class="section" id="id5">
+<h2>1.2. ユーザーを修正する<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">修正したいユーザーの <strong>修正</strong> をクリックします。</p>
+<p><img alt="user_fix" src="../_images/user_control_fix.png" /></p>
+</li>
+<li><p class="first">各項目を修正し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>1.3. ユーザーを削除する<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したいユーザーの <strong>削除</strong> をクリックします。</p>
+<p><img alt="user_delete" src="../_images/user_control_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>1.4. ユーザーをインポートする<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>ユーザーを CSV ファイルに書き出すことができます。</p>
+<ul class="simple">
+<li>メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</li>
+<li><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</li>
+<li><strong>参照</strong> をクリックし、取り込む CSV ファイルを選択します。</li>
+</ul>
+<blockquote>
+<div><img alt="file_reference" src="../_images/user_control_file_reference.png" /></div></blockquote>
+<ul>
+<li><p class="first">プルダウンメニューから <strong>インポート</strong> を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="user_import" src="../_images/user_control_import.png" /></p>
+</li>
+<li><p class="first">インポート完了のメッセージが表示されます。プルダウンメニューから <strong>結果参照</strong> を選択して <strong>実行</strong> をクリックします。</p>
+<p><img alt="import_result" src="../_images/user_control_import_result.png" /></p>
+</li>
+<li><p class="first">インポートされた結果が別ウィンドウで表示されます。</p>
+<p><img alt="import_result_reference" src="../_images/user_control_import_result_reference.png" /></p>
+</li>
+</ul>
+<p><strong>&lt;説明&gt;</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>チェック</td>
+<td>インポートするために、CSVファイルの内容をチェックします。</td>
+</tr>
+<tr class="row-even"><td>結果参照</td>
+<td>チェック・インポート・エクスポートの処理結果を表示します。</td>
+</tr>
+<tr class="row-odd"><td>インポート</td>
+<td>CSVファイルからデータを取り込みます。</td>
+</tr>
+<tr class="row-even"><td>エクスポート</td>
+<td>登録したデータをCSVファイルに書き出します。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h2>1.5. ユーザーをエクスポートする<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>表計算ソフト等で編集した CSV ファイルを取り込むことができます。</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><img alt="user_control_image" src="../_images/user_control_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューから <strong>エクスポート</strong> を選択して <strong>実行</strong> をクリックします。</p>
+<p><img alt="user_export" src="../_images/user_control_export.png" /></p>
+</li>
+<li><p class="first">ダイアログが表示されるので、 <strong>保存</strong> をクリックし保存したい場所を選択します。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="csv">
+<h2>1.6. CSV ファイルの書き方<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h2>
+<p>CSV ファイルを記載する場合は、一度エクスポートを実行した CSV ファイル(export.csv) をご参照ください。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="14%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">インポートに必要なヘッダーの説明</th>
+<th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>operation</td>
+<td>操作</td>
+<td><ul class="first simple">
+<li>insert ・・・ ユーザを新規登録する場合</li>
+<li>update ・・・ ユーザの登録内容を変更する場合</li>
+<li>delete ・・・ ユーザを削除する場合</li>
+</ul>
+<p class="last">のいずれかを指定(半角英字)</p>
+</td>
+</tr>
+<tr class="row-odd"><td>username</td>
+<td>ログイン ID</td>
+<td><p class="first">WebMagic にログインするときの ID</p>
+<p class="last">文字数は <strong>15文字</strong> まで。
+利用可能文字は <strong>半角英数字(a-z A-Z 0-9), アンダースコア(_), ハイフン(-)</strong></p>
+</td>
+</tr>
+<tr class="row-even"><td>password</td>
+<td>パスワード</td>
+<td><p class="first">エクスポート時に作成される <strong>export.csv</strong> にはこの列は含まれない(セキュリティのため)</p>
+<p class="last">文字数は <strong>無制限</strong> 。
+利用可能文字は <strong>半角英数字(a-z A-Z 0-9), アンダースコア(_), ハイフン(-)</strong></p>
+</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>氏名</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>kana</td>
+<td>フリガナ</td>
+<td>全角カタカナ</td>
+</tr>
+<tr class="row-odd"><td>roma</td>
+<td>ローマ字</td>
+<td>半角英字</td>
+</tr>
+<tr class="row-even"><td>emp_code</td>
+<td>社員 ID</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>post</td>
+<td>役職名</td>
+<td><p class="first">役職設定で設定した役職名。
+複数ある場合は 「:」 で分割</p>
+<p class="last">例) 役職が「部長」と「課長」の場合, 「部長:課長」と指定</p>
+</td>
+</tr>
+<tr class="row-even"><td>extension</td>
+<td>内線番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>portable_phone</td>
+<td>携帯番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>e_mail</td>
+<td>E-mail アドレス</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>contact_email</td>
+<td>メール通知アドレス</td>
+<td>伝言などで通知するアドレス</td>
+</tr>
+<tr class="row-even"><td>contact_email_flg</td>
+<td>メール通知フラグ</td>
+<td><p class="first">メール通知を行うか否かのチェック(半角数字)。
+「1」 が ON, 「0」 が OFF</p>
+<p class="last">例) 伝言(ON), スケジュール(OFF), ワークフロー(OFF)を「1:0:0」のように指定</p>
+</td>
+</tr>
+<tr class="row-odd"><td>group</td>
+<td>所属コード</td>
+<td><p class="first">所属設定で設定したコード(半角数字)
+複数ある場合は 「:」 で分割</p>
+<p class="last">例) 所属が総務部「100」と 管理部「200」の場合, 「100:200」と指定</p>
+</td>
+</tr>
+<tr class="row-even"><td>home_address</td>
+<td>自宅住所</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>home_tel</td>
+<td>自宅 TEL 番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>home_fax</td>
+<td>自宅 FAX 番号</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>conn_method</td>
+<td>接続方法フラグ</td>
+<td><p class="first">WebMagic へのポート単位の接続許可のチェック(半角数字)。
+「1」 が ON, 「0」 が OFF</p>
+<p class="last">例) 通常(ON), 通常 SSL(OFF), 携帯(ON), 携帯 SSL(ON) を「1:0:1:1」のように指定</p>
+</td>
+</tr>
+<tr class="row-even"><td>perms</td>
+<td>管理者権限</td>
+<td>WebMagic の管理者を指定する(半角英字)。
+管理権限を与える場合は「admin」と指定</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p class="rubric">脚注</p>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>パスワードはセキュリティのため ●●● と表示されます。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>[プライマリ写真] に設定した写真がアドレス帳のユーザー名簿に表示されます。</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. ユーザー</a><ul>
+<li><a class="reference internal" href="#id2">1.1. ユーザーを登録する</a></li>
+<li><a class="reference internal" href="#id5">1.2. ユーザーを修正する</a></li>
+<li><a class="reference internal" href="#id6">1.3. ユーザーを削除する</a></li>
+<li><a class="reference internal" href="#id7">1.4. ユーザーをインポートする</a></li>
+<li><a class="reference internal" href="#id8">1.5. ユーザーをエクスポートする</a></li>
+<li><a class="reference internal" href="#csv">1.6. CSV ファイルの書き方</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">1. 設定画面(管理者)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="department_control.html"
+                        title="next chapter">2. 所属</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="department_control.html" title="2. 所属"
+             >next</a></li>
+        <li class="right" >
+          <a href="index.html" title="1. 設定画面(管理者)"
+             >previous</a> |</li>
+        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li>
+          <li><a href="index.html" >1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, WebMagic Development Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>
