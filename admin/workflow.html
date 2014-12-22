@@ -1,0 +1,260 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>9. ワークフロー &mdash; WebMagic v4.3.3 documentation</title>
+    <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '4.3.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="WebMagic v4.3.3 documentation" href="../index.html" />
+    <link rel="up" title="1. 設定画面(管理者)" href="index.html" />
+    <link rel="next" title="10. URL リンク" href="link_category_control.html" />
+    <link rel="prev" title="8. 行事予定" href="event_auth_control.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="link_category_control.html" title="10. URL リンク"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="event_auth_control.html" title="8. 行事予定"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.3.3 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>9. ワークフロー<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">ここでは、ワークフローで文書を申請・回覧する時に使用する経路と文書を登録することができます。</div>
+<div class="line">登録した雛形は <strong>共有雛形</strong> として、全ユーザで共有できます。</div>
+<div class="line"><br /></div>
+<div class="line">また、経路に含まれるユーザへのメール通知等の初期値設定ができます。</div>
+</div>
+<div class="section" id="id2">
+<h2>9.1. 雛形申請経路<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>共有したい申請ルートをあらかじめ登録しておきましょう。</p>
+<div class="section" id="id3">
+<h3>9.1.1. 共有雛形の経路を登録する<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ワークフロー <img alt="workflow_config_image" src="../_images/workflow_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">プルダウンメニューより [雛形申請経路の新規登録を行う] を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="route_template_register" src="../_images/route_template_register.png" /></p>
+</li>
+<li><p class="first">「雛形申請経路名」を入力します。</p>
+</li>
+<li><p class="first">次に「申請経路」を設定します。[ユーザ一覧] から経路に追加したいユーザを選択☑ し、 <strong>経路に追加</strong> をクリックします。</p>
+<p><img alt="route_add" src="../_images/route_add.gif" /></p>
+</li>
+<li><p class="first">経路の順序を変更したい場合は、[経路一覧] のユーザを変更したい順序の [経路順序] へドラッグ &amp; ドロップします。</p>
+<p><img alt="route_rating" src="../_images/route_rating.gif" /></p>
+</li>
+<li><p class="first">入力が完了したら、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>[経路一覧] からユーザを削除したい、または余分な経路枠を削除したい場合は、項目を選択☑ し <strong>チェックした項目を削除</strong> をクリックします</p>
+<p class="last"><img alt="route_delete" src="../_images/route_delete.png" /></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>経路枠を追加したい場合は <strong>経路枠を追加</strong> をクリックします</p>
+<p class="last"><img alt="route_frame" src="../_images/route_frame.gif" /></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>回覧の経路にする場合は、「回覧にする」を選択☑ します</p>
+<p class="last"><img alt="route_circulation" src="../_images/route_circulation.png" /></p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>9.1.2. 雛形の並び順を変更する<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ワークフロー <img alt="workflow_config_image" src="../_images/workflow_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">経路の順序を変更したい場合は、並び変えたい箇所へドラッグ &amp; ドロップします。</p>
+<p><img alt="route_template_rating" src="../_images/route_template_rating.gif" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>9.1.3. 削除する<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ワークフロー <img alt="workflow_config_image" src="../_images/workflow_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい雛形を選択☑し <strong>チェックされた申請経路を削除する</strong> を選択し <strong>実行</strong> をクリックします。</p>
+<p><img alt="route_template_delete" src="../_images/route_template_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>9.2. 雛形文書<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>共有したい申請ルートをあらかじめ登録しておきましょう。</p>
+<div class="section" id="id7">
+<h3>9.2.1. 共有雛形の文書を登録する<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ワークフロー <img alt="workflow_config_image" src="../_images/workflow_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書] タブをクリックし、 プルダウンメニューより [雛形申請経路の新規登録を行う] を選択し、 <strong>実行</strong> をクリックします。</p>
+<p><img alt="workflow_template_register" src="../_images/workflow_template_register.png" /></p>
+</li>
+<li><p class="first">「タイトル」に文書のタイトルを、「雛形文書」に本文となる文章を入力して <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>9.2.2. 雛形の並び順を変更する<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ワークフロー <img alt="workflow_config_image" src="../_images/workflow_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[雛形文書] タブをクリックし、 雛形文書の順序を変更したい場合は、並び変えたい箇所へドラッグ &amp; ドロップします。</p>
+<p><img alt="workflow_template_rating" src="../_images/workflow_template_rating.gif" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>9.2.3. 削除する<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ワークフロー <img alt="workflow_config_image" src="../_images/workflow_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい雛形を選択☑し [チェックされた雛形を削除する] を選択し <strong>実行</strong> をクリックします。</p>
+<p><img alt="workflow_template_delete" src="../_images/workflow_template_delete.png" /></p>
+</li>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>9.3. 初期値設定<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>ワークフローに関する初期値を設定する</p>
+<ul>
+<li><p class="first">メニューの <img alt="config_image" src="../_images/config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">ワークフロー <img alt="workflow_config_image" src="../_images/workflow_config_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">[初期値設定] タブをクリックし、「決裁後のメール通知」「未読・既読の状態表示」の設定値をそれぞれ選択します。</p>
+<p><img alt="workflow_default" src="../_images/workflow_default.png" /></p>
+</li>
+<li><p class="first"><strong>適用</strong> をクリックします。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>「決裁後のメール通知」を <strong>する</strong> に設定すると、ワークフローが届いたらその旨をメールで通知します。</li>
+<li>「未読・既読の状態表示」は 経路にいるユーザが当該ワークフローを読んだかどうかの状態を、詳細画面で表示するかどうかの設定です。</li>
+<li>値を規定値に戻したい場合は、 <strong>規定値に戻す</strong> をクリックします。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">9. ワークフロー</a><ul>
+<li><a class="reference internal" href="#id2">9.1. 雛形申請経路</a><ul>
+<li><a class="reference internal" href="#id3">9.1.1. 共有雛形の経路を登録する</a></li>
+<li><a class="reference internal" href="#id4">9.1.2. 雛形の並び順を変更する</a></li>
+<li><a class="reference internal" href="#id5">9.1.3. 削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id6">9.2. 雛形文書</a><ul>
+<li><a class="reference internal" href="#id7">9.2.1. 共有雛形の文書を登録する</a></li>
+<li><a class="reference internal" href="#id8">9.2.2. 雛形の並び順を変更する</a></li>
+<li><a class="reference internal" href="#id9">9.2.3. 削除する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id10">9.3. 初期値設定</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="event_auth_control.html"
+                        title="previous chapter">8. 行事予定</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="link_category_control.html"
+                        title="next chapter">10. URL リンク</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="link_category_control.html" title="10. URL リンク"
+             >next</a></li>
+        <li class="right" >
+          <a href="event_auth_control.html" title="8. 行事予定"
+             >previous</a> |</li>
+        <li><a href="../index.html">WebMagic v4.3.3 documentation</a> &raquo;</li>
+          <li><a href="index.html" >1. 設定画面(管理者)</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, OCC Corporation..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.8.
+    </div>
+  </body>
+</html>
