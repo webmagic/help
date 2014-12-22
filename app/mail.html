@@ -1,20 +1,18 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>4. メール &mdash; WebMagic  documentation</title>
-    
+    <title>4. メール &mdash; WebMagic v4.3.3 documentation</title>
     <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '',
+        VERSION:     '4.3.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +21,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="WebMagic  documentation" href="../index.html" />
+    <link rel="top" title="WebMagic v4.3.3 documentation" href="../index.html" />
     <link rel="next" title="5. 掲示板" href="noticeboard.html" />
     <link rel="prev" title="3. アドレス帳" href="address.html" /> 
   </head>
@@ -37,7 +35,7 @@
         <li class="right" >
           <a href="address.html" title="3. アドレス帳"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li> 
+        <li><a href="../index.html">WebMagic v4.3.3 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -59,16 +57,16 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">メッセージが表示されたら、 <strong>OK</strong> をクリックします。 <a class="footnote-reference" href="#id37" id="id3">[1]</a></p>
-<p><img alt="profile_msg" src="../_images/mail_profile_msg.gif" /></p>
+<p><img alt="profile_msg" src="../_images/profile_msg.gif" /></p>
 </li>
 <li><p class="first">[アカウント] タブでまず「基本設定」を入力します。</p>
-<p><img alt="profile" src="../_images/mail_profile.gif" /></p>
+<p><img alt="profile" src="../_images/profile.gif" /></p>
 </li>
 <li><p class="first">次に「受信設定」「送信設定」を入力します。</p>
-<p><img alt="profile_send_receive" src="../_images/mail_profile_send_receive.gif" /></p>
+<p><img alt="profile_send_receive" src="../_images/profile_send_receive.gif" /></p>
 </li>
 <li><p class="first"><strong>追加</strong> をクリックします。</p>
-<p><img alt="profile_add" src="../_images/mail_profile_add.gif" /></p>
+<p><img alt="profile_add" src="../_images/profile_add.gif" /></p>
 </li>
 <li><p class="first"><strong>戻る</strong> をクリックします。</p>
 </li>
@@ -89,7 +87,7 @@
 <div class="line">「メールは受信できるが送信ができない」といった場合は、メールを送信する際にメールサーバ側で認証が必要とされている可能性があります。</div>
 <div class="line">その場合は「送信設定」の [送信方法] の変更、または認証の設定を行います。</div>
 </div>
-<p><img alt="profile_smtp" src="../_images/mail_profile_smtp.gif" /></p>
+<p><img alt="profile_smtp" src="../_images/profile_smtp.gif" /></p>
 <p><strong>メール送信方法の種類</strong></p>
 <table border="1" class="docutils">
 <colgroup>
@@ -97,18 +95,18 @@
 <col width="82%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">送信方法</th>
+<tr><th class="head">送信方法</th>
 <th class="head">説明</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>SMTP</td>
+<tr><td>SMTP</td>
 <td>電子メールを送信するためのプロトコル</td>
 </tr>
-<tr class="row-odd"><td>SMTP over SSL</td>
+<tr><td>SMTP over SSL</td>
 <td>電子メール送信時に、メールクライアントとサーバ間の通信を暗号化する方式</td>
 </tr>
-<tr class="row-even"><td>STARTTLS</td>
+<tr><td>STARTTLS</td>
 <td>SMTP/POP3 で通信を開始し、通信途中で暗号化された状態に切り替える方式</td>
 </tr>
 </tbody>
@@ -120,15 +118,15 @@
 <col width="70%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">認証方法</th>
+<tr><th class="head">認証方法</th>
 <th class="head">説明</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>POP before SMTP</td>
+<tr><td>POP before SMTP</td>
 <td>電子メール送信前に、POP サーバに接続して認証を行う</td>
 </tr>
-<tr class="row-odd"><td>SMTP 認証(SMTP-AUTH)</td>
+<tr><td>SMTP 認証(SMTP-AUTH)</td>
 <td>電子メール送信時に、SMTP サーバで認証を行う</td>
 </tr>
 </tbody>
@@ -141,7 +139,7 @@
 <div class="section" id="id7">
 <h4>4.1.2.2. 他のメールソフトでも受信したい場合<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <p>メールの [詳細設定] をクリックし、他のメールソフトでも受信したい [プロファイル名] を選択して [サーバからメールを削除する] のチェックを外します。</p>
-<p><img alt="profile_maildel" src="../_images/mail_profile_maildel.gif" /></p>
+<p><img alt="profile_maildel" src="../_images/profile_maildel.gif" /></p>
 </div>
 </div>
 </div>
@@ -154,25 +152,25 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">メール受信画面の [新規メール] をクリックします。</p>
-<p><img alt="new_link" src="../_images/mail_new_link.gif" /></p>
+<p><img alt="new_link" src="../_images/new_link.gif" /></p>
 </li>
 <li><p class="first">「宛先」 に送信先のメールアドレスを入力します。また、送信先が WebMagic に登録されているユーザの場合、 [参照] をクリックします。</p>
-<p><img alt="address_ref" src="../_images/mail_address_ref.gif" /></p>
+<p><img alt="address_ref" src="../_images/address_ref.gif" /></p>
 </li>
 <li><p class="first">送信先にしたいユーザーの所属名を選択し、氏名にチェックを入れ <strong>OK</strong> をクリックします。</p>
-<p><img alt="address_check" src="../_images/mail_address_check.gif" /></p>
+<p><img alt="address_check" src="../_images/address_check.gif" /></p>
 </li>
 <li><p class="first">再度、送信者確認の画面が表示されます。送信先に変更がなければ <strong>OK</strong> をクリックします。</p>
-<p><img alt="address_confirm" src="../_images/mail_address_confirm.gif" /></p>
+<p><img alt="address_confirm" src="../_images/address_confirm.gif" /></p>
 </li>
 <li><p class="first">「件名」と「本文」を入力します。</p>
-<p><img alt="new_subject_body" src="../_images/mail_new_subject_body.gif" /></p>
+<p><img alt="new_subject_body" src="../_images/new_subject_body.gif" /></p>
 </li>
 <li><p class="first">添付ファイルがある場合は <strong>参照</strong> をクリックし、ファイルを指定して <strong>追加</strong> をクリックします。</p>
-<p><img alt="new_attached" src="../_images/mail_new_attached.gif" /></p>
+<p><img alt="new_attached" src="../_images/new_attached.gif" /></p>
 </li>
 <li><p class="first"><strong>プレビュー</strong> をクリックすると別ウィンドウでプレビュー画面が表示されます。この画面から送信することもできます。</p>
-<p><img alt="new_preview" src="../_images/mail_new_preview.gif" /></p>
+<p><img alt="new_preview" src="../_images/new_preview.gif" /></p>
 </li>
 </ul>
 <div class="section" id="id9">
@@ -181,7 +179,7 @@
 <div class="line">宛先を指定する際、部署で絞り込み、表示されたユーザー全員に送信できます。</div>
 <div class="line">全員にチェックを入れる場合、氏名の左側一番上のチェックボックスにチェックを入れると、表示されているユーザー全員一度にチェックをつけることができます。</div>
 </div>
-<p><img alt="address_all_check" src="../_images/mail_address_all_check.gif" /></p>
+<p><img alt="address_all_check" src="../_images/address_all_check.gif" /></p>
 <div class="section" id="cc-bcc">
 <h4>4.2.1.1. CC, BCC とは？<a class="headerlink" href="#cc-bcc" title="Permalink to this headline">¶</a></h4>
 <p>メールの宛先を「CC」や「BCC」と指定して送信することができます。</p>
@@ -202,7 +200,7 @@
 <li>メール受信画面の [メール受信] をクリックします。</li>
 </ul>
 <blockquote>
-<div><img alt="receive" src="../_images/mail_receive.gif" /></div></blockquote>
+<div><img alt="receive" src="../_images/receive.gif" /></div></blockquote>
 <ul class="simple">
 <li>メールが受信されます。</li>
 <li>読みたいメールの [件名] をクリックします。</li>
@@ -212,8 +210,8 @@
 <p>受信したメールは、件名の左側にあるアイコンの状態で [未読/既読/添付] を確認することができます。</p>
 <blockquote>
 <div><div class="line-block">
-<div class="line"><img alt="mail_open" src="../_images/mail_open.gif" /> ・・・ 既読済みメール</div>
-<div class="line"><img alt="mail_close" src="../_images/mail_close.gif" /> ・・・ 未読受信メール</div>
+<div class="line"><img alt="mail_open" src="../_images/open.gif" /> ・・・ 既読済みメール</div>
+<div class="line"><img alt="mail_close" src="../_images/close.gif" /> ・・・ 未読受信メール</div>
 <div class="line"><img alt="stick" src="../_images/stick.gif" /> ・・・ 添付ファイル付きメール</div>
 </div>
 </div></blockquote>
@@ -221,7 +219,7 @@
 <div class="section" id="id12">
 <h3>4.3.2. ホーム画面からメールの新着を確認する<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>ホーム画面の「メールが○件届いています」という表示をクリックすると、新規に届いているメールを受信した状態でメール一覧画面が表示されます。</p>
-<p><img alt="home" src="../_images/mail_home.gif" /></p>
+<p><img alt="home" src="../_images/home.gif" /></p>
 </div>
 <div class="section" id="id13">
 <h3>4.3.3. メールの添付ファイルを開く<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
@@ -233,7 +231,7 @@
 <li><p class="first">添付ファイルマークが付いたメールの [件名] をクリックします。</p>
 </li>
 <li><p class="first">添付ファイルをクリックします。</p>
-<p><img alt="attached" src="../_images/mail_attached.gif" /></p>
+<p><img alt="attached" src="../_images/attached.gif" /></p>
 </li>
 </ul>
 </div>
@@ -250,10 +248,10 @@
 <li><p class="first">メールの「件名」をクリックし、メールを開きます。</p>
 </li>
 <li><p class="first"><strong>返信</strong> をクリックします。 <a class="footnote-reference" href="#id39" id="id16">[3]</a></p>
-<p><img alt="return" src="../_images/mail_return.jpg" /></p>
+<p><img alt="return" src="../_images/return.jpg" /></p>
 </li>
 <li><p class="first">[宛先] [件名] が自動的に入力されます。本文も引用符付きで引用されているので、引用された本文を編集します。</p>
-<p><img alt="return_edit" src="../_images/mail_return_edit.gif" /></p>
+<p><img alt="return_edit" src="../_images/return_edit.gif" /></p>
 </li>
 <li><p class="first"><strong>送信</strong> をクリックします。</p>
 </li>
@@ -268,10 +266,10 @@
 <li><p class="first">メールの「件名」をクリックし、メールを開きます。</p>
 </li>
 <li><p class="first"><strong>転送</strong> をクリックします。</p>
-<p><img alt="forword" src="../_images/mail_forward.jpg" /></p>
+<p><img alt="forword" src="../_images/forward.jpg" /></p>
 </li>
 <li><p class="first">[件名] と [本文]、添付ファイルがあった場合は [添付ファイル] も自動的に追加されます。</p>
-<p><img alt="forword_edit" src="../_images/mail_forward_edit.gif" /></p>
+<p><img alt="forword_edit" src="../_images/forward_edit.gif" /></p>
 </li>
 <li><p class="first">[宛先] を設定します。</p>
 </li>
@@ -287,13 +285,13 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">メール画面の [詳細設定] をクリックします。</p>
-<p><img alt="config" src="../_images/mail_config.gif" /></p>
+<p><img alt="config" src="../_images/config.gif" /></p>
 </li>
 <li><p class="first">「署名」をクリックし、署名を作るプロファイルを選択、[署名] と [署名編集] を入力して <strong>追加</strong> をクリックします。</p>
-<p><img alt="signature" src="../_images/mail_signature.gif" /></p>
+<p><img alt="signature" src="../_images/signature.gif" /></p>
 </li>
 <li><p class="first">追加された署名は <strong>▲</strong> <strong>▲</strong>  のボックスに表示されます。 <a class="footnote-reference" href="#id40" id="id19">[4]</a></p>
-<p><img alt="signature_add" src="../_images/mail_signature_add.gif" /></p>
+<p><img alt="signature_add" src="../_images/signature_add.gif" /></p>
 </li>
 <li><p class="first"><strong>戻る</strong> をクリックします。</p>
 </li>
@@ -304,7 +302,7 @@
 <div class="line">署名を設定する画面で、「署名」と「署名の編集」を新しく入力し <strong>追加</strong> をクリックします。</div>
 <div class="line">追加された署名が <strong>▲</strong> <strong>▼</strong> のボックスに表示されます。</div>
 </div>
-<p><img alt="multi_signature" src="../_images/mail_multi_signature.gif" /></p>
+<p><img alt="multi_signature" src="../_images/multi_signature.gif" /></p>
 </div>
 <div class="section" id="id21">
 <h3>4.6.2. 「標準の署名」を使いたくない場合<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
@@ -323,7 +321,7 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">削除したいメールにチェックを入れ、 <strong>削除</strong> をクリックします。</p>
-<p><img alt="list_delete" src="../_images/mail_list_delete.png" /></p>
+<p><img alt="list_delete" src="../_images/list_delete.png" /></p>
 </li>
 <li><p class="first">削除したメールは「ゴミ箱」へ移動します。</p>
 </li>
@@ -332,7 +330,7 @@
 <h3>4.7.1. 削除したメールを元に戻す<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <p>削除したメールはいったん「ゴミ箱」に移動するので、「ゴミ箱」を開いて元に戻したいメールをチェックします。移動先フォルダの「受信箱」を選択し、 <strong>移動</strong> をクリックすると元の「受信箱」に戻すことができます。</p>
 <blockquote>
-<div><img alt="trash_move" src="../_images/mail_trash_move.png" /></div></blockquote>
+<div><img alt="trash_move" src="../_images/trash_move.png" /></div></blockquote>
 </div>
 <div class="section" id="id24">
 <h3>4.7.2. メールを完全に削除する<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
@@ -341,13 +339,13 @@
 <div class="line">「ゴミ箱」を開き、メールにチェックを入れ <strong>削除</strong> をクリックします。</div>
 </div>
 <blockquote>
-<div><img alt="trash_delete" src="../_images/mail_trash_delete.png" /></div></blockquote>
+<div><img alt="trash_delete" src="../_images/trash_delete.png" /></div></blockquote>
 </div>
 <div class="section" id="id25">
 <h3>4.7.3. ゴミ箱を一度に空にする<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
 <p>ゴミ箱内のすべてのメールを削除する場合は一番上のチェックを入れるか、 <strong>ゴミ箱を空にする</strong> をクリックします。</p>
 <blockquote>
-<div><img alt="trash_all" src="../_images/mail_trash_all.png" /></div></blockquote>
+<div><img alt="trash_all" src="../_images/trash_all.png" /></div></blockquote>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last"><strong>ゴミ箱内から削除されたメールは復旧することはできません。</strong></p>
@@ -361,7 +359,7 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">移動したいメールをチェックします。移動先のフォルダ名を選択し、 <strong>移動</strong> をクリックします。</p>
-<p><img alt="list_move" src="../_images/mail_list_move.png" /></p>
+<p><img alt="list_move" src="../_images/list_move.png" /></p>
 </li>
 <li><p class="first">メールが指定したフォルダに移動します。</p>
 </li>
@@ -374,10 +372,10 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">メール一覧画面の [検索] をクリックします。</p>
-<p><img alt="list_search" src="../_images/mail_list_search.png" /></p>
+<p><img alt="list_search" src="../_images/list_search.png" /></p>
 </li>
 <li><p class="first">検索条件を入力し <strong>検索</strong> をクリックすると、検索結果が表示されます。 <a class="footnote-reference" href="#id41" id="id28">[5]</a> <a class="footnote-reference" href="#id42" id="id29">[6]</a></p>
-<p><img alt="search_result" src="../_images/mail_search_result.png" /></p>
+<p><img alt="search_result" src="../_images/search_result1.png" /></p>
 </li>
 </ul>
 </div>
@@ -388,13 +386,13 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">メール受信一覧の [詳細設定] をクリックします。</p>
-<p><img alt="list_config" src="../_images/mail_list_config.png" /></p>
+<p><img alt="list_config" src="../_images/list_config.png" /></p>
 </li>
 <li><p class="first">「新規フォルダ」をクリックし、各項目を入力して <strong>追加</strong> をクリックします。</p>
-<p><img alt="draft_folder" src="../_images/mail_draft_folder.png" /></p>
+<p><img alt="draft_folder" src="../_images/draft_folder.png" /></p>
 </li>
 <li><p class="first">「振り分け」をクリックし、各項目を入力して <strong>追加</strong> をクリックします。</p>
-<p><img alt="draft_cofig" src="../_images/mail_draft_config.png" /></p>
+<p><img alt="draft_cofig" src="../_images/draft_config.png" /></p>
 </li>
 </ul>
 <div class="admonition note">
@@ -420,14 +418,14 @@
 <div class="line">その場合、優先順位が高い方の振り分けが有効になります。 優先順位を変更したい場合、順位を変更させたい条件を選択して <strong>▼</strong> <strong>▲</strong>  をクリックします。</div>
 <div class="line"><br /></div>
 </div>
-<p class="last"><img alt="draft_rank" src="../_images/mail_draft_rank.png" /></p>
+<p class="last"><img alt="draft_rank" src="../_images/draft_rank.png" /></p>
 </div>
 </div>
 <div class="section" id="id32">
 <h2>4.11. 振り分けを手動で実行する<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
 <p>現在の受信箱に追加した振り分け条件を反映させたい場合は [振り分け適用] をクリックすると任意のタイミングで振り分けることができます。 <a class="footnote-reference" href="#id44" id="id33">[8]</a></p>
 <blockquote>
-<div><img alt="list_draft" src="../_images/mail_list_draft.png" /></div></blockquote>
+<div><img alt="list_draft" src="../_images/list_draft.png" /></div></blockquote>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p><strong>フォルダが表示されない</strong></p>
@@ -436,7 +434,7 @@
 <div class="line">フォルダをクリックすると振り分けられたメールが一覧表示されます。</div>
 <div class="line"><br /></div>
 </div>
-<p class="last"><img alt="list_folder" src="../_images/mail_list_folder.png" /></p>
+<p class="last"><img alt="list_folder" src="../_images/list_folder.png" /></p>
 </div>
 </div>
 <div class="section" id="id34">
@@ -446,13 +444,13 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">エクスポートしたいメールの [件名] をクリックします。</p>
-<p><img alt="list_export" src="../_images/mail_list_export.png" /></p>
+<p><img alt="list_export" src="../_images/list_export.png" /></p>
 </li>
 <li><p class="first">[操作] から [eml 形式でエクスポート] を選択し、 <strong>実行</strong> をクリックします。</p>
-<p><img alt="export_exec" src="../_images/mail_export_exec.png" /></p>
+<p><img alt="export_exec" src="../_images/export_exec.png" /></p>
 </li>
 <li><p class="first"><strong>保存</strong> をクリックし、ファイルの保存先を選択した後、 <strong>OK</strong> をクリックします。</p>
-<p><img alt="export_msg" src="../_images/mail_export_msg.png" /></p>
+<p><img alt="export_msg" src="../_images/export_msg.png" /></p>
 </li>
 </ul>
 </div>
@@ -466,16 +464,16 @@
 <li><p class="first">メニューの <img alt="mail_image" src="../_images/mail_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first">[メール取り込み] をクリックします。</p>
-<p><img alt="list_import" src="../_images/mail_list_import.png" /></p>
+<p><img alt="list_import" src="../_images/list_import.png" /></p>
 </li>
 <li><p class="first"><strong>参照</strong> をクリックし、取り込みたいファイルを選択して <strong>OK</strong> をクリックします。</p>
-<p><img alt="import_exec" src="../_images/mail_import_exec.png" /></p>
+<p><img alt="import_exec" src="../_images/import_exec.png" /></p>
 </li>
 <li><p class="first">取り込みに成功すると、下記のようなメッセージが表示されますので、 <strong>戻る</strong> をクリックします。</p>
-<p><img alt="import_result" src="../_images/mail_import_result.png" /></p>
+<p><img alt="import_result" src="../_images/import_result1.png" /></p>
 </li>
 <li><p class="first">一覧画面で取り込んだメールが表示されます。</p>
-<p><img alt="import_result_list" src="../_images/mail_import_result_list.png" /></p>
+<p><img alt="import_result_list" src="../_images/import_result_list.png" /></p>
 </li>
 </ul>
 </div>
@@ -491,7 +489,7 @@
 <li><p class="first">メールの 「件名」をクリックし、詳細画面を表示します。</p>
 </li>
 <li><p class="first">[ヘッダー表示] を選択し <strong>実行</strong> をクリックします。</p>
-<p><img alt="show_header" src="../_images/mail_show_header.png" /></p>
+<p><img alt="show_header" src="../_images/show_header.png" /></p>
 </li>
 </ul>
 <hr class="docutils" />
@@ -634,12 +632,12 @@
         <li class="right" >
           <a href="address.html" title="3. アドレス帳"
              >previous</a> |</li>
-        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li> 
+        <li><a href="../index.html">WebMagic v4.3.3 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2011, WebMagic Development Team.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+        &copy; Copyright 2014, OCC Corporation..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.8.
     </div>
   </body>
 </html>

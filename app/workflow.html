@@ -1,20 +1,18 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>13. ワークフロー &mdash; WebMagic  documentation</title>
-    
+    <title>13. ワークフロー &mdash; WebMagic v4.3.3 documentation</title>
     <link rel="stylesheet" href="../_static/wm.custom.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '',
+        VERSION:     '4.3.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +21,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="WebMagic  documentation" href="../index.html" />
+    <link rel="top" title="WebMagic v4.3.3 documentation" href="../index.html" />
     <link rel="next" title="14. 文書管理" href="cabinet.html" />
     <link rel="prev" title="12. ToDo" href="todo.html" /> 
   </head>
@@ -37,7 +35,7 @@
         <li class="right" >
           <a href="todo.html" title="12. ToDo"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li> 
+        <li><a href="../index.html">WebMagic v4.3.3 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -49,250 +47,455 @@
   <div class="section" id="id1">
 <h1>13. ワークフロー<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line">部署内での決裁や回覧をパソコン上で行うことができます。</div>
-<div class="line">決裁や回覧が現在どの承認担当者まで回っているかをいつでも確認できます。また担当者宛に、決裁や回覧がある旨のメールが届きますので、「忘れる」というミスを防ぐことができます。</div>
+<div class="line">ワークフローでは、上長の決裁が必要な手続きを文書にして申請したり、情報共有のための文書を回覧することができます。</div>
+<div class="line">さらに、申請・回覧文書にはファイルも添付でき、決裁経路には所属部署問わずにユーザを追加することができます。</div>
+<div class="line"><br /></div>
+<div class="line">ホーム画面では、承認・確認すべきワークフローがある場合、「未処理件数」として表示されます。</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line">管理者の設定によっては、決裁漏れが無いよう、「決裁または確認すべき文書が届いた」という旨の <strong>メールが送信</strong> でき、「確認漏れ」というミスを防ぐことができます。</div>
+<div class="line">また、決裁者(ユーザ)毎に文書の <strong>既読・未読</strong> 状態や、決裁(回覧)が <strong>現在どの決裁者まで回っているか</strong> をいつでも確認できます。</div>
 </div>
-<div class="section" id="id2">
-<h2>13.1. 決裁する<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>決裁を行いましょう。申請から承認、申請内容によっては社内使用の雛型･個人使用の雛型を作成することもできます。</p>
-<div class="section" id="id3">
-<h3>13.1.1. 申請する<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="register">
+<span id="id2"></span><h2>13.1. 申請する<a class="headerlink" href="#register" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">上長の決裁が必要な文書を申請します。</div>
+<div class="line">申請の際は、ついでに申請文と申請経路を <strong>個人用の雛形へ登録</strong> することもできます。</div>
+</div>
 <ul>
 <li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first"><strong>新規作成</strong> をクリックします。</p>
-<p><img alt="workflow_new" src="../_images/workflow_new.png" /></p>
+<p><img alt="workflow_register" src="../_images/workflow_register.png" /></p>
 </li>
-<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
-<p><img alt="workflow_edit" src="../_images/workflow_edit.png" /></p>
+<li><p class="first">「タイトル」と「申請文」を入力し、添付したいファイルがあれば追加します。</p>
+</li>
+<li><p class="first">次に「申請経路」を設定します。[ユーザ一覧] から経路に追加したいユーザを選択☑ し、 <strong>経路に追加</strong> をクリックします。</p>
+<p><img alt="route_add" src="../_images/route_add.gif" /></p>
+</li>
+<li><p class="first">経路の順序を変更したい場合は、[経路一覧] のユーザを変更したい順序の [経路順序] へドラッグ &amp; ドロップします。</p>
+<p><img alt="route_rating" src="../_images/route_rating.gif" /></p>
+</li>
+<li><p class="first">入力が完了したら、 <strong>OK</strong> をクリックします。</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">見積書等添付したい場合、 <strong>参照</strong> をクリックでファイル名を指定し、 <strong>追加</strong> をクリックします。</p>
-</div>
-<ul>
-<li><p class="first">決裁を承認するユーザーを「ユーザー一覧」から選択し、 <strong>追加→</strong>  をクリックします。</p>
-<p><img alt="workflow_route_select" src="../_images/workflow_route_select.png" /></p>
-</li>
-<li><p class="first">「優先順序」を整え、 <strong>OK</strong> をクリックします。</p>
-<p><img alt="workflow_route" src="../_images/workflow_route.png" /></p>
-</li>
-<li><p class="first">登録確認画面が表示されます。 <strong>OK</strong> をクリックします。</p>
-</li>
-</ul>
-<p><strong>&lt;申請ステータス&gt;</strong></p>
-<blockquote>
+<p>申請した文書の状態には下記の種類があります。</p>
+<p><strong>&lt;決裁経路状態&gt;</strong></p>
+<blockquote class="last">
 <div><table border="1" class="docutils">
 <colgroup>
-<col width="23%" />
-<col width="77%" />
+<col width="11%" />
+<col width="89%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">状態</th>
+<tr><th class="head">状態</th>
 <th class="head">内容</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>申請中</td>
-<td>「承認」をクリックしていないユーザーがいる場合</td>
+<tr><td>未決裁</td>
+<td>決裁者が決裁できる状態で、まだ決裁していない状態のこと</td>
 </tr>
-<tr class="row-odd"><td>完  了</td>
-<td>ユーザー全員が「承認」をクリックした場合</td>
+<tr><td>未回覧</td>
+<td>決裁者まで回覧されておらず、決裁する権利がない状態のこと</td>
 </tr>
-<tr class="row-even"><td>否  認</td>
-<td>ユーザーが一人でも「否認」をクリックした場合</td>
+<tr><td>承 認</td>
+<td>決裁者が当該文書に対して「承認」した状態のこと</td>
+</tr>
+<tr><td>否 認</td>
+<td>決裁者が当該文書に対して「否認」した状態のことで、否認した時点で回覧がストップし、以降の決裁者へは回覧されない</td>
 </tr>
 </tbody>
 </table>
 </div></blockquote>
 </div>
-<div class="section" id="id4">
-<h3>13.1.2. 既存のワークフローの内容をコピーして申請する<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>既存のワークフローの内容を元に、新規で申請を作成する場合にはコピー機能が利用できます。</p>
-<ul>
-<li><p class="first">コピー元のワークフローの詳細表示中に <strong>コピー</strong> をクリックします。</p>
-<p><img alt="workflow_copy" src="../_images/workflow_copy.png" /></p>
-</li>
-<li><p class="first">タイトル、申請文などの内容や申請経路が引き継がれた状態で新規作成画面が表示されます。</p>
-</li>
-</ul>
-<p>[申請文書入力画面]</p>
-<blockquote>
-<div><img alt="workflow_copy_body" src="../_images/workflow_copy_body.png" /></div></blockquote>
-<p>[申請経路設定画面]</p>
-<blockquote>
-<div><img alt="workflow_copy_route" src="../_images/workflow_copy_route.png" /></div></blockquote>
 </div>
-<div class="section" id="id5">
-<h3>13.1.3. 雛形を使って申請する<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h2>13.2. 回覧する<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line">文書の本文は、あらかじめ登録してある雛形を使うことができます。</div>
-<div class="line">雛形には、管理者が登録する「共有雛形」、ユーザー個人が登録できる「個人雛形」があります。 <a class="footnote-reference" href="#id20" id="id6">[1]</a> <a class="footnote-reference" href="#id21" id="id7">[2]</a></div>
-</div>
-<ul>
-<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
-</li>
-<li><p class="first"><strong>新規作成</strong>  をクリックします。</p>
-<p><img alt="workflow_new" src="../_images/workflow_new.png" /></p>
-</li>
-<li><p class="first">「共有雛形」「個人雛形」のどちらかを選択し、雛形名を選択して <strong>読込</strong> をクリックします。タイトルは自動的に入力されます。</p>
-<p><img alt="template_select" src="../_images/workflow_template_select.png" /></p>
-</li>
-<li><p class="first">雛形の文章が読み込まれます。</p>
-<p><img alt="template_import" src="../_images/workflow_template_import.png" /></p>
-</li>
-<li><p class="first">文章を編集し、 <strong>OK</strong> をクリックします。</p>
-<p><img alt="template_edit" src="../_images/workflow_template_edit.png" /></p>
-</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">ファイルを添付したい場合、 <strong>参照</strong> をクリックしファイル名を指定、 <strong>追加</strong> をクリックします。</p>
-</div>
-<ul>
-<li><p class="first">決裁を承認するユーザーを「ユーザー一覧」から選択し、 <strong>追加→</strong>  をクリックします。</p>
-<p><img alt="workflow_route_select" src="../_images/workflow_route_select.png" /></p>
-</li>
-<li><p class="first">「優先順序」を整え、 <strong>OK</strong> をクリックします。</p>
-<p><img alt="workflow_route" src="../_images/workflow_route.png" /></p>
-</li>
-</ul>
-</div>
-<div class="section" id="id8">
-<h3>13.1.4. あらかじめ設定された申請経路を利用する<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">「いつも同じユーザーに決裁を回す」という場合、あらかじめ設定された申請経路を利用できます。</div>
-<div class="line">あらかじめ設定しておく経路には、「共有経路」と「個人経路」があります。 <a class="footnote-reference" href="#id22" id="id9">[3]</a></div>
-</div>
-<blockquote>
-<div><blockquote>
-<div><img alt="request_route" src="../_images/workflow_request_route.png" /></div></blockquote>
-<div class="line-block">
-<div class="line">共有経路・・・管理者のみが設定できます。</div>
-<div class="line">個人経路・・・ユーザー個人が設定できます。</div>
-</div>
-</div></blockquote>
-</div>
-<div class="section" id="id10">
-<h3>13.1.5. ホーム画面でのお知らせ<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<p>自分が承認すべきワークフローがある場合、ホーム画面にお知らせが表示されます。</p>
-<blockquote>
-<div><img alt="home_notify" src="../_images/workflow_home_notify.png" /></div></blockquote>
-</div>
-<div class="section" id="id11">
-<h3>13.1.6. メールでのお知らせ<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<p>自分が承認すべきワークフローがある場合、メールでお知らせが届きます。 <a class="footnote-reference" href="#id23" id="id12">[4]</a></p>
-</div>
-</div>
-<div class="section" id="id13">
-<h2>13.2. 回覧する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line">回覧をパソコン上で行います。</div>
-<div class="line">いつ・誰が回覧に目を通したのか､また回覧は誰まで回っているのかなどの確認を行うことができます。</div>
+<div class="line">文書を承認・否認の形式ではなく、経路のユーザへ一斉に回覧したい場合は、 <strong>回覧にして</strong> 申請します。</div>
+<div class="line">申請の際は、ついでに申請文と申請経路を <strong>個人用の雛形へ登録</strong> することもできます。</div>
 </div>
 <ul>
 <li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
 </li>
 <li><p class="first"><strong>新規作成</strong> をクリックします。</p>
-<p><img alt="workflow_new" src="../_images/workflow_new.png" /></p>
+<p><img alt="workflow_register" src="../_images/workflow_register.png" /></p>
 </li>
-<li><p class="first">各項目を入力し、 <strong>OK</strong> をクリックします。</p>
-<p><img alt="workflow_edit" src="../_images/workflow_edit.png" /></p>
+<li><p class="first">「タイトル」と「申請文」を入力し、添付したいファイルがあれば追加します。</p>
+</li>
+<li><p class="first">次に「申請経路」を設定します。[ユーザ一覧] から経路に追加したいユーザを選択☑し、 <strong>経路に追加</strong> をクリックします。</p>
+<p><img alt="route_add" src="../_images/route_add.gif" /></p>
+</li>
+<li><p class="first"><strong>回覧</strong> にするには、「回覧にする」を選択☑します。</p>
+<p><img alt="route_circulation" src="../_images/route_circulation.png" /></p>
+</li>
+<li><p class="first">入力が完了したら、 <strong>OK</strong> をクリックします。</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">見積書等を添付したい場合、 <strong>参照</strong> をクリックしファイル名を指定し <strong>追加</strong> をクリックします。</p>
+<p>回覧した文書の状態には下記の種類があります。</p>
+<p><strong>&lt;回覧経路状態&gt;</strong></p>
+<blockquote class="last">
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">決裁状況</th>
+<th class="head">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>未確認</td>
+<td>決裁者がまだ「確認」していない状態のこと</td>
+</tr>
+<tr><td>確 認</td>
+<td>決裁者が「確認」した状態のこと</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 </div>
-<ul>
-<li><p class="first">回覧するユーザーを「ユーザー一覧」から選択し <strong>追加→</strong> をクリックします。</p>
-<p><img alt="workflow_route_select" src="../_images/workflow_route_select.png" /></p>
-</li>
-<li><p class="first">「回覧する」にチェックを入れ、 <strong>OK</strong> をクリックします。</p>
-<p><img alt="workflow_circulate" src="../_images/workflow_circulate.png" /></p>
-</li>
-<li><p class="first">登録の確認画面が表示されますので <strong>OK</strong> をクリックします。</p>
-</li>
-</ul>
-<p><strong>&lt;回覧ステータス&gt;</strong></p>
-<blockquote>
+</div>
+<div class="section" id="id4">
+<h2>13.3. 申請・回覧文書を確認する<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">一覧画面では、申請・回覧文書の決裁数等の状態、本人の決裁状況やコメント数が確認できます。</div>
+<div class="line">詳細画面では、決裁経路や既読・未読の状態、コメントが確認できます。</div>
+</div>
+<div class="section" id="id5">
+<h3>13.3.1. 一覧から状態を確認する<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">「状態(決裁数/総数)」は、申請・回覧文書が <strong>回覧中か、完了しているのかなど</strong> 状態が確認できます。</div>
+<div class="line">カッコ内の「決裁数/総数」は、 <strong>決裁した人数と決裁経路に含まれる人数</strong> が表示されています。</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>一覧画面の状態には下記の種類があります。</p>
+<p><strong>&lt;一覧画面状態一覧&gt;</strong></p>
+<blockquote class="last">
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">状態</th>
+<th class="head">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>申請中</td>
+<td>申請文書がまだ決裁されておらず、決裁経路に未決裁者がいる状態</td>
+</tr>
+<tr><td>回覧中</td>
+<td>回覧文書がまだ確認されておらず、決裁経路に未確認者がいる状態</td>
+</tr>
+<tr><td>否  認</td>
+<td>申請文書を「否認」と決裁したユーザがおり、その先へ未回覧な(ストップしている)状態</td>
+</tr>
+<tr><td>完  了</td>
+<td>申請文書を全員が「承認」と決裁した状態</td>
+</tr>
+<tr><td>回覧終了</td>
+<td>回覧文書を全員が「確認」を決裁した状態</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>13.3.2. 一覧から決裁状況を確認する<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">「決裁状況」では、申請・回覧文書に対してユーザの対応状況が確認できます。</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>決裁状況には下記の種類があります。</p>
+<p><strong>&lt;決裁状況一覧&gt;</strong></p>
+<blockquote class="last">
 <div><table border="1" class="docutils">
 <colgroup>
 <col width="17%" />
 <col width="83%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">状態</th>
+<tr><th class="head">決裁状況</th>
 <th class="head">内容</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>回覧中</td>
-<td>「確認」をクリックしていないユーザーがいる場合</td>
+<tr><td>未決裁</td>
+<td>まだ決裁していない状態のこと</td>
 </tr>
-<tr class="row-odd"><td>回覧終了</td>
-<td>ユーザー全員が「確認」をクリックした場合</td>
+<tr><td>未確認</td>
+<td>まだ確認していない状態のこと</td>
+</tr>
+<tr><td>承 認</td>
+<td>「承認」した状態のこと</td>
+</tr>
+<tr><td>否 認</td>
+<td>「否認」した状態のことで、否認した時点で回覧がストップし、以降の決裁者へは回覧されていない</td>
+</tr>
+<tr><td>承認(否認取消)</td>
+<td>申請文書を一度「否認」した後、「承認」と決裁した状態のこと</td>
+</tr>
+<tr><td>回覧終了</td>
+<td>回覧文書を全員が「確認」を決裁した状態のこと</td>
 </tr>
 </tbody>
 </table>
 </div></blockquote>
 </div>
-<div class="section" id="id14">
-<h2>13.3. ワークフローを削除する<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
-<p>ワークフローを削除しましょう。申請・回覧した本人または管理者のみが削除できます。</p>
-<ul>
-<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
-</li>
-<li><p class="first">削除したいワークフローの「削除」をクリックします。</p>
-<p><img alt="workflow_delete" src="../_images/workflow_delete.png" /></p>
-</li>
-<li><p class="first">確認メッセージが表示されたら、 <strong>OK</strong> をクリックします。</p>
-</li>
-</ul>
 </div>
-<div class="section" id="id15">
-<h2>13.4. 申請を承認（否認）する<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>13.3.3. 決裁の進行状況を確認する<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
-<div class="line">自分が決裁すべき申請が回ってきた場合の承認方法を確認しましょう。</div>
-<div class="line">「承認」「否認」を決定する際にコメントも入力することができます。</div>
+<div class="line">詳細画面では、申請・回覧文書が <strong>決裁の進行状況</strong> や <strong>決裁者の既読・未読状態</strong> が確認できます。</div>
 </div>
+<ul class="simple">
+<li>メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</li>
+<li>確認したい文書のタイトルをクリックします。</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>詳細画面の状態には下記の種類があります。</p>
+<p><strong>&lt;詳細画面状態一覧&gt;</strong></p>
+<blockquote class="last">
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">決裁状況</th>
+<th class="head">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>未決裁</td>
+<td>申請文書をまだ決裁していない状態のこと</td>
+</tr>
+<tr><td>未確認</td>
+<td>回覧文書をまだ確認していない状態のこと</td>
+</tr>
+<tr><td>否  認</td>
+<td>申請文書を「否認」と決裁した状態のこと</td>
+</tr>
+<tr><td>承  認</td>
+<td>申請文書を「承認」と決裁した状態のこと</td>
+</tr>
+<tr><td>承認(否認取消)</td>
+<td>申請文書を一度「否認」した後、「承認」と決裁した状態のこと</td>
+</tr>
+<tr><td>未回覧</td>
+<td>申請・回覧文書がまだ回覧されていない状態のこと</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>13.4. 決裁する<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">決裁すべき申請が届いた場合の決裁方法を確認しましょう。</div>
+<div class="line">申請文書に対しては、「承認」「否認」、回覧文書に対しては、「確認」という決裁ができます。</div>
+</div>
+<div class="section" id="id9">
+<h3>13.4.1. 申請を承認・否認する<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
 </li>
-<li><p class="first">「(未決)」と記載されたワークフローの <strong>タイトル</strong> をクリックします。</p>
-<p><img alt="workflow_title_click" src="../_images/workflow_title_click.png" /></p>
+<li><p class="first">決裁状況が <strong>未決裁</strong> となっている申請文書のタイトルをクリックします。</p>
+<p><img alt="workflow_approval_title" src="../_images/workflow_approval_title.png" /></p>
 </li>
 <li><p class="first">申請内容を確認し、 <strong>承認</strong> または <strong>否認</strong> をクリックします。</p>
 <p><img alt="workflow_approval" src="../_images/workflow_approval.png" /></p>
 </li>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
+</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">コメントを添えたい場合、「コメント」欄に文字を入力します。</p>
-</div>
-<ul class="simple">
-<li><strong>承認・否認</strong> の確認ボタンが表示されますので、 <strong>OK</strong> をクリックします。</li>
+<ul class="last simple">
+<li>コメントをつけるには、コメント欄から別途登録します。詳しくは <a class="reference internal" href="#workflow-comment"><em>コメントをつける</em></a> をご確認ください。</li>
+<li>コメントは「承認」「否認」後にも登録することができます。</li>
+<li>「否認」した後でも、「承認」し直すことができます。詳しくは <a class="reference internal" href="#workflow-approval-after-denail"><em>否認した申請を承認する</em></a> をご確認ください。</li>
 </ul>
-<div class="section" id="id16">
-<h3>13.4.1. 否認した申請を承認する<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
-<p>否認した申請を承認し直すことが可能です。</p>
+</div>
+</div>
+<div class="section" id="workflow-approval-after-denail">
+<span id="id10"></span><h3>13.4.2. 否認した申請を承認する<a class="headerlink" href="#workflow-approval-after-denail" title="Permalink to this headline">¶</a></h3>
 <ul>
-<li><p class="first">否認した申請の <strong>タイトル</strong> をクリックします。</p>
-<p><img alt="workflow_denial" src="../_images/workflow_denial.png" /></p>
+<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
 </li>
-<li><p class="first">否認したコメントが引用された状態で申請の詳細が表示されます。</p>
+<li><p class="first">決裁状況が <strong>否認</strong> となっている申請文書のタイトルをクリックします。</p>
+<p><img alt="workflow_denail_title" src="../_images/workflow_denail_title.png" /></p>
 </li>
-<li><p class="first">承認し直す場合は、 <strong>承認</strong> をクリックします。</p>
-<p><img alt="workflow_reapproval" src="../_images/workflow_reapproval.png" /></p>
+<li><p class="first">申請内容を確認し、 <strong>承認</strong> クリックします。</p>
+<p><img alt="workflow_approval_after_denail" src="../_images/workflow_approval_after_denail.png" /></p>
 </li>
-<li><p class="first">否認を取り消して承認してもよいか確認されますので、承認でよければ <strong>OK</strong> をクリックします。</p>
+<li><p class="first">確認メッセージが表示されたら <strong>OK</strong> をクリックします。</p>
 </li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>コメントをつけるには、コメント欄から別途登録します。詳しくは <a class="reference internal" href="#workflow-comment"><em>コメントをつける</em></a> をご確認ください。</li>
+<li>コメントは「承認」後にも登録することができます。</li>
 </ul>
 </div>
 </div>
-<div class="section" id="id17">
-<h2>13.5. ワークフローを検索する<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>13.4.3. 回覧文書を確認する<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">状態が <strong>未確認</strong> となっている申請文書のタイトルをクリックします。</p>
+<p><img alt="workflow_circulation_title" src="../_images/workflow_circulation_title.png" /></p>
+</li>
+<li><p class="first">申請内容を確認し、 <strong>確認</strong> クリックします。</p>
+<p><img alt="workflow_circulation" src="../_images/workflow_circulation.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>コメントをつけるには、コメント欄から別途登録します。詳しくは <a class="reference internal" href="#workflow-comment"><em>コメントをつける</em></a> をご確認ください。</li>
+<li>コメントは回覧「確認」後にも登録することができます。</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="workflow-comment">
+<span id="id12"></span><h2>13.5. コメントをつける<a class="headerlink" href="#workflow-comment" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">タイトルをクリックします。</p>
+</li>
+<li><p class="first">「コメント」欄にコメントを入力し、 <strong>コメント</strong> をクリックします。</p>
+<p><img alt="workflow_comment" src="../_images/workflow_comment.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">コメントは何回でもつけることができます。承認後、確認後等の決裁後も可能です。</p>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>13.6. 他の申請文書をコピーして申請・回覧する<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">既存の内容を元に、新規で申請する場合にはコピー機能が利用できます。タイトルや申請文と経路をコピーして、申請文書または回覧文書が作成します。</div>
+</div>
+<ul>
+<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">コピーしたい文書のタイトルをクリックします。</p>
+</li>
+<li><p class="first"><strong>コピー</strong> をクリックします。</p>
+<p><img alt="workflow_copy" src="../_images/workflow_copy.png" /></p>
+</li>
+<li><p class="first">タイトル、申請文や申請経路が引き継がれた状態で新規作成画面が表示されますので、内容を編集し、 <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>13.7. 雛形を使用して申請・回覧する<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">文書作成時には、雛形を使うことができます。タイトル・申請文と申請経路はそれぞれ読み込んで、使用します。</div>
+<div class="line">雛形には、管理者が登録する「共有雛形 <a class="footnote-reference" href="#id25" id="id15">[1]</a> 」、個人用に登録できる「個人雛形 <a class="footnote-reference" href="#id26" id="id16">[2]</a> <a class="footnote-reference" href="#id27" id="id17">[3]</a> 」があります。</div>
+</div>
+<ul>
+<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first"><strong>新規作成</strong>  をクリックします。</p>
+<p><img alt="workflow_register" src="../_images/workflow_register.png" /></p>
+</li>
+<li><p class="first">初めに、 <strong>タイトル・申請文の雛形</strong> を選択します。「共有雛形」「個人雛形」のどちらかを選択し、雛形名を選択して <strong>読込</strong> をクリックします。</p>
+<p><img alt="workflow_template_select" src="../_images/workflow_template_select.png" /></p>
+</li>
+<li><p class="first">すでに入力済みの内容は、上書きされる旨の確認メッセージが表示されますので、よろしければ <strong>OK</strong> をクリックします。</p>
+</li>
+<li><p class="first">次に、 <strong>申請経路の雛形</strong> を選択します。「共有雛形」「個人雛形」のどちらかを選択し、雛形名を選択して <strong>読込</strong> をクリックします。</p>
+<p><img alt="route_template_select" src="../_images/route_template_select.png" /></p>
+</li>
+<li><p class="first">すでに設定済みの経路は、上書きされる旨の確認メッセージが表示されますので、よろしければ <strong>OK</strong> をクリックします。</p>
+</li>
+<li><p class="first">内容を確認し <strong>OK</strong> をクリックします。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h2>13.8. ワークフローを削除する<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">ワークフローを削除しましょう。</div>
+<div class="line">申請・回覧した本人が作成した文書のみ削除できます。または管理者権限のユーザは、全て削除できます。</div>
+</div>
+<ul>
+<li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
+</li>
+<li><p class="first">削除したい文書を選択☑して、プルダウンメニューから [チェックされた掲示を削除する] を選択し <strong>実行</strong> をクリックします。</p>
+<p><img alt="workflow_delete" src="../_images/workflow_delete.png" /></p>
+</li>
+<li><p class="first">削除確認画面が表示されますので、表示されている掲示一覧を確認し、よろしければ <strong>削除</strong> をクリックします。</p>
+<p><img alt="workflow_delete_confirm" src="../_images/workflow_delete_confirm.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h2>13.9. 一覧を絞り込む<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id20">
+<h3>13.9.1. 項目を切り替える<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<p>項目を切り替えることで、申請文書または回覧文書を絞り込むことができます。</p>
+<blockquote>
+<div><img alt="workflow_category" src="../_images/workflow_category.png" /></div></blockquote>
+<p><strong>&lt;項目一覧&gt;</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">状態</th>
+<th class="head">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>すべて</td>
+<td>すべての申請・回覧文書を表示</td>
+</tr>
+<tr><td>すべて(未処理のみ)</td>
+<td>「未決裁」「未確認」の文書を表示</td>
+</tr>
+<tr><td>申請</td>
+<td>本人が申請し、状態が「申請中」「完了」「否認」の文書を表示</td>
+</tr>
+<tr><td>承認</td>
+<td>本人または他のユーザが申請し、状態が「申請中」「完了」の文書を表示</td>
+</tr>
+<tr><td>回覧</td>
+<td>本人または他のユーザが申請し、状態が「回覧中」「回覧終了」の文書を表示</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">初めに表示する項目を設定しておくことができます。詳しくは <a class="reference internal" href="../user/workflow.html#personal-workflow-config"><em>初期値設定</em></a> をご確認ください。</p>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>13.9.2. 検索する<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <p>「申請者」「タイトル」「本文」に含まれる文字列から、検索することができます。</p>
 <ul>
 <li><p class="first">メニューの <img alt="workflow_image" src="../_images/workflow_image.gif" /> をクリックします。</p>
@@ -300,77 +503,45 @@
 <li><p class="first">キーワードを入力し、 <strong>検索</strong> をクリックします。</p>
 <p><img alt="workflow_search" src="../_images/workflow_search.png" /></p>
 </li>
-<li><p class="first">該当するワークフローのみが表示されます。検索した文字列が点滅します。</p>
-<p><img alt="workflow_search_result" src="../_images/workflow_search_result.png" /></p>
-</li>
 </ul>
-<div class="section" id="id18">
-<h3>13.5.1. 検索する前の状態に戻したい<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id22">
+<h2>13.10. 検索する前の状態に戻す<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
 <p>検索を実行したあと <strong>リセット</strong> をクリックすると、検索する前の状態に戻すことができます。</p>
 <blockquote>
-<div><img alt="workflow_search_reset" src="../_images/workflow_search_reset.png" /></div></blockquote>
+<div><img alt="workflow_reset" src="../_images/workflow_reset.png" /></div></blockquote>
 </div>
-<div class="section" id="id19">
-<h3>13.5.2. 状態で絞り込む<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
-<p>ワークフローを申請されている状態で絞り込むことができます。</p>
+<div class="section" id="id23">
+<h2>13.11. コメント新着順に並び替える<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<p>コメント新着順に並び替えるには、 <strong>最終コメント日時</strong> をクリックします。</p>
 <blockquote>
-<div><img alt="workflow_refine" src="../_images/workflow_refine.png" /></div></blockquote>
-<p><strong>&lt;絞り込み一覧&gt;</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="18%" />
-<col width="82%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">状態</th>
-<th class="head">内容</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>すべて</td>
-<td>すべてのワークフローを表示</td>
-</tr>
-<tr class="row-odd"><td>すべて(未処理のみ)</td>
-<td>すべてのワークフローで未処理のものを表示</td>
-</tr>
-<tr class="row-even"><td>申請</td>
-<td>自分が申請して「申請中」「完了」「否認」のものを表示</td>
-</tr>
-<tr class="row-odd"><td>承認</td>
-<td>自分または他のユーザーが申請して自分が「承認」にしたワークフローを表示</td>
-</tr>
-<tr class="row-even"><td>回覧</td>
-<td>自分または他のユーザーが申請して「回覧中」「回覧終了」の状態のワークフローを表示</td>
-</tr>
-</tbody>
-</table>
+<div><img alt="workflow_comment_sort" src="../_images/workflow_comment_sort.png" /></div></blockquote>
+</div>
+<div class="section" id="id24">
+<h2>13.12. メール通知のお知らせを設定する<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<p>管理者が、メール通知のお知らせを ON にしている場合、申請・回覧文書のお知らせが <strong>あらかじめ設定してあるメールアドレス</strong> に届きます。</p>
+<p>設定方法は、 <a class="reference internal" href="../user/user_control_personal.html#private-information"><em>個人情報</em></a> をご確認ください。</p>
 <hr class="docutils" />
 <p class="rubric">脚注</p>
-<table class="docutils footnote" frame="void" id="id20" rules="none">
+<table class="docutils footnote" frame="void" id="id25" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id6">[1]</a></td><td>「共有雛形」の登録は、管理者のみしかできません。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id15">[1]</a></td><td>「共有雛形」の登録は、管理者しかできません。</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id21" rules="none">
+<table class="docutils footnote" frame="void" id="id26" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id7">[2]</a></td><td>「個人雛形」の登録については <a class="reference internal" href="../user/route_config.html#private-workflow"><em>ワークフロー</em></a> をご確認ください。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id16">[2]</a></td><td>「個人雛形申請経路」の登録については <a class="reference internal" href="../user/workflow.html#personal-route-config"><em>雛形申請経路</em></a> をご確認ください。</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id22" rules="none">
+<table class="docutils footnote" frame="void" id="id27" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id9">[3]</a></td><td>「個人経路」の登録については <a class="reference internal" href="../user/route_config.html#private-workflow"><em>ワークフロー</em></a> をご確認ください。</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id17">[3]</a></td><td>「個人雛形文書」の登録については <a class="reference internal" href="../user/workflow.html#personal-workflow-template-config"><em>雛形文書</em></a> をご確認ください。</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id23" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id12">[4]</a></td><td>「メールでのお知らせ」の設定については <a class="reference internal" href="../user/user_control_personal.html#private-information"><em>個人情報</em></a> をご確認ください。</td></tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 
@@ -383,26 +554,32 @@
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">13. ワークフロー</a><ul>
-<li><a class="reference internal" href="#id2">13.1. 決裁する</a><ul>
-<li><a class="reference internal" href="#id3">13.1.1. 申請する</a></li>
-<li><a class="reference internal" href="#id4">13.1.2. 既存のワークフローの内容をコピーして申請する</a></li>
-<li><a class="reference internal" href="#id5">13.1.3. 雛形を使って申請する</a></li>
-<li><a class="reference internal" href="#id8">13.1.4. あらかじめ設定された申請経路を利用する</a></li>
-<li><a class="reference internal" href="#id10">13.1.5. ホーム画面でのお知らせ</a></li>
-<li><a class="reference internal" href="#id11">13.1.6. メールでのお知らせ</a></li>
+<li><a class="reference internal" href="#register">13.1. 申請する</a></li>
+<li><a class="reference internal" href="#id3">13.2. 回覧する</a></li>
+<li><a class="reference internal" href="#id4">13.3. 申請・回覧文書を確認する</a><ul>
+<li><a class="reference internal" href="#id5">13.3.1. 一覧から状態を確認する</a></li>
+<li><a class="reference internal" href="#id6">13.3.2. 一覧から決裁状況を確認する</a></li>
+<li><a class="reference internal" href="#id7">13.3.3. 決裁の進行状況を確認する</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id13">13.2. 回覧する</a></li>
-<li><a class="reference internal" href="#id14">13.3. ワークフローを削除する</a></li>
-<li><a class="reference internal" href="#id15">13.4. 申請を承認（否認）する</a><ul>
-<li><a class="reference internal" href="#id16">13.4.1. 否認した申請を承認する</a></li>
+<li><a class="reference internal" href="#id8">13.4. 決裁する</a><ul>
+<li><a class="reference internal" href="#id9">13.4.1. 申請を承認・否認する</a></li>
+<li><a class="reference internal" href="#workflow-approval-after-denail">13.4.2. 否認した申請を承認する</a></li>
+<li><a class="reference internal" href="#id11">13.4.3. 回覧文書を確認する</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id17">13.5. ワークフローを検索する</a><ul>
-<li><a class="reference internal" href="#id18">13.5.1. 検索する前の状態に戻したい</a></li>
-<li><a class="reference internal" href="#id19">13.5.2. 状態で絞り込む</a></li>
+<li><a class="reference internal" href="#workflow-comment">13.5. コメントをつける</a></li>
+<li><a class="reference internal" href="#id13">13.6. 他の申請文書をコピーして申請・回覧する</a></li>
+<li><a class="reference internal" href="#id14">13.7. 雛形を使用して申請・回覧する</a></li>
+<li><a class="reference internal" href="#id18">13.8. ワークフローを削除する</a></li>
+<li><a class="reference internal" href="#id19">13.9. 一覧を絞り込む</a><ul>
+<li><a class="reference internal" href="#id20">13.9.1. 項目を切り替える</a></li>
+<li><a class="reference internal" href="#id21">13.9.2. 検索する</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#id22">13.10. 検索する前の状態に戻す</a></li>
+<li><a class="reference internal" href="#id23">13.11. コメント新着順に並び替える</a></li>
+<li><a class="reference internal" href="#id24">13.12. メール通知のお知らせを設定する</a></li>
 </ul>
 </li>
 </ul>
@@ -439,12 +616,12 @@
         <li class="right" >
           <a href="todo.html" title="12. ToDo"
              >previous</a> |</li>
-        <li><a href="../index.html">WebMagic  documentation</a> &raquo;</li> 
+        <li><a href="../index.html">WebMagic v4.3.3 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2011, WebMagic Development Team.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+        &copy; Copyright 2014, OCC Corporation..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.8.
     </div>
   </body>
 </html>
